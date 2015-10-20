@@ -22,12 +22,25 @@ public class C4ServerSession extends C4Logic {
 		playAgain = true;
 		gameOver = false;
 	    this.connection = connection;
-	     converser = new C4Packet();
-		startSession(connection);
+		receive = connection.getInputStream();
+	    converser = new C4Packet();
+	    start();
 		
 	}
-	
-	public void startSession(Socket connection) throws IOException{
+	private void start() throws IOException {
+		byte[] packet = converser.receivePacket(receive);
+		if(packet[0] == 2)
+			playAgain = true;
+		else if(packet[0] == 3)
+		{
+			playAgain = false;
+			gameOver = true;
+			
+		}
+	    startGameSession();
+	}
+
+	public void startGameSession() throws IOException{
 	
 		byte[] b = {0,0,0};
 		sendPacket(b);
