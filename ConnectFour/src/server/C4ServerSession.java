@@ -21,14 +21,16 @@ public class C4ServerSession extends C4Logic {
 		
 		playAgain = true;
 		gameOver = false;
-		
+	    this.connection = connection;
+	     converser = new C4Packet();
 		startSession(connection);
+		
 	}
 	
 	public void startSession(Socket connection) throws IOException{
-		
-		System.out.println(converser.receivePacket(connection.getInputStream()));
-		
+	
+		byte[] b = {0,0,0};
+		sendPacket(b);
 		/*		
 		
 		while (false)
