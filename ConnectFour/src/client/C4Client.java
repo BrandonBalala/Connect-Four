@@ -33,7 +33,7 @@ public class C4Client extends C4Logic {
 		b[0]=10;
 		b[1]=20;
 		b[2]=30;
-		converser.sendMove(b, send);
+		converser.sendPacket(b, send);
 		}
 		catch(Exception e)
 		{

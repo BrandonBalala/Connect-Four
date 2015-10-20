@@ -8,13 +8,13 @@ import java.net.SocketException;
 public class C4Packet {
 	
 
-	public void sendMove(byte[] move, OutputStream send) throws IOException
+	public void sendPacket(byte[] move, OutputStream send) throws IOException
 	{
 			send.write(move);
 
 	}
 	
-	public byte[] receiveMove(InputStream receive) throws IOException
+	public byte[] receivePacket(InputStream receive) throws IOException
 	{
 			byte[] bytes =	new byte[3];
 			int totalBytes = 0;

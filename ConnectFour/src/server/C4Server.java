@@ -22,7 +22,7 @@ public class C4Server {
 		while(true)
 		{
 				//port we should listen on?
-				servSock = new ServerSocket(50000);
+				servSock = new ServerSocket(62366);
 				
 				// Get client connection
 				Socket clntSock = servSock.accept();

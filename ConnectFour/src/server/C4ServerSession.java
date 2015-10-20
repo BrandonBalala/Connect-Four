@@ -6,13 +6,17 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 import shared.C4Logic;
+import shared.C4Packet;
 
 public class C4ServerSession extends C4Logic {
 	
 	private boolean playAgain;
 	private boolean gameOver;
+	OutputStream send;
+	InputStream  receive;
+	C4Packet converser;
 	
-	public C4ServerSession(Socket clntSocket){
+	public C4ServerSession(Socket clntSocket) throws IOException{
 		
 		playAgain = true;
 		gameOver = false;
@@ -20,21 +24,17 @@ public class C4ServerSession extends C4Logic {
 		startSession(clntSocket);
 	}
 	
-	public void startSession(Socket clntSocket){
+	public void startSession(Socket clntSocket) throws IOException{
 		
-		byte[] byteBuffer = new byte[32];
-		int recvMsgSize;
+		System.out.println(converser.receivePacket(clntSocket.getInputStream()));
 		
-		try {
-			
-		InputStream in = clntSocket.getInputStream();
-		OutputStream out = clntSocket.getOutputStream();
+		/*		
 		
-		while ((recvMsgSize = in.read(byteBuffer)) != -1)
+		while (false)
 		{
 			
 			//a session can be 0 or more games. check if the user wants to play
-		}
+		}*/
 		
 		while(playAgain)
 		{
@@ -44,11 +44,5 @@ public class C4ServerSession extends C4Logic {
 			}
 	
 		}
-		
-		clntSocket.close();
-		
-	} catch (IOException e) {
-		System.out.println("Streams couldnt get set up from client socket.");
-		}// end of catch
 	}
 }
