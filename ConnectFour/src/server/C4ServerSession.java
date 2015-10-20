@@ -15,18 +15,19 @@ public class C4ServerSession extends C4Logic {
 	OutputStream send;
 	InputStream  receive;
 	C4Packet converser;
+	Socket connection;
 	
-	public C4ServerSession(Socket clntSocket) throws IOException{
+	public C4ServerSession(Socket connection) throws IOException{
 		
 		playAgain = true;
 		gameOver = false;
 		
-		startSession(clntSocket);
+		startSession(connection);
 	}
 	
-	public void startSession(Socket clntSocket) throws IOException{
+	public void startSession(Socket connection) throws IOException{
 		
-		System.out.println(converser.receivePacket(clntSocket.getInputStream()));
+		System.out.println(converser.receivePacket(connection.getInputStream()));
 		
 		/*		
 		
@@ -44,5 +45,13 @@ public class C4ServerSession extends C4Logic {
 			}
 	
 		}
+		
+		connection.close();
+	}
+	
+	public void sendPacket(byte[] packet) throws IOException
+	{
+		send = connection.getOutputStream();
+		converser.sendPacket(packet, send);
 	}
 }

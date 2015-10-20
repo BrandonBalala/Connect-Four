@@ -11,7 +11,8 @@ public class C4Packet {
 	public void sendPacket(byte[] move, OutputStream send) throws IOException
 	{
 			send.write(move);
-
+			System.out.println("WORK WORK  :" + move[0] + " " + move[1] + " " + move[2]);
+			send.close();
 	}
 	
 	public byte[] receivePacket(InputStream receive) throws IOException
@@ -27,7 +28,7 @@ public class C4Packet {
 		      totalBytes += bytesReceived;
 		    }
 			return bytes;
-
+			
 	}
 
 }
