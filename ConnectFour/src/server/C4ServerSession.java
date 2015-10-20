@@ -5,7 +5,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-public class C4ServerSession {
+import shared.C4Logic;
+
+public class C4ServerSession extends C4Logic {
 	
 	private boolean playAgain;
 	private boolean gameOver;
