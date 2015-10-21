@@ -12,10 +12,11 @@ public class C4ServerSession extends C4Logic {
 	
 	private boolean playAgain;
 	private boolean gameOver;
+	Socket connection;
 	OutputStream send;
 	InputStream  receive;
 	C4Packet converser;
-	Socket connection;
+	
 	
 	public C4ServerSession(Socket connection) throws IOException{
 		
@@ -23,6 +24,7 @@ public class C4ServerSession extends C4Logic {
 		gameOver = false;
 	    this.connection = connection;
 		receive = connection.getInputStream();
+		send = connection.getOutputStream();
 	    converser = new C4Packet();
 	    start();
 		
@@ -35,7 +37,6 @@ public class C4ServerSession extends C4Logic {
 		{
 			playAgain = false;
 			gameOver = true;
-			
 		}
 	    startGameSession();
 	}
