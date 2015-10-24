@@ -1,0 +1,312 @@
+[INFO ] 2015-10-24 11:49:25.081 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-10-24 11:49:25.138 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/Guicherme/Desktop/workspace/ConnectFourGame/target/classes/fxml/IP.fxml:8
+
+	at javafx.fxml.FXMLLoader.constructLoadException(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$700(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(Unknown Source) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureStage(MainAppFX.java:83) [classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:53) [classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$159(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.LauncherImpl$$Lambda$53/1603456453.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$172(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$45/186276003.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$170(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$48/573945332.run(Unknown Source) [jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_40]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$171(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$47/237061348.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$145(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication$$Lambda$36/2117255219.run(Unknown Source) [jfxrt.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.ClassNotFoundException: gui.IPController.java
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	... 24 more
+[INFO ] 2015-10-24 11:50:27.231 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-10-24 11:50:27.283 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/Guicherme/Desktop/workspace/ConnectFourGame/target/classes/fxml/IP.fxml:8
+
+	at javafx.fxml.FXMLLoader.constructLoadException(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$700(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(Unknown Source) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureStage(MainAppFX.java:83) [classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:53) [classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$159(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.LauncherImpl$$Lambda$53/1172930247.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$172(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$46/186276003.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$170(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$48/1610214753.run(Unknown Source) [jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_40]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$171(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$47/237061348.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$145(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication$$Lambda$36/2117255219.run(Unknown Source) [jfxrt.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.ClassNotFoundException: gui.IPController.java
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	... 24 more
+[INFO ] 2015-10-24 11:51:47.200 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-10-24 11:51:47.248 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/Guicherme/Desktop/workspace/ConnectFourGame/target/classes/fxml/IP.fxml:8
+
+	at javafx.fxml.FXMLLoader.constructLoadException(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$700(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(Unknown Source) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureStage(MainAppFX.java:83) [classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:53) [classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$159(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.LauncherImpl$$Lambda$53/1906966037.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$172(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$45/186276003.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$170(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$48/1610214753.run(Unknown Source) [jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_40]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$171(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$46/237061348.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$145(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication$$Lambda$36/2117255219.run(Unknown Source) [jfxrt.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.ClassNotFoundException: com.dc.ConnectFourGame.controllers.IPController.java
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	... 24 more
+[INFO ] 2015-10-24 11:53:10.774 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-10-24 11:53:10.843 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/Guicherme/Desktop/workspace/ConnectFourGame/target/classes/fxml/IP.fxml:8
+
+	at javafx.fxml.FXMLLoader.constructLoadException(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$700(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(Unknown Source) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureStage(MainAppFX.java:83) [classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:53) [classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$159(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.LauncherImpl$$Lambda$53/1313957572.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$172(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$45/186276003.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$170(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$48/402050236.run(Unknown Source) [jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_40]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$171(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$47/237061348.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$145(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication$$Lambda$36/2117255219.run(Unknown Source) [jfxrt.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.ClassNotFoundException: com.dc.ConnectFourGame.controllers.IPController.java
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	... 24 more
+[INFO ] 2015-10-24 11:53:55.234 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-10-24 11:53:55.291 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/Guicherme/Desktop/workspace/ConnectFourGame/target/classes/fxml/IP.fxml:8
+
+	at javafx.fxml.FXMLLoader.constructLoadException(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$700(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(Unknown Source) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureStage(MainAppFX.java:83) [classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:53) [classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$159(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.LauncherImpl$$Lambda$53/134966557.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$172(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$45/186276003.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$170(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$48/675183867.run(Unknown Source) [jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_40]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$171(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$47/237061348.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$145(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication$$Lambda$36/2117255219.run(Unknown Source) [jfxrt.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.ClassNotFoundException: com.dc.ConnectFourGame.controllers.IPController.java
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	... 24 more
+[INFO ] 2015-10-24 11:54:34.266 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-10-24 11:54:34.333 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/Guicherme/Desktop/workspace/ConnectFourGame/target/classes/fxml/IP.fxml:8
+
+	at javafx.fxml.FXMLLoader.constructLoadException(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$700(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(Unknown Source) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureStage(MainAppFX.java:83) [classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:53) [classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$159(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.LauncherImpl$$Lambda$53/255287952.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$172(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$45/186276003.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$170(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$48/198480359.run(Unknown Source) [jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_40]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$171(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$47/237061348.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$145(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication$$Lambda$36/2117255219.run(Unknown Source) [jfxrt.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.ClassNotFoundException: com.dc.ConnectFourGame.controllers.IPController.java
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	... 24 more
+[INFO ] 2015-10-24 11:56:06.293 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-10-24 11:56:06.352 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/Guicherme/Desktop/workspace/ConnectFourGame/target/classes/fxml/IP.fxml:8
+
+	at javafx.fxml.FXMLLoader.constructLoadException(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$700(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(Unknown Source) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureStage(MainAppFX.java:83) [classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:53) [classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$159(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.LauncherImpl$$Lambda$53/1604805118.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$172(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$46/186276003.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$170(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$48/530899104.run(Unknown Source) [jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_40]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$171(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$47/237061348.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$145(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication$$Lambda$36/2117255219.run(Unknown Source) [jfxrt.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.ClassNotFoundException: com.dc.ConnectFourGame.controllers.IPController.java
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	... 24 more
+[INFO ] 2015-10-24 11:56:42.309 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-10-24 11:56:42.368 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/Guicherme/Desktop/workspace/ConnectFourGame/target/classes/fxml/IP.fxml:8
+
+	at javafx.fxml.FXMLLoader.constructLoadException(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$700(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(Unknown Source) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(Unknown Source) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureStage(MainAppFX.java:83) [classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:53) [classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$159(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.LauncherImpl$$Lambda$53/255287952.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$172(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$46/186276003.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$170(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$48/675183867.run(Unknown Source) [jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_40]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$171(Unknown Source) [jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl$$Lambda$47/237061348.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$145(Unknown Source) [jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication$$Lambda$36/2117255219.run(Unknown Source) [jfxrt.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.ClassNotFoundException: com.dc.ConnectFourGame.controllers.IPController.java
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_40]
+	... 24 more
+[INFO ] 2015-10-24 11:56:59.963 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-10-24 11:57:00.489 [JavaFX Application Thread] IPController - initialize called
+[INFO ] 2015-10-24 11:57:24.609 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-10-24 11:57:25.094 [JavaFX Application Thread] IPController - initialize called
+[INFO ] 2015-10-24 11:58:20.496 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-10-24 11:58:21.057 [JavaFX Application Thread] IPController - initialize called
+[INFO ] 2015-10-24 11:59:31.692 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-10-24 11:59:32.196 [JavaFX Application Thread] IPController - initialize called
+[INFO ] 2015-10-24 11:59:35.455 [JavaFX Application Thread] IPController - clicked
+[INFO ] 2015-10-24 11:59:36.245 [JavaFX Application Thread] IPController - clicked
+[INFO ] 2015-10-24 11:59:36.753 [JavaFX Application Thread] IPController - clicked
+[INFO ] 2015-10-24 11:59:37.167 [JavaFX Application Thread] IPController - clicked
+[INFO ] 2015-10-24 11:59:37.548 [JavaFX Application Thread] IPController - clicked
+[INFO ] 2015-10-24 12:25:38.838 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-10-24 12:34:16.136 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-10-24 12:36:38.485 [JavaFX Application Thread] MainAppFX - Program Begins
