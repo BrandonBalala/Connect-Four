@@ -5,19 +5,28 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
+import com.dc.ConnectFourGame.controllers.IPController;
 import com.dc.ConnectFourGame.shared.C4Logic;
 import com.dc.ConnectFourGame.shared.C4Packet;
 
 public class C4Client extends C4Logic {
 	
-	Socket connection;
-	OutputStream send;
-	InputStream  receive;
-	C4Packet converser;
+	private Socket connection;
+	private OutputStream send;
+	private InputStream  receive;
+	private C4Packet converser;
 	
-	public C4Client() throws IOException
-	{
+	private int port = 50000;
+	private IPController ipController;
+	
+	public C4Client(){
 		converser = new C4Packet();
+	}
+	
+	public void readIp() throws IOException{
+		ipController = new IPController();
+		String address = ipController.getConnectingIP();
+		startConnection(address, port);
 	}
 	
 	public void handleClick(){
@@ -30,7 +39,7 @@ public class C4Client extends C4Logic {
 		try{
 		connection = new Socket(serverIp, serverPort);
 		receive = connection.getInputStream();
-		byte[] b =converser.receivePacket(receive);
+		byte[] b = converser.receivePacket(receive);
 		System.out.println(b[0]);
 		System.out.println(b[1]);
 		System.out.println(b[2]);
@@ -49,3 +58,4 @@ public class C4Client extends C4Logic {
 	}
 
 }
+

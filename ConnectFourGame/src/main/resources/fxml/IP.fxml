@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -13,7 +14,6 @@
   <rowConstraints>
     <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
     <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
     <RowConstraints maxHeight="283.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
@@ -22,32 +22,29 @@
             <Insets left="10.0" />
          </padding>
       </Label>
-      <TextField fx:id="serverIPField" editable="false" maxWidth="-Infinity" prefHeight="25.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <HBox alignment="CENTER" prefHeight="43.0" prefWidth="567.0" GridPane.columnSpan="2">
          <children>
-            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" text="Please enter the same ip address if you want to play with the server">
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" text="Please enter the ip address of the server to play a connect 4 game!">
                <padding>
                   <Insets left="10.0" top="10.0" />
                </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
             </Label>
          </children>
       </HBox>
-      <Label text="Connecting IP address:" GridPane.rowIndex="2">
-         <padding>
-            <Insets left="10.0" />
-         </padding>
-      </Label>
-      <TextField fx:id="connectingIPField" maxWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <Button fx:id="IPBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#IPClick" text="Done" GridPane.rowIndex="3">
+      <Button fx:id="IPBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#IPClick" text="Done" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets left="50.0" />
          </GridPane.margin>
       </Button>
-      <Label fx:id="errorLabel" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <Label fx:id="errorLabel" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets left="50.0" />
          </GridPane.margin>
       </Label>
+      <TextField fx:id="serverIPField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>
    <padding>
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

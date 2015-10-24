@@ -13,56 +13,35 @@ public class C4Server {
 	
 	private ServerSocket servSock;
 	private InetAddress serverInfo;
-	private boolean connectionEstablished = false; 
-	private IPController IpController;
+	private int port = 62366;
 	
 	//constructor
 	public C4Server() throws IOException{
-		IpController = new IPController();
-		printIP();
-		establishConnection();
+		serverInfo = InetAddress.getLocalHost();
+		System.out.println(serverInfo.getHostAddress());
+		setUp();
 	}
 	
 	public void setUp() throws IOException{
 		
-		if(connectionEstablished)
-		{
-			//infinite loop to accept game proposals from client
-			while(true)
-			{
-				//port we should listen on?
-				servSock = new ServerSocket(62366);
+	//infinite loop to accept game proposals from client
+	while(true)
+	{
+		//port we should listen on?
+		servSock = new ServerSocket(port);
 				
-				// Get client connection
-				Socket clntSock = servSock.accept();
+		// Get client connection
+		Socket clntSock = servSock.accept();
 				
-				//send client socket to session
-				new C4ServerSession(clntSock);
-
-			}
-		}
+		//send client socket to session
+		new C4ServerSession(clntSock);
+		
+	}
+		
 	}// end of setUp
 	
-	public void printIP() throws UnknownHostException{
-		serverInfo = InetAddress.getLocalHost();
-		String address = serverInfo.getHostAddress();
-		IpController.setServerIp(address);
-	}
-	
-	public void establishConnection() throws IOException{
-		if(IpController.getServerIp().equals(IpController.getConnectingIP()))
-		{
-			IpController.setErrorLabel("");
-			connectionEstablished = true;
-			setUp();
-		}
-		else
-			IpController.setErrorLabel("Wrong IP!");
-	}
-	
-
-	public InetAddress getServerInfo()
-	{
+	public InetAddress getServerInfo(){
 		return serverInfo;
 	}
+	
 }//end of class
