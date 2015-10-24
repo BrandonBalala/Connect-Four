@@ -13,11 +13,10 @@ public class IPController {
     private TextField connectingIPField;
 
     @FXML
-    private Button IPBtn;
+    private Button connectButton;
 
     @FXML
-    void IPClick(ActionEvent event) {
-    	System.out.println("clicked");
+    void connectToServer(ActionEvent event) {
+    	System.out.println("CONNECTED");
     }
-    
 }

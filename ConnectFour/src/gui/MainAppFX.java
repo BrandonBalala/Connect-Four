@@ -55,7 +55,7 @@ public class MainAppFX extends Application {
             FXMLLoader loader = new FXMLLoader();
 
             // Set the location of the fxml file in the FXMLLoader
-            loader.setLocation(MainAppFX.class.getResource("resources/fxml/IP.fxml"));
+            loader.setLocation(MainAppFX.class.getResource("/fxml/Scene.fxml"));
 
             // Parent is the base class for all nodes that have children in the
             // scene graph such as AnchorPane and most other containers
