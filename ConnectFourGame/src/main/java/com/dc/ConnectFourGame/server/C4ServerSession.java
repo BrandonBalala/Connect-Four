@@ -106,13 +106,51 @@ public class C4ServerSession extends C4Logic {
 		if (column != -1)
 			return column;
 
-		// Diagonal check
-		column = diagonalCheck(target, player);
+		// Diagonal Upwards check
+		column = diagonalUpwardsCheck(target, player);
+		
+		if (column != -1)
+			return column;
+		
+		// Diagonal Upwards check
+		column = diagonalDownwardsCheck(target, player);
 
 		return column;
 	}
+	private int diagonalDownwardsCheck(int target, int player) {
+		int colChoice = -1;
+		outerLoop: for (int row = 0; row <= rowLength - 4; row++) {
+			for (int col = 0; col <= colLength - 4; col++) {
+				int token1 = gameBoard[row][col];
+				int token2 = gameBoard[row + 1][col + 1];
+				int token3 = gameBoard[row + 2][col + 2];
+				int token4 = gameBoard[row + 3][col + 3];
 
-	private int diagonalCheck(int target, int player) {
+				if (token1 == 0 && token2 == target && token3 == target && token4 == target) {
+					colChoice = col;
+					break outerLoop;
+				}
+				if (token2 == 0 && token1 == target && token3 == target && token4 == target) {
+					colChoice = col + 1;
+					break outerLoop;
+				}
+				if (token3 == 0 && token1 == target && token2 == target && token4 == target) {
+					colChoice = col + 2;
+					break outerLoop;
+				}
+				if (token4 == 0 && token1 == target && token2 == target && token3 == target) {
+					colChoice = col + 3;
+					break outerLoop;
+				}
+			}
+		}
+		if (colChoice != -1) {
+			setChoice(colChoice, player);
+		}
+		return colChoice;
+	}
+	
+	private int diagonalUpwardsCheck(int target, int player) {
 
 		int colChoice = -1;
 		outerLoop: for (int row = rowLength - 1; row > rowLength - 4; row--) {
@@ -135,7 +173,7 @@ public class C4ServerSession extends C4Logic {
 					break outerLoop;
 				}
 				if (token4 == 0 && token1 == target && token2 == target && token3 == target) {
-					colChoice = col + 1;
+					colChoice = col + 3;
 					break outerLoop;
 				}
 			}
@@ -161,15 +199,15 @@ public class C4ServerSession extends C4Logic {
 					break outerLoop;
 				}
 				if (token2 == 0 && token1 == target && token3 == target && token4 == target) {
-					colChoice = col + 1;
+					colChoice = col;
 					break outerLoop;
 				}
 				if (token3 == 0 && token1 == target && token2 == target && token4 == target) {
-					colChoice = col + 2;
+					colChoice = col;
 					break outerLoop;
 				}
 				if (token4 == 0 && token1 == target && token2 == target && token3 == target) {
-					colChoice = col + 1;
+					colChoice = col;
 					break outerLoop;
 				}
 			}
@@ -204,7 +242,7 @@ public class C4ServerSession extends C4Logic {
 					break outerLoop;
 				}
 				if (token4 == 0 && token1 == target && token2 == target && token3 == target) {
-					colChoice = col + 1;
+					colChoice = col + 3;
 					break outerLoop;
 				}
 			}
