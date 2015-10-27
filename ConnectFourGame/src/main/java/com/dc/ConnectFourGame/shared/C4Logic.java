@@ -1,7 +1,5 @@
 package com.dc.ConnectFourGame.shared;
 
-import java.util.Random;
-
 public class C4Logic {
 	int[][] gameBoard;
 	private int playerMarker;

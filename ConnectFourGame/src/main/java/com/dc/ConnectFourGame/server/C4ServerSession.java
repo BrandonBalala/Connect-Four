@@ -1,8 +1,6 @@
 package com.dc.ConnectFourGame.server;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.Socket;
 import java.util.Random;
 
@@ -14,11 +12,10 @@ public class C4ServerSession extends C4Logic {
 	private boolean playAgain;
 	private boolean gameOver;
 	Socket connection;
-	OutputStream send;
-	InputStream receive;
+
 	C4Packet converser;
 	C4Logic c4logic;
-	
+
 	private int[][] gameBoard = c4logic.getGameBoard();
 	private int rowLength = gameBoard.length;
 	private int colLength = gameBoard[0].length;
@@ -28,8 +25,7 @@ public class C4ServerSession extends C4Logic {
 		playAgain = true;
 		gameOver = false;
 		this.connection = connection;
-		receive = connection.getInputStream();
-		send = connection.getOutputStream();
+
 		converser = new C4Packet();
 		c4logic = new C4Logic();
 		start();
@@ -37,7 +33,7 @@ public class C4ServerSession extends C4Logic {
 	}
 
 	private void start() throws IOException {
-		byte[] packet = converser.receivePacket(receive);
+		byte[] packet = converser.receivePacket(connection);
 		if (packet[0] == 2)
 			playAgain = true;
 		else if (packet[0] == 3) {
@@ -52,19 +48,21 @@ public class C4ServerSession extends C4Logic {
 		byte[] b = { 0, 0, 0 };
 		sendPacket(b);
 
-		//player can play more than one game
+		// player can play more than one game
 		while (playAgain) {
 			while (!gameOver) {
-				int column = decideMove(2,1);
+				int column = decideMove(2, 1);
 				int row = c4logic.getUpmostRow(column);
-				
-				if(c4logic.checkDraw());
+
+				if (c4logic.checkDraw())	
 					gameOver = true;
-				
-				if(c4logic.checkWin(column, 2))
+
+				if (c4logic.checkWin(column, 2))
 					gameOver = true;
-				//WTFFFFFFFFFFFFFFFFFFFFFFFFF CHECK WIN CHECK DRAW????????????????
-				//resend packet with column and row that was already put internally
+				// WTFFFFFFFFFFFFFFFFFFFFFFFFF CHECK WIN CHECK
+				// DRAW????????????????
+				// resend packet with column and row that was already put
+				// internally
 			}
 
 		}
@@ -73,20 +71,18 @@ public class C4ServerSession extends C4Logic {
 	}
 
 	public void sendPacket(byte[] packet) throws IOException {
-		send = connection.getOutputStream();
-		converser.sendPacket(packet, send);
+		converser.sendPacket(packet, connection);
 	}
 
 	public int decideMove(int serverToken, int clientToken) {
 		// to win
 		int column = getWinOrBlockMove(serverToken, serverToken);
-		
 
 		// to lose
 		if (column == -1)
 			column = getWinOrBlockMove(clientToken, serverToken);
 
-		//random
+		// random
 		if (column == -1)
 			column = getRandomMove(serverToken);
 
@@ -117,7 +113,7 @@ public class C4ServerSession extends C4Logic {
 	}
 
 	private int diagonalCheck(int target, int player) {
-	
+
 		int colChoice = -1;
 		outerLoop: for (int row = rowLength - 1; row > rowLength - 4; row--) {
 			for (int col = 0; col <= colLength - 4; col++) {
