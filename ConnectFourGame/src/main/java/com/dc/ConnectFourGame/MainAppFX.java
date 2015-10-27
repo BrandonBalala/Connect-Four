@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
@@ -50,12 +51,14 @@ public class MainAppFX extends Application {
         // The Stage comes from the framework so make a copy to use elsewhere
         this.primaryStage = primaryStage;
         // Create the Scene and put it on the Stage
-        configureStage();
-
+        configureMainStage();
+        
         // Set the window title
-        primaryStage.setTitle("Connecting");
+        primaryStage.setTitle("Board");
+        
         // Raise the curtain on the Stage
         primaryStage.show();
+        
     }
 
     /**
@@ -65,23 +68,19 @@ public class MainAppFX extends Application {
      * reference to the fxml's controller should you need to pass data to it.
      * Not used in this archetype.
      */
-    private void configureStage() {
+    
+    private void configureMainStage() {
         try {
             // Instantiate the FXMLLoader
             FXMLLoader loader = new FXMLLoader();
 
             // Set the location of the fxml file in the FXMLLoader
-            loader.setLocation(MainAppFX.class.getResource("/fxml/IP.fxml"));
-
-            // Localize the loader with its bundle
-            // Uses the default locale and if a matching bundle is not found
-            // will then use MessagesBundle.properties
-            loader.setResources(ResourceBundle.getBundle("MessagesBundle"));
+            loader.setLocation(MainAppFX.class.getResource("/fxml/board.fxml"));
 
             // Parent is the base class for all nodes that have children in the
             // scene graph such as AnchorPane and most other containers
-            Parent parent = (GridPane)loader.load();
-
+            Parent parent = (BorderPane)loader.load();
+            
             // Load the parent into a Scene
             Scene scene = new Scene(parent);
 
