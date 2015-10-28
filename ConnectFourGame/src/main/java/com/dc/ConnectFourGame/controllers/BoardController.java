@@ -212,29 +212,29 @@ public class BoardController {
 	@FXML
 	void userClick(ActionEvent event) {
 		String id = ((Node) event.getSource()).getId();
-		int box = -1;
+		int colChosen = -1;
 		
 		switch(id){
 			case "FirstColumn":
-				box = 0;
+				colChosen = 0;
 				break;
 			case "SecondColumn":
-				box = 1;
+				colChosen = 1;
 				break;
 			case "ThirdColumn":
-				box = 2;
+				colChosen = 2;
 				break;
 			case "FourthColumn":
-				box = 3;
+				colChosen = 3;
 				break;
 			case "FifthColumn":
-				box = 4;
+				colChosen = 4;
 				break;
 			case "SixthColumn":
-				box = 5;
+				colChosen = 5;
 				break;
 			case "SeventhColumn":
-				box = 6;
+				colChosen = 6;
 				break;	
 		}
 		

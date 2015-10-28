@@ -14,6 +14,7 @@ public class C4Server {
 	// constructor
 	public C4Server() throws IOException {
 		serverInfo = InetAddress.getLocalHost();
+		//Displays the servers IP address
 		System.out.println(serverInfo.getHostAddress());
 		setUp();
 	}
@@ -30,7 +31,6 @@ public class C4Server {
 
 			// send client socket to session
 			new C4ServerSession(clntSock);
-
 		}
 
 	}// end of setUp

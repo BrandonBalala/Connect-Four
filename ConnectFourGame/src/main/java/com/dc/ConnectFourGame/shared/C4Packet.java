@@ -8,8 +8,8 @@ import java.net.SocketException;
 
 public class C4Packet {
 
-	OutputStream send;
-	InputStream receive;
+	private OutputStream send;
+	private InputStream receive;
 
 	public void sendPacket(byte[] move, Socket socket) throws IOException {
 

@@ -11,21 +11,14 @@ public class C4ServerSession extends C4Logic {
 
 	private boolean playAgain;
 	private boolean gameOver;
-	Socket connection;
-
-	C4Packet converser;
-	C4Logic c4logic;
-
-	private int[][] gameBoard = c4logic.getGameBoard();
-	private int rowLength = gameBoard.length;
-	private int colLength = gameBoard[0].length;
+	private Socket connection;
+	private C4Packet converser;
+	private C4Logic c4logic;
 
 	public C4ServerSession(Socket connection) throws IOException {
-
-		playAgain = true;
-		gameOver = false;
+		//playAgain = true;
+		//gameOver = false;
 		this.connection = connection;
-
 		converser = new C4Packet();
 		c4logic = new C4Logic();
 		start();
@@ -34,27 +27,48 @@ public class C4ServerSession extends C4Logic {
 
 	private void start() throws IOException {
 		byte[] packet = converser.receivePacket(connection);
-		if (packet[0] == 2)
+		if (packet[0] == 1){  //START GAME
 			playAgain = true;
-		else if (packet[0] == 3) {
+			gameOver = false;
+		}
+		else if(packet[0] == 2){ //PLAY AGAIN OR RESET GAME
+			//resets the gameBoard
+			playAgain = true;
+			gameOver = false;
+			c4logic = new C4Logic();
+		}
+		else if (packet[0] == 3) { //END GAME
 			playAgain = false;
 			gameOver = true;
 		}
+		
 		startGameSession();
 	}
-
+	
 	public void startGameSession() throws IOException {
-
+		//WHAT OUR PACKETS SHOULD LOOK LIKE ?
+		//byte[] b = { THE TYPE OF PACKAGE, ROW CHOSEN, COL CHOSEN };
+		//ROW AND COL CAN BE SET TO -1 IF THEY  ARE NOT NEEDED
+		//TYPES suggestions!:
+		//1 -> establish connection to server,then resend back 0 to client to let him know to start making moves 
+		//2 -> PLAY AGAIN OR RESET GAME, client makes request to play again or rest game
+		//3 -> END GAME, client informs server to end game
+		//4 -> WIN sent to client to notify win
+		//5 -> LOSE, sent to client to notify lose
+		//6 -> TIE, sent to client to notify tie
+		//7 -> MOVE, so if it is this, col and row are important.
+		//8	-> ERROR, inform client that he sent invalid move
+		//9 -> idk
+		//etc...
 		byte[] b = { 0, 0, 0 };
 		sendPacket(b);
 
-		// player can play more than one game
 		while (playAgain) {
 			while (!gameOver) {
 				int column = decideMove(2, 1);
 				int row = c4logic.getUpmostRow(column);
 
-				if (c4logic.checkDraw())	
+				if (c4logic.checkDraw())
 					gameOver = true;
 
 				if (c4logic.checkWin(column, 2))
@@ -93,31 +107,36 @@ public class C4ServerSession extends C4Logic {
 	// player says that its the server who is playing and its marker will be
 	// added to the board
 	private int getWinOrBlockMove(int target, int player) {
+		int[][] gameBoard = c4logic.getGameBoard();
+		int rowLength = gameBoard.length;
+		int colLength = gameBoard[0].length;
+		
 		int column;
 		// Horizontal check
-		column = horizontalCheck(target, player);
+		column = horizontalCheck(target, player, gameBoard,rowLength, colLength);
 
 		if (column != -1)
 			return column;
 
 		// Vertical check
-		column = verticalCheck(target, player);
+		column = verticalCheck(target, player, gameBoard,rowLength, colLength);
 
 		if (column != -1)
 			return column;
 
 		// Diagonal Upwards check
-		column = diagonalUpwardsCheck(target, player);
-		
+		column = diagonalUpwardsCheck(target, player, gameBoard,rowLength, colLength);
+
 		if (column != -1)
 			return column;
-		
+
 		// Diagonal Upwards check
-		column = diagonalDownwardsCheck(target, player);
+		column = diagonalDownwardsCheck(target, player, gameBoard,rowLength, colLength);
 
 		return column;
 	}
-	private int diagonalDownwardsCheck(int target, int player) {
+
+	private int diagonalDownwardsCheck(int target, int player, int[][] gameBoard, int rowLength, int colLength) {
 		int colChoice = -1;
 		outerLoop: for (int row = 0; row <= rowLength - 4; row++) {
 			for (int col = 0; col <= colLength - 4; col++) {
@@ -149,8 +168,8 @@ public class C4ServerSession extends C4Logic {
 		}
 		return colChoice;
 	}
-	
-	private int diagonalUpwardsCheck(int target, int player) {
+
+	private int diagonalUpwardsCheck(int target, int player, int[][] gameBoard, int rowLength, int colLength) {
 
 		int colChoice = -1;
 		outerLoop: for (int row = rowLength - 1; row > rowLength - 4; row--) {
@@ -184,7 +203,7 @@ public class C4ServerSession extends C4Logic {
 		return colChoice;
 	}
 
-	private int verticalCheck(int target, int player) {
+	private int verticalCheck(int target, int player, int[][] gameBoard, int rowLength, int colLength) {
 
 		int colChoice = -1;
 		outerLoop: for (int col = 0; col < colLength; col++) {
@@ -219,7 +238,7 @@ public class C4ServerSession extends C4Logic {
 		return colChoice;
 	}
 
-	private int horizontalCheck(int target, int player) {
+	private int horizontalCheck(int target, int player, int[][] gameBoard, int rowLength, int colLength) {
 
 		int colChoice = -1;
 		outerLoop: for (int row = 0; row < rowLength; row++) {
