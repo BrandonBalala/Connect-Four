@@ -1,8 +1,10 @@
 package com.dc.ConnectFourGame.controllers;
 
 import java.io.IOException;
+import java.net.Socket;
 
 import com.dc.ConnectFourGame.client.C4Client;
+import com.dc.ConnectFourGame.shared.PACKET_TYPE;
 
 import javafx.scene.Node;
 
@@ -178,14 +180,12 @@ public class BoardController {
 	@FXML
 	private Label label56;
 
-	private Label[][] arrayLabels = {
-			{label00, label01, label02, label03, label04, label05, label06},
-			{label10, label11, label12, label13, label14, label15, label16},
-			{label20, label21, label22, label23, label24, label25, label26},
-			{label30, label31, label32, label33, label34, label35, label36},
-			{label40, label41, label42, label43, label44, label45, label46},
-			{label50, label51, label52, label53, label54, label55, label56}
-	};
+	private Label[][] arrayLabels = { { label00, label01, label02, label03, label04, label05, label06 },
+			{ label10, label11, label12, label13, label14, label15, label16 },
+			{ label20, label21, label22, label23, label24, label25, label26 },
+			{ label30, label31, label32, label33, label34, label35, label36 },
+			{ label40, label41, label42, label43, label44, label45, label46 },
+			{ label50, label51, label52, label53, label54, label55, label56 } };
 
 	private C4Client client = new C4Client();
 
@@ -200,12 +200,12 @@ public class BoardController {
 
 	@FXML
 	void ReplayGame(ActionEvent event) {
-
+		client.sendResetPacket();
 	}
 
 	@FXML
 	void quitGame(ActionEvent event) {
-		//SEND MESSAGE TO SERVER TO STOP CONNECTION?
+		client.sendDisconnectPacket();
 		Platform.exit();
 	}
 
@@ -213,38 +213,56 @@ public class BoardController {
 	void userClick(ActionEvent event) {
 		String id = ((Node) event.getSource()).getId();
 		int colChosen = -1;
-		
-		switch(id){
-			case "FirstColumn":
-				colChosen = 0;
-				break;
-			case "SecondColumn":
-				colChosen = 1;
-				break;
-			case "ThirdColumn":
-				colChosen = 2;
-				break;
-			case "FourthColumn":
-				colChosen = 3;
-				break;
-			case "FifthColumn":
-				colChosen = 4;
-				break;
-			case "SixthColumn":
-				colChosen = 5;
-				break;
-			case "SeventhColumn":
-				colChosen = 6;
-				break;	
+
+		switch (id) {
+		case "FirstColumn":
+			colChosen = 0;
+			break;
+		case "SecondColumn":
+			colChosen = 1;
+			break;
+		case "ThirdColumn":
+			colChosen = 2;
+			break;
+		case "FourthColumn":
+			colChosen = 3;
+			break;
+		case "FifthColumn":
+			colChosen = 4;
+			break;
+		case "SixthColumn":
+			colChosen = 5;
+			break;
+		case "SeventhColumn":
+			colChosen = 6;
+			break;
 		}
 		
-		//send packet to serrver with column chosen to use setChoice
-		//comes back with row and column
-		int row;
-		int column;
-		
-		//arrayLabels[row][column].setText("X");
-		
+		client.sendMovePacket(colChosen);
+	}
+
+	public void setStatusMessage(String message) {
+		labelStatus.setText(message);
+	}
+
+	public void setMovesOnBoard(byte[] packet) {
+		int rowClient = (int) packet[1];
+		int colClient = (int) packet[2];
+		int rowServer = (int) packet[3];
+		int colServer = (int) packet[4];
+
+		arrayLabels[rowClient][colClient].setText("X");
+		arrayLabels[rowServer][colServer].setText("O");
+	}
+
+	public void resetBoard() {
+		for (int row = 0; row < arrayLabels.length; row++) {
+			for (int col = 0; col < arrayLabels[0].length; col++) {
+				arrayLabels[row][col].setText("");
+			}
+		}
+
+		setStatusMessage("");
 	}
 
 }

@@ -6,6 +6,7 @@ import java.util.Random;
 
 import com.dc.ConnectFourGame.shared.C4Logic;
 import com.dc.ConnectFourGame.shared.C4Packet;
+import com.dc.ConnectFourGame.shared.PACKET_TYPE;
 
 public class C4ServerSession extends C4Logic {
 
@@ -16,8 +17,6 @@ public class C4ServerSession extends C4Logic {
 	private C4Logic c4logic;
 
 	public C4ServerSession(Socket connection) throws IOException {
-		//playAgain = true;
-		//gameOver = false;
 		this.connection = connection;
 		converser = new C4Packet();
 		c4logic = new C4Logic();
@@ -27,56 +26,19 @@ public class C4ServerSession extends C4Logic {
 
 	private void start() throws IOException {
 		byte[] packet = converser.receivePacket(connection);
-		if (packet[0] == 1){  //START GAME
+		int type = (int) packet[0];
+		if (type == PACKET_TYPE.CONNECT.getValue()) {
+			sendConnectPacket();
 			playAgain = true;
 			gameOver = false;
+			startGameSession();
 		}
-		else if(packet[0] == 2){ //PLAY AGAIN OR RESET GAME
-			//resets the gameBoard
-			playAgain = true;
-			gameOver = false;
-			c4logic = new C4Logic();
-		}
-		else if (packet[0] == 3) { //END GAME
-			playAgain = false;
-			gameOver = true;
-		}
-		
-		startGameSession();
 	}
-	
-	public void startGameSession() throws IOException {
-		//WHAT OUR PACKETS SHOULD LOOK LIKE ?
-		//byte[] b = { THE TYPE OF PACKAGE, ROW CHOSEN, COL CHOSEN };
-		//ROW AND COL CAN BE SET TO -1 IF THEY  ARE NOT NEEDED
-		//TYPES suggestions!:
-		//1 -> establish connection to server,then resend back 0 to client to let him know to start making moves 
-		//2 -> PLAY AGAIN OR RESET GAME, client makes request to play again or rest game
-		//3 -> END GAME, client informs server to end game
-		//4 -> WIN sent to client to notify win
-		//5 -> LOSE, sent to client to notify lose
-		//6 -> TIE, sent to client to notify tie
-		//7 -> MOVE, so if it is this, col and row are important.
-		//8	-> ERROR, inform client that he sent invalid move
-		//9 -> idk
-		//etc...
-		byte[] b = { 0, 0, 0 };
-		sendPacket(b);
 
+	public void startGameSession() throws IOException {
 		while (playAgain) {
 			while (!gameOver) {
-				int column = decideMove(2, 1);
-				int row = c4logic.getUpmostRow(column);
-
-				if (c4logic.checkDraw())
-					gameOver = true;
-
-				if (c4logic.checkWin(column, 2))
-					gameOver = true;
-				// WTFFFFFFFFFFFFFFFFFFFFFFFFF CHECK WIN CHECK
-				// DRAW????????????????
-				// resend packet with column and row that was already put
-				// internally
+				getResponce();
 			}
 
 		}
@@ -88,11 +50,12 @@ public class C4ServerSession extends C4Logic {
 		converser.sendPacket(packet, connection);
 	}
 
+	// Moves are set onto the gameboard in getWinOrBlockMove or getRandomMove
 	public int decideMove(int serverToken, int clientToken) {
 		// to win
 		int column = getWinOrBlockMove(serverToken, serverToken);
 
-		// to lose
+		// to block
 		if (column == -1)
 			column = getWinOrBlockMove(clientToken, serverToken);
 
@@ -110,28 +73,28 @@ public class C4ServerSession extends C4Logic {
 		int[][] gameBoard = c4logic.getGameBoard();
 		int rowLength = gameBoard.length;
 		int colLength = gameBoard[0].length;
-		
+
 		int column;
 		// Horizontal check
-		column = horizontalCheck(target, player, gameBoard,rowLength, colLength);
+		column = horizontalCheck(target, player, gameBoard, rowLength, colLength);
 
 		if (column != -1)
 			return column;
 
 		// Vertical check
-		column = verticalCheck(target, player, gameBoard,rowLength, colLength);
+		column = verticalCheck(target, player, gameBoard, rowLength, colLength);
 
 		if (column != -1)
 			return column;
 
 		// Diagonal Upwards check
-		column = diagonalUpwardsCheck(target, player, gameBoard,rowLength, colLength);
+		column = diagonalUpwardsCheck(target, player, gameBoard, rowLength, colLength);
 
 		if (column != -1)
 			return column;
 
 		// Diagonal Upwards check
-		column = diagonalDownwardsCheck(target, player, gameBoard,rowLength, colLength);
+		column = diagonalDownwardsCheck(target, player, gameBoard, rowLength, colLength);
 
 		return column;
 	}
@@ -286,5 +249,141 @@ public class C4ServerSession extends C4Logic {
 		}
 
 		return col;
+	}
+
+	private void getResponce() {
+		try {
+			byte[] packet = converser.receivePacket(connection);
+			switch (PACKET_TYPE.values()[(int) packet[0]]) {
+			case RESET_GAME:
+				playAgain = true;
+				gameOver = false;
+				c4logic.resetGame();
+				break;
+			case DISCONNECT:
+				playAgain = false;
+				gameOver = true;
+				break;
+			case MOVE: // RECEIVING A MOVE FROM CLIENT
+				setPlayerChoice(packet);
+				break;
+			default:
+				break;
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	private void setPlayerChoice(byte[] packet) {
+		int col = (int) packet[2];
+		int clientToken = 1;
+		col = c4logic.setChoice(col, clientToken);
+
+		if (col != -1) { // means it was a valid move
+			int row = c4logic.getUpmostRow(col);
+
+			if (c4logic.checkWin(col, clientToken)) {
+				gameOver = true;
+				sendWinPacket(row, col);
+			} else if (c4logic.checkDraw()) {
+				gameOver = true;
+				sendTiePacket(row, col, clientToken);
+			} else { // server turn to make a move
+				setServerChoice(row, col);
+			}
+		} else { // means it was an invalid move
+			sendBadMovePacket();
+		}
+	}
+
+	private void setServerChoice(int rowClient, int colClient) {
+		int serverToken = 2;
+		int clientToken = 1;
+		int colServer = decideMove(serverToken, clientToken);
+
+		if (colServer != -1) { // means it was a valid move
+			int rowServer = c4logic.getUpmostRow(colServer);
+
+			if (c4logic.checkWin(colServer, serverToken)) {
+				gameOver = true;
+				sendLosePacket(rowServer, colServer);
+			} else if (c4logic.checkDraw()) {
+				gameOver = true;
+				sendTiePacket(rowServer, colServer, serverToken);
+			} else {
+				sendBackClientAndServerMove(rowClient, colClient, rowServer, colServer);
+			}
+		}
+	}
+
+	private void sendBackClientAndServerMove(int rowClient, int colClient, int rowServer, int colServer) {
+		try {
+			byte[] packet = converser.createPacket(PACKET_TYPE.MOVE.getValue(), rowClient, colClient, rowServer,
+					colServer);
+			converser.sendPacket(packet, connection);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	private void sendBadMovePacket() {
+		try {
+			byte[] packet = converser.createPacket(PACKET_TYPE.BAD_MOVE.getValue(), -1, -1, -1, -1);
+			converser.sendPacket(packet, connection);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void sendConnectPacket() {
+		try {
+			byte[] packet = converser.createPacket(PACKET_TYPE.CONNECT.getValue(), -1, -1, -1, -1);
+			converser.sendPacket(packet, connection);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	private void sendLosePacket(int row, int col) {
+		try {
+			byte[] packet = converser.createPacket(PACKET_TYPE.LOSE.getValue(), -1, -1, row, col);
+			converser.sendPacket(packet, connection);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	private void sendTiePacket(int row, int col, int player) {
+		try {
+			byte[] packet = null;
+			// to display the last move, on the client GUI and who was move made
+			// by
+			if (player == 1) // CLIENT
+				packet = converser.createPacket(PACKET_TYPE.TIE.getValue(), row, col, -1, -1);
+			else // SERVER
+				packet = converser.createPacket(PACKET_TYPE.TIE.getValue(), -1, -1, row, col);
+
+			converser.sendPacket(packet, connection);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	private void sendWinPacket(int row, int col) {
+		try {
+			byte[] packet = converser.createPacket(PACKET_TYPE.WIN.getValue(), row, col, -1, -1);
+			converser.sendPacket(packet, connection);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

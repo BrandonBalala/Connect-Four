@@ -159,4 +159,10 @@ public class C4Logic {
 
 		return row;
 	}
+
+	public void resetGame() {
+		gameBoard = new int[6][7];
+		playerMarker = 21;
+		serverMarker = 21;
+	}
 }
