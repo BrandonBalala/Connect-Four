@@ -322,3 +322,42 @@ Caused by: java.lang.ClassNotFoundException: com.dc.ConnectFourGame.controllers.
 [INFO ] 2015-10-27 13:54:47.362 [JavaFX Application Thread] MainAppFX - Program Begins
 [INFO ] 2015-10-27 14:41:41.352 [JavaFX Application Thread] MainAppFX - Program Begins
 [INFO ] 2015-10-27 16:50:20.438 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-10-29 00:48:04.519 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-10-29 01:03:28.546 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-10-29 01:03:28.583 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/E:/SCHOOL/_____FALL2015/DATA%20COMM/git/ConnectFour/ConnectFourGame/target/classes/fxml/board.fxml:11
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$700(FXMLLoader.java:103) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:932) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:971) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:220) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:744) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureMainStage(MainAppFX.java:78) ~[classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:50) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$163(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$176(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$174(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$175(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$149(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+Caused by: java.lang.InstantiationException: com.dc.ConnectFourGame.controllers.BoardController
+	at java.lang.Class.newInstance(Class.java:427) ~[?:1.8.0_60]
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:51) ~[?:1.8.0_60]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:927) ~[jfxrt.jar:?]
+	... 18 more
+Caused by: java.lang.NoSuchMethodException: com.dc.ConnectFourGame.controllers.BoardController.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082) ~[?:1.8.0_60]
+	at java.lang.Class.newInstance(Class.java:412) ~[?:1.8.0_60]
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:51) ~[?:1.8.0_60]
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:927) ~[jfxrt.jar:?]
+	... 18 more
+[INFO ] 2015-10-29 01:04:29.648 [JavaFX Application Thread] MainAppFX - Program Begins

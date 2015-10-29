@@ -187,7 +187,22 @@ public class BoardController {
 			{ label40, label41, label42, label43, label44, label45, label46 },
 			{ label50, label51, label52, label53, label54, label55, label56 } };
 
-	private C4Client client = new C4Client();
+	private C4Client client;
+	private boolean isConnected;
+
+	public BoardController(C4Client client) {
+		this.client = client;
+		isConnected = false;
+	}
+	
+	public BoardController() {
+		this.client = new C4Client();
+		isConnected = false;
+	}
+
+	public void setIsConnected(boolean isConnected) {
+		this.isConnected = isConnected;
+	}
 
 	@FXML
 	void IPClick(ActionEvent event) throws IOException {
@@ -200,45 +215,50 @@ public class BoardController {
 
 	@FXML
 	void ReplayGame(ActionEvent event) {
-		client.sendResetPacket();
+		if (isConnected)
+			client.sendResetPacket();
 	}
 
 	@FXML
 	void quitGame(ActionEvent event) {
-		client.sendDisconnectPacket();
-		Platform.exit();
+		if (isConnected) {
+			client.sendDisconnectPacket();
+			Platform.exit();
+		}
 	}
 
 	@FXML
 	void userClick(ActionEvent event) {
-		String id = ((Node) event.getSource()).getId();
-		int colChosen = -1;
+		if (isConnected) {
+			String id = ((Node) event.getSource()).getId();
+			int colChosen = -1;
 
-		switch (id) {
-		case "FirstColumn":
-			colChosen = 0;
-			break;
-		case "SecondColumn":
-			colChosen = 1;
-			break;
-		case "ThirdColumn":
-			colChosen = 2;
-			break;
-		case "FourthColumn":
-			colChosen = 3;
-			break;
-		case "FifthColumn":
-			colChosen = 4;
-			break;
-		case "SixthColumn":
-			colChosen = 5;
-			break;
-		case "SeventhColumn":
-			colChosen = 6;
-			break;
+			switch (id) {
+			case "FirstColumn":
+				colChosen = 0;
+				break;
+			case "SecondColumn":
+				colChosen = 1;
+				break;
+			case "ThirdColumn":
+				colChosen = 2;
+				break;
+			case "FourthColumn":
+				colChosen = 3;
+				break;
+			case "FifthColumn":
+				colChosen = 4;
+				break;
+			case "SixthColumn":
+				colChosen = 5;
+				break;
+			case "SeventhColumn":
+				colChosen = 6;
+				break;
+			}
+
+			client.sendMovePacket(colChosen);
 		}
-		
-		client.sendMovePacket(colChosen);
 	}
 
 	public void setStatusMessage(String message) {

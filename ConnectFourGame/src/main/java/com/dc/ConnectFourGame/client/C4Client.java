@@ -30,7 +30,7 @@ public class C4Client extends C4Logic {
 	}
 
 	public void readIp() throws IOException {
-		controller = new BoardController();
+		controller = new BoardController(this);
 		address = controller.getConnectingIP();
 		startConnection(address, port);
 	}
@@ -53,9 +53,11 @@ public class C4Client extends C4Logic {
 			switch (PACKET_TYPE.values()[(int) packet[0]]) {
 			case CONNECT:
 				controller.setStatusMessage("Prepare to lose. MUHAHA");
+				controller.setIsConnected(true);
 				break;
 			case RESET_GAME:
 				controller.resetBoard();
+				controller.setIsConnected(true);
 				break;
 			case MOVE:
 				controller.setMovesOnBoard(packet);
@@ -66,12 +68,15 @@ public class C4Client extends C4Logic {
 				break;
 			case WIN:
 				controller.setStatusMessage("YOU WON!");
+				controller.setIsConnected(false);
 				break;
 			case LOSE:
 				controller.setStatusMessage("YOU LOSE...");
+				controller.setIsConnected(false);
 				break;
 			case TIE:
 				controller.setStatusMessage("IT'S A DRAW.");
+				controller.setIsConnected(false);
 				break;
 			default:
 				break;
