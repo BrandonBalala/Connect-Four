@@ -17,6 +17,6 @@ public class IPController {
 
     @FXML
     void connectToServer(ActionEvent event) {
-    	System.out.println("CONNECTED");
+    	System.out.println("IPCONTROLLER Stuff");
     }
 }
