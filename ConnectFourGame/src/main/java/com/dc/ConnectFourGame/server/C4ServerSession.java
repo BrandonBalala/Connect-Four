@@ -117,7 +117,11 @@ public class C4ServerSession extends C4Logic {
 		int colServer = decideMove();
 		int rowServer = getNextEmptyRow(colServer);
 
-		if(isValidMove(rowServer,colServer))
+		while(!isValidMove(rowServer,colServer))
+		{
+			colServer = decideMove();
+			rowServer = getNextEmptyRow(colServer);
+		}
 			if (checkWin(colServer, rowServer, Identifier.Server)) {
 				gameOver = true;
 				sendLosePacket(rowServer, colServer);

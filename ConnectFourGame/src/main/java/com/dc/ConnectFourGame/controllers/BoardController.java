@@ -193,15 +193,12 @@ public class BoardController {
 
 	private C4Client client;
 	private boolean isConnected;
-	          
-	public BoardController(C4Client client) {
-		this.client = client;
-		isConnected = false;
-	}
+	private boolean notWaiting;
 	
 	public BoardController() {
 		this.client = new C4Client();
 		isConnected = false;
+		notWaiting = true;
 	}
 
 	public void setIsConnected(boolean isConnected) {
@@ -233,7 +230,7 @@ public class BoardController {
 
 	@FXML
 	void userClick(MouseEvent event) {
-		if (isConnected) {
+		if (isConnected && notWaiting) {
 			String id = ((Node) event.getTarget()).getId();
 			int colChosen = -1;
 			switch (id) {
@@ -259,11 +256,13 @@ public class BoardController {
 				colChosen = 6;
 				break;
 			}
-			
+			if(colChosen != -1)
 			//HANDLE this exception here
 			try {
+				notWaiting=false;
 				client.makeMove(colChosen);
 				client.getResponce();
+				notWaiting=true;
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
