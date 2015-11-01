@@ -14,14 +14,10 @@ public class C4Client extends C4Logic {
 	private Socket connection;
 	private C4Packet converser;
 	private String address;
-	private boolean connected;
 
 	private int port = 62366;
 	private BoardController controller;
 
-	public C4Client() {
-		converser = new C4Packet();
-	}
 	
 	public C4Packet getC4Packet(){
 		return converser;	
@@ -31,8 +27,8 @@ public class C4Client extends C4Logic {
 		return connection;	
 	}
 
-	public void readIp() throws IOException {
-		controller = new BoardController(this);
+	public void readIp(BoardController controller) throws IOException {
+		this.controller = controller;
 		address = controller.getConnectingIP();
 		startConnection(address, port);
 	}
@@ -40,10 +36,10 @@ public class C4Client extends C4Logic {
 	public boolean startConnection(String serverIp, int serverPort) throws IOException {
 		try {
 			connection = new Socket(serverIp, serverPort);
+			converser = new C4Packet(connection);
 			byte [] packet = converser.createPacket(PACKET_TYPE.CONNECT.getValue(), -1, -1);
-			converser.sendPacket(packet, connection);
+			converser.sendPacket(packet);
 			getResponce();
-
 		} catch (Exception e) {
 			return false;
 		}
@@ -53,17 +49,15 @@ public class C4Client extends C4Logic {
 	public void getResponce() {
 		System.out.println("response\n");
 		try {
-			byte[] packet = converser.receivePacket(connection);
+			byte[] packet = converser.receivePacket();
 			switch (PACKET_TYPE.values()[(int) packet[0]]) {
 			case CONNECT:
 				controller.setStatusMessage("Prepare to lose. MUHAHA");
 				controller.setIsConnected(true);
-				connected = true;
 				break;
 			case RESET_GAME:
 				controller.resetBoard();
 				controller.setIsConnected(true);
-				connected = true;
 				break;
 			case MOVE:
 				controller.setMovesOnBoard(packet);
@@ -75,17 +69,14 @@ public class C4Client extends C4Logic {
 			case WIN:
 				controller.setStatusMessage("YOU WON!");
 				controller.setIsConnected(false);
-				connected = false;
 				break;
 			case LOSE:
 				controller.setStatusMessage("YOU LOSE...");
 				controller.setIsConnected(false);
-				connected = false;
 				break;
 			case TIE:
 				controller.setStatusMessage("IT'S A DRAW.");
 				controller.setIsConnected(false);
-				connected = false;
 				break;
 			default:
 				break;
@@ -100,7 +91,7 @@ public class C4Client extends C4Logic {
 		byte[] packet;
 		try {
 			packet = converser.createPacket(PACKET_TYPE.RESET_GAME.getValue(), -1, -1);
-			converser.sendPacket(packet, connection);
+			converser.sendPacket(packet);
 			getResponce();
 
 		} catch (IOException e) {
@@ -114,7 +105,7 @@ public class C4Client extends C4Logic {
 		byte[] packet;
 		try {
 			packet = converser.createPacket(PACKET_TYPE.DISCONNECT.getValue(), -1, -1);
-			converser.sendPacket(packet, connection);
+			converser.sendPacket(packet);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -139,7 +130,7 @@ public class C4Client extends C4Logic {
 	}
 	public void sendMovePacket(int column,int row) throws IOException {
 			byte[] packet = converser.createPacket(PACKET_TYPE.MOVE.getValue(), row, column);
-			converser.sendPacket(packet, connection);
+			converser.sendPacket(packet);
 			getResponce();
 		
 	}

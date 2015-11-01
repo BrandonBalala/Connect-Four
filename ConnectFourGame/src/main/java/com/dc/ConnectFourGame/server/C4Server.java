@@ -22,15 +22,14 @@ public class C4Server {
 	public void setUp() throws IOException {
 
 		// infinite loop to accept game proposals from client
-		while (true) {
-			// port we should listen on?
-			servSock = new ServerSocket(port);
-
+		servSock = new ServerSocket(port);
+		for(;;){
 			// Get client connection
-			Socket clntSock = servSock.accept();
-
+			Socket clntSock = servSock.accept();;
 			// send client socket to session
-			new C4ServerSession(clntSock);
+				new C4ServerSession(clntSock);
+			
+			
 		}
 
 	}// end of setUp

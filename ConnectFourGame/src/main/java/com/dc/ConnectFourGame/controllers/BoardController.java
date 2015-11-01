@@ -11,12 +11,14 @@ import javafx.scene.Node;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.WindowEvent;
 
 public class BoardController {
 	@FXML
@@ -190,7 +192,7 @@ public class BoardController {
 
 	private C4Client client;
 	private boolean isConnected;
-
+	          
 	public BoardController(C4Client client) {
 		this.client = client;
 		isConnected = false;
@@ -207,7 +209,7 @@ public class BoardController {
 
 	@FXML
 	void IPClick(ActionEvent event) throws IOException {
-		client.readIp();
+		client.readIp(this);
 	}
 
 	public String getConnectingIP() {
@@ -233,7 +235,6 @@ public class BoardController {
 		if (isConnected) {
 			String id = ((Node) event.getSource()).getId();
 			int colChosen = -1;
-
 			switch (id) {
 			case "FirstColumn":
 				colChosen = 0;
@@ -261,6 +262,7 @@ public class BoardController {
 			//HANDLE this exception here
 			try {
 				client.makeMove(colChosen);
+				client.getResponce();
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -291,5 +293,4 @@ public class BoardController {
 
 		setStatusMessage("");
 	}
-
 }

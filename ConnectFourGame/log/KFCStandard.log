@@ -364,3 +364,124 @@ Caused by: java.lang.NoSuchMethodException: com.dc.ConnectFourGame.controllers.B
 [INFO ] 2015-10-31 23:51:55.676 [main] ArchetypeJavaFXUnitTest - Starting test [samplePass]
 [INFO ] 2015-10-31 23:53:06.971 [JavaFX Application Thread] MainAppFX - Program Begins
 [INFO ] 2015-10-31 23:53:28.806 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:09:28.276 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:09:47.114 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:20:28.635 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:29:31.882 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:30:46.655 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:32:09.770 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:40:02.125 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:42:42.945 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:43:48.543 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:44:36.839 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:45:59.067 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:46:32.986 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:50:19.409 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:52:52.534 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:53:39.852 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:59:01.993 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:04:30.794 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:05:09.585 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:12:48.575 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:17:04.870 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:18:37.781 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:19:07.935 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:20:19.592 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:32:18.084 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:36:25.625 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:40:23.144 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:41:50.851 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:51:01.361 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:54:55.600 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:55:42.040 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 01:55:42.195 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:06:26.295 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:07:16.183 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:09:39.068 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-11-01 02:09:39.245 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/ofern/git/ConnectFour/ConnectFourGame/target/classes/fxml/board.fxml:105
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureMainStage(MainAppFX.java:78) ~[classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:50) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$163(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$176(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$174(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$175(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$149(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+Caused by: java.lang.IllegalArgumentException: Can not set javafx.scene.layout.VBox field com.dc.ConnectFourGame.controllers.BoardController.SecondColumn to javafx.scene.layout.GridPane
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167) ~[?:1.8.0_60]
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171) ~[?:1.8.0_60]
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81) ~[?:1.8.0_60]
+	at java.lang.reflect.Field.set(Field.java:764) ~[?:1.8.0_60]
+	at javafx.fxml.FXMLLoader.injectFields(FXMLLoader.java:1163) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$1600(FXMLLoader.java:103) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processValue(FXMLLoader.java:857) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:751) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527) ~[jfxrt.jar:?]
+	... 13 more
+[INFO ] 2015-11-01 02:10:14.273 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-11-01 02:10:14.448 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/ofern/git/ConnectFour/ConnectFourGame/target/classes/fxml/board.fxml:105
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureMainStage(MainAppFX.java:78) ~[classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:50) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$163(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$176(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$174(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$175(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$149(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+Caused by: java.lang.IllegalArgumentException: Can not set javafx.scene.layout.VBox field com.dc.ConnectFourGame.controllers.BoardController.SecondColumn to javafx.scene.layout.GridPane
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167) ~[?:1.8.0_60]
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171) ~[?:1.8.0_60]
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81) ~[?:1.8.0_60]
+	at java.lang.reflect.Field.set(Field.java:764) ~[?:1.8.0_60]
+	at javafx.fxml.FXMLLoader.injectFields(FXMLLoader.java:1163) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$1600(FXMLLoader.java:103) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processValue(FXMLLoader.java:857) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:751) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527) ~[jfxrt.jar:?]
+	... 13 more
+[INFO ] 2015-11-01 02:12:54.491 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:14:30.192 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:14:52.608 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:20:28.204 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:32:55.960 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:33:27.630 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:33:55.715 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:34:23.576 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:35:14.174 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:41:42.500 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:51:21.962 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:54:30.491 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:55:04.727 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:55:04.740 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:55:06.206 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:55:25.346 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:55:46.079 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:57:42.911 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 02:58:36.960 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 03:00:03.994 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 03:00:38.458 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 03:01:47.494 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 03:01:48.970 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 03:02:22.320 [JavaFX Application Thread] MainAppFX - Program Begins

@@ -10,11 +10,18 @@ public class C4Packet {
 
 	private OutputStream send;
 	private InputStream receive;
+	private Socket socket;
 	
 	//WHAT OUR PACKETS SHOULD LOOK LIKE
 	//byte[] b = { THE TYPE OF PACKAGE, row client, col client, row server, col server };
 	//ROW AND COL CAN BE SET TO -1 IF THEY  ARE NOT NEEDED
 	
+	public C4Packet(Socket socket) throws IOException
+	{
+		this.socket = socket;
+		receive = socket.getInputStream();
+		send = socket.getOutputStream();
+	}
 	/**
 	 * Creates a packet
 	 * @param type
@@ -32,23 +39,18 @@ public class C4Packet {
 		return packet;
 	}
 
-	public void sendPacket(byte[] packet, Socket socket) throws IOException {
-
-		send = socket.getOutputStream();
-
+	public void sendPacket(byte[] packet) throws IOException {
 		send.write(packet);
 		System.out.println("SENT\nSender: " + new Exception().getStackTrace()[1].getClassName()
 						+ "\nTYPE:" + packet[0] 
 						+ "\nRow: " + packet[1] 
 						+ "\nColumn: " + packet[2])
 						;
-		send.close();
+		send.flush();
 	}
 
-	public byte[] receivePacket(Socket socket) throws IOException {
-
-		receive = socket.getInputStream();
-
+	public byte[] receivePacket() throws IOException {
+		
 		byte[] packet = new byte[3];
 		int totalBytes = 0;
 		int bytesReceived;
@@ -64,6 +66,16 @@ public class C4Packet {
 						+ "\nColumn: " + packet[2]);
 		return packet;
 
+	}
+	
+	public void connectionClose() throws IOException
+	{
+		socket.close();
+	}
+	
+	public boolean isConnected() throws IOException
+	{
+		return socket.isConnected();
 	}
 
 }
