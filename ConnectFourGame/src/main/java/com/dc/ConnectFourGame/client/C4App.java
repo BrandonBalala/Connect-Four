@@ -5,7 +5,7 @@ import java.io.IOException;
 public class C4App {
 
 	public static void main(String[] args) throws IOException {
-		new C4Client();
+		new C4Client().startConnection("localhost", 62366);
 	}
 
 }

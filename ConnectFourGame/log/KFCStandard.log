@@ -361,3 +361,6 @@ Caused by: java.lang.NoSuchMethodException: com.dc.ConnectFourGame.controllers.B
 	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:927) ~[jfxrt.jar:?]
 	... 18 more
 [INFO ] 2015-10-29 01:04:29.648 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-10-31 23:51:55.676 [main] ArchetypeJavaFXUnitTest - Starting test [samplePass]
+[INFO ] 2015-10-31 23:53:06.971 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-10-31 23:53:28.806 [JavaFX Application Thread] MainAppFX - Program Begins

@@ -14,8 +14,9 @@ public class C4Client extends C4Logic {
 	private Socket connection;
 	private C4Packet converser;
 	private String address;
+	private boolean connected;
 
-	private int port = 50000;
+	private int port = 62366;
 	private BoardController controller;
 
 	public C4Client() {
@@ -42,6 +43,7 @@ public class C4Client extends C4Logic {
 			byte [] packet = converser.createPacket(PACKET_TYPE.CONNECT.getValue(), -1, -1);
 			converser.sendPacket(packet, connection);
 			getResponce();
+
 		} catch (Exception e) {
 			return false;
 		}
@@ -49,16 +51,19 @@ public class C4Client extends C4Logic {
 	}
 	
 	public void getResponce() {
+		System.out.println("response\n");
 		try {
 			byte[] packet = converser.receivePacket(connection);
 			switch (PACKET_TYPE.values()[(int) packet[0]]) {
 			case CONNECT:
 				controller.setStatusMessage("Prepare to lose. MUHAHA");
 				controller.setIsConnected(true);
+				connected = true;
 				break;
 			case RESET_GAME:
 				controller.resetBoard();
 				controller.setIsConnected(true);
+				connected = true;
 				break;
 			case MOVE:
 				controller.setMovesOnBoard(packet);
@@ -70,14 +75,17 @@ public class C4Client extends C4Logic {
 			case WIN:
 				controller.setStatusMessage("YOU WON!");
 				controller.setIsConnected(false);
+				connected = false;
 				break;
 			case LOSE:
 				controller.setStatusMessage("YOU LOSE...");
 				controller.setIsConnected(false);
+				connected = false;
 				break;
 			case TIE:
 				controller.setStatusMessage("IT'S A DRAW.");
 				controller.setIsConnected(false);
+				connected = false;
 				break;
 			default:
 				break;
