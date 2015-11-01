@@ -2,6 +2,8 @@ package com.dc.ConnectFourGame.controllers;
 
 import java.io.IOException;
 import java.net.Socket;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import com.dc.ConnectFourGame.client.C4Client;
 import com.dc.ConnectFourGame.shared.Identifier;
@@ -13,6 +15,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -21,7 +24,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.WindowEvent;
 
-public class BoardController {
+public class BoardController implements Initializable{
 	@FXML
 	private GridPane FirstColumn;
 
@@ -184,12 +187,7 @@ public class BoardController {
 	@FXML
 	private Label label56;
 
-	private Label[][] arrayLabels = { { label00, label01, label02, label03, label04, label05, label06 },
-			{ label10, label11, label12, label13, label14, label15, label16 },
-			{ label20, label21, label22, label23, label24, label25, label26 },
-			{ label30, label31, label32, label33, label34, label35, label36 },
-			{ label40, label41, label42, label43, label44, label45, label46 },
-			{ label50, label51, label52, label53, label54, label55, label56 } };
+	private Label[][] arrayLabels;
 
 	private C4Client client;
 	private boolean isConnected;
@@ -262,7 +260,6 @@ public class BoardController {
 				notWaiting=false;
 				client.makeMove(colChosen);
 				client.getResponce();
-				notWaiting=true;
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -286,9 +283,11 @@ public class BoardController {
 				+ "\nCOL CLIENT: " + colClient
 				+ "\nROW SERVER: " + rowServer
 				+ "\nCOL SERVER: " + colServer);
-		
+				
 		arrayLabels[rowClient][colClient].setText("X");
 		arrayLabels[rowServer][colServer].setText("O");
+
+		notWaiting=true;
 	}
 
 	public void resetBoard() {
@@ -299,5 +298,15 @@ public class BoardController {
 		}
 
 		setStatusMessage("");
+	}
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		arrayLabels = new Label[][]{ { label00, label01, label02, label03, label04, label05, label06 },
+			{ label10, label11, label12, label13, label14, label15, label16 },
+			{ label20, label21, label22, label23, label24, label25, label26 },
+			{ label30, label31, label32, label33, label34, label35, label36 },
+			{ label40, label41, label42, label43, label44, label45, label46 },
+			{ label50, label51, label52, label53, label54, label55, label56 } };
 	}
 }

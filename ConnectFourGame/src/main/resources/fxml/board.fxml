@@ -409,12 +409,12 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label fx:id="label00" alignment="CENTER" contentDisplay="CENTER" GridPane.halignment="CENTER">
+                        <Label fx:id="l0" alignment="CENTER" contentDisplay="CENTER" GridPane.halignment="CENTER">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label fx:id="label10" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                        <Label fx:id="l7" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
@@ -424,7 +424,7 @@
                               <Font name="System Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label fx:id="label20" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                        <Label fx:id="l" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
