@@ -11,6 +11,7 @@ public class C4Logic {
 	
 	
 	public int setChoice(int col, Identifier player){
+		col+=3;
 		if(col < 0 || col > gameBoard[0].length-4)
 			return -1;
 		
@@ -37,11 +38,11 @@ public class C4Logic {
 		int checkType = 0;
 		int repeatNum = 0;
 		Identifier currentTile;
-		int row = gameBoard.length-1;
-		int column = gameBoard[0].length-1;
+		int row = gameBoard.length-4;
+		int column = 3;
 		int r,c;
 		boolean repeated=true;
-			while(column >=3)
+			while(column <= gameBoard[0].length-4)
 			{
 				while(row>=3)
 				{		
@@ -97,14 +98,19 @@ public class C4Logic {
 					checkType=0;
 					row--;
 				}
-				row = gameBoard.length-1;
-				column--;
+				row = gameBoard.length-4;
+				column++;
 			}
 			return null;
 	}
 	
 	public boolean decideMove(){
 		return false;
+	}
+	
+	public void AIPlay()
+	{
+		
 	}
 	
 	public int randomMove(Identifier player){
