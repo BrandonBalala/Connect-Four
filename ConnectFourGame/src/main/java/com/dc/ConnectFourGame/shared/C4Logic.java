@@ -14,28 +14,22 @@ public class C4Logic {
 		return gameBoard;
 	}
 
-	public int setChoice(int col, Identifier player){
-		col+=3;
-		if(col < 0 || col > gameBoard[0].length-4)
-			return -1;
+	public boolean setChoice(int row,int column, Identifier player){;
+	    row+=2;
+	    column+=2;
+		if(isValidMove(row,column))
+		{
+			gameBoard[row][column] = player;
 		
-		int colChosen = -1;
-		
-		for(int row = gameBoard.length - 1; row >= 0; row--){
-			if(gameBoard[row][col] != null){
-				gameBoard[row][col] = player;
-				colChosen = col;
-			}
-		}
-		
-		if (colChosen != -1) {
 			if (player == Identifier.Client)
 				playerMarkers--;
 			else if (player == Identifier.Server)
 				serverMarkers--;
+			
+			return true;
 		}
-
-		return colChosen;
+		else
+			return false;
 	}
 	
 
@@ -46,11 +40,11 @@ public class C4Logic {
 	 * @param col
 	 * @return
 	 */
-	public boolean checkWin(int column, Identifier player){
+	public boolean checkWin(int column,int row, Identifier player){
 		int checkType = 0;
 		int repeatNum = 0;
 		column+=3;
-		int row = getNextEmptyRow(column);
+		row=+3;
 		int r=row,c=column;
 		boolean repeated=true;
 					
@@ -203,9 +197,16 @@ public class C4Logic {
 
 	public boolean isValidMove(int row,int column)
 	{
-		if(gameBoard[row+2][column+2]==null && row == getNextEmptyRow(column))
+		if(		
+			column > 2 &&
+			column < gameBoard[0].length-3 &&
+			row >2 && row<gameBoard.length-3 &&
+			gameBoard[row][column]==null &&
+			row == getNextEmptyRow(column)){
+			
 			return true;
-		else 
+		}
+		else
 			return false;
 		
 	}

@@ -23,13 +23,11 @@ public class C4Packet {
 	 * @return byte[]	the packet
 	 * @throws IOException
 	 */
-	public byte[] createPacket(int type, int rowClient, int colClient, int rowServer, int colServer) throws IOException {
-		byte[] packet = new byte[5];
+	public byte[] createPacket(int type, int row, int column) throws IOException {
+		byte[] packet = new byte[3];
 		packet[0] = (byte) type;
-		packet[1] = (byte) rowClient;
-		packet[2] = (byte) colServer;
-		packet[3] = (byte) rowServer;
-		packet[4] = (byte) colServer;
+		packet[1] = (byte) row;
+		packet[2] = (byte) column;
 
 		return packet;
 	}
@@ -39,11 +37,11 @@ public class C4Packet {
 		send = socket.getOutputStream();
 
 		send.write(packet);
-		System.out.println("SENT\nTYPE: " + packet[0] 
-						+ "\nROW CLIENT: " + packet[1] 
-						+ "\nCOL CLIENT: " + packet[2]
-						+ "\nROW SERVER: " + packet[3]
-						+ "\nCOL SERVER: " + packet[4]);
+		System.out.println("SENT\nSender: " + new Exception().getStackTrace()[1].getClassName()
+						+ "\nTYPE:" + packet[0] 
+						+ "\nRow: " + packet[1] 
+						+ "\nColumn: " + packet[2])
+						;
 		send.close();
 	}
 
@@ -51,20 +49,19 @@ public class C4Packet {
 
 		receive = socket.getInputStream();
 
-		byte[] packet = new byte[5];
+		byte[] packet = new byte[3];
 		int totalBytes = 0;
 		int bytesReceived;
 
-		while (totalBytes < 5) {
-			if ((bytesReceived = receive.read(packet, totalBytes, 5 - totalBytes)) == -1)
+		while (totalBytes < 3) {
+			if ((bytesReceived = receive.read(packet, totalBytes, 3 - totalBytes)) == -1)
 				throw new SocketException("Connection closed prematurely.");
 			totalBytes += bytesReceived;
 		}
-		System.out.println("RECEIVED\nTYPE: " + packet[0] 
-				+ "\nROW CLIENT: " + packet[1] 
-				+ "\nCOL CLIENT: " + packet[2]
-				+ "\nROW SERVER: " + packet[3]
-				+ "\nCOL SERVER: " + packet[4]);
+		System.out.println("RECEIVED\nSender: " + new Exception().getStackTrace()[1].getClassName()
+						+ "\nTYPE:" + packet[0] 
+						+ "\nRow: " + packet[1] 
+						+ "\nColumn: " + packet[2]);
 		return packet;
 
 	}

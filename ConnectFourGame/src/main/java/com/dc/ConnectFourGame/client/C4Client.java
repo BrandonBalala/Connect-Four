@@ -6,6 +6,7 @@ import java.net.Socket;
 import com.dc.ConnectFourGame.controllers.BoardController;
 import com.dc.ConnectFourGame.shared.C4Logic;
 import com.dc.ConnectFourGame.shared.C4Packet;
+import com.dc.ConnectFourGame.shared.Identifier;
 import com.dc.ConnectFourGame.shared.PACKET_TYPE;
 
 public class C4Client extends C4Logic {
@@ -38,7 +39,7 @@ public class C4Client extends C4Logic {
 	public boolean startConnection(String serverIp, int serverPort) throws IOException {
 		try {
 			connection = new Socket(serverIp, serverPort);
-			byte [] packet = converser.createPacket(PACKET_TYPE.CONNECT.getValue(), -1, -1, -1, -1);
+			byte [] packet = converser.createPacket(PACKET_TYPE.CONNECT.getValue(), -1, -1);
 			converser.sendPacket(packet, connection);
 			getResponce();
 		} catch (Exception e) {
@@ -90,7 +91,7 @@ public class C4Client extends C4Logic {
 	public void sendResetPacket() {
 		byte[] packet;
 		try {
-			packet = converser.createPacket(PACKET_TYPE.RESET_GAME.getValue(), -1, -1, -1, -1);
+			packet = converser.createPacket(PACKET_TYPE.RESET_GAME.getValue(), -1, -1);
 			converser.sendPacket(packet, connection);
 			getResponce();
 
@@ -104,7 +105,7 @@ public class C4Client extends C4Logic {
 		// TODO Auto-generated method stub
 		byte[] packet;
 		try {
-			packet = converser.createPacket(PACKET_TYPE.DISCONNECT.getValue(), -1, -1, -1, -1);
+			packet = converser.createPacket(PACKET_TYPE.DISCONNECT.getValue(), -1, -1);
 			converser.sendPacket(packet, connection);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -112,15 +113,27 @@ public class C4Client extends C4Logic {
 		}
 	}
 
-	public void sendMovePacket(int colChosen) {
-		try {
-			byte[] packet = converser.createPacket(PACKET_TYPE.MOVE.getValue(), -1, colChosen, -1, -1);
+	public void makeMove(int column) throws Exception
+	{
+		int row =getNextEmptyRow(column);
+		if(setChoice(row,column, Identifier.Client))
+		{
+			try {
+				sendMovePacket(column,row);
+			} catch (IOException e) {
+				//rollback play
+				getGameBoard()[row][column] = null;
+				throw new Exception("Error encountered when attempting to play move");
+			}
+		}
+		else
+			throw new Exception("Error encountered when attempting to play move");
+	}
+	public void sendMovePacket(int column,int row) throws IOException {
+			byte[] packet = converser.createPacket(PACKET_TYPE.MOVE.getValue(), row, column);
 			converser.sendPacket(packet, connection);
 			getResponce();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 	}
 
 }

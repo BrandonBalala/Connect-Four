@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.Socket;
 
 import com.dc.ConnectFourGame.client.C4Client;
+import com.dc.ConnectFourGame.shared.Identifier;
 import com.dc.ConnectFourGame.shared.PACKET_TYPE;
 
 import javafx.scene.Node;
@@ -256,8 +257,14 @@ public class BoardController {
 				colChosen = 6;
 				break;
 			}
-
-			client.sendMovePacket(colChosen);
+			
+			//HANDLE this exception here
+			try {
+				client.makeMove(colChosen);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 
