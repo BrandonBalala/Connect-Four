@@ -45,7 +45,14 @@ public class C4Client extends C4Logic {
 		}
 		return true;
 	}
-	
+	public byte[] convertPacketToSmallBoard(byte[] packet)
+	{
+		packet[1]-=3;
+		packet[2]-=3;
+		packet[3]-=3;
+		packet[4]-=3;
+		return packet;
+	}
 	public void getResponce() {
 		System.out.println("response\n");
 		try {
@@ -60,7 +67,7 @@ public class C4Client extends C4Logic {
 				controller.setIsConnected(true);
 				break;
 			case MOVE:
-				controller.setMovesOnBoard(packet);
+				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
 				break;
 			case BAD_MOVE:
 				// DO NOTHING OR DISPLAY A MESSAGE SAYING IT WAS A BAD MOVE?

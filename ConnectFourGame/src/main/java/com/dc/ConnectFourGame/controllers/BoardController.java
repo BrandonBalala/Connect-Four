@@ -281,6 +281,13 @@ public class BoardController {
 		int rowServer = (int) packet[3];
 		int colServer = (int) packet[4];
 
+		
+		System.out.println("Move attempting to chance board: "
+				+ "\nROW CLIENT: " + rowClient
+				+ "\nCOL CLIENT: " + colClient
+				+ "\nROW SERVER: " + rowServer
+				+ "\nCOL SERVER: " + colServer);
+		
 		arrayLabels[rowClient][colClient].setText("X");
 		arrayLabels[rowServer][colServer].setText("O");
 	}
