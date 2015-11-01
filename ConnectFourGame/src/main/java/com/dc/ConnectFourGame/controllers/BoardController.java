@@ -259,7 +259,6 @@ public class BoardController implements Initializable{
 			try {
 				notWaiting=false;
 				client.makeMove(colChosen);
-				client.getResponce();
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
