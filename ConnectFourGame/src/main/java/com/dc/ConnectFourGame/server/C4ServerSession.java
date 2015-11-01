@@ -6,6 +6,7 @@ import java.util.Random;
 
 import com.dc.ConnectFourGame.shared.C4Logic;
 import com.dc.ConnectFourGame.shared.C4Packet;
+import com.dc.ConnectFourGame.shared.Identifier;
 import com.dc.ConnectFourGame.shared.PACKET_TYPE;
 
 public class C4ServerSession extends C4Logic {
@@ -14,12 +15,10 @@ public class C4ServerSession extends C4Logic {
 	private boolean gameOver;
 	private Socket connection;
 	private C4Packet converser;
-	private C4Logic c4logic;
 
 	public C4ServerSession(Socket connection) throws IOException {
 		this.connection = connection;
 		converser = new C4Packet();
-		c4logic = new C4Logic();
 		start();
 
 	}
@@ -51,204 +50,19 @@ public class C4ServerSession extends C4Logic {
 	}
 
 	// Moves are set onto the gameboard in getWinOrBlockMove or getRandomMove
-	public int decideMove(int serverToken, int clientToken) {
-		// to win
-		int column = getWinOrBlockMove(serverToken, serverToken);
-
-		// to block
-		if (column == -1)
-			column = getWinOrBlockMove(clientToken, serverToken);
-
-		// random
-		if (column == -1)
-			column = getRandomMove(serverToken);
-
-		return column;
-	}
-
-	// target indicates which marker you are looking for in the board
-	// player says that its the server who is playing and its marker will be
-	// added to the board
-	private int getWinOrBlockMove(int target, int player) {
-		int[][] gameBoard = c4logic.getGameBoard();
-		int rowLength = gameBoard.length;
-		int colLength = gameBoard[0].length;
-
-		int column;
-		// Horizontal check
-		column = horizontalCheck(target, player, gameBoard, rowLength, colLength);
-
-		if (column != -1)
-			return column;
-
-		// Vertical check
-		column = verticalCheck(target, player, gameBoard, rowLength, colLength);
-
-		if (column != -1)
-			return column;
-
-		// Diagonal Upwards check
-		column = diagonalUpwardsCheck(target, player, gameBoard, rowLength, colLength);
-
-		if (column != -1)
-			return column;
-
-		// Diagonal Upwards check
-		column = diagonalDownwardsCheck(target, player, gameBoard, rowLength, colLength);
-
-		return column;
-	}
-
-	private int diagonalDownwardsCheck(int target, int player, int[][] gameBoard, int rowLength, int colLength) {
-		int colChoice = -1;
-		outerLoop: for (int row = 0; row <= rowLength - 4; row++) {
-			for (int col = 0; col <= colLength - 4; col++) {
-				int token1 = gameBoard[row][col];
-				int token2 = gameBoard[row + 1][col + 1];
-				int token3 = gameBoard[row + 2][col + 2];
-				int token4 = gameBoard[row + 3][col + 3];
-
-				if (token1 == 0 && token2 == target && token3 == target && token4 == target) {
-					colChoice = col;
-					break outerLoop;
-				}
-				if (token2 == 0 && token1 == target && token3 == target && token4 == target) {
-					colChoice = col + 1;
-					break outerLoop;
-				}
-				if (token3 == 0 && token1 == target && token2 == target && token4 == target) {
-					colChoice = col + 2;
-					break outerLoop;
-				}
-				if (token4 == 0 && token1 == target && token2 == target && token3 == target) {
-					colChoice = col + 3;
-					break outerLoop;
-				}
-			}
+	public int decideMove() {
+		int[] ranks = new int[7];
+		for(int column = 0; column < 7; column++)
+		{
+			ranks[column] = getRank(column, Identifier.Server);
 		}
-		if (colChoice != -1) {
-			setChoice(colChoice, player);
+		int choice = 0;
+		for(int i = 1; i < 7; i++)
+		{
+			if(ranks[i]>ranks[choice])
+				choice = i;
 		}
-		return colChoice;
-	}
-
-	private int diagonalUpwardsCheck(int target, int player, int[][] gameBoard, int rowLength, int colLength) {
-
-		int colChoice = -1;
-		outerLoop: for (int row = rowLength - 1; row > rowLength - 4; row--) {
-			for (int col = 0; col <= colLength - 4; col++) {
-				int token1 = gameBoard[row][col];
-				int token2 = gameBoard[row - 1][col + 1];
-				int token3 = gameBoard[row - 2][col + 2];
-				int token4 = gameBoard[row - 3][col + 3];
-
-				if (token1 == 0 && token2 == target && token3 == target && token4 == target) {
-					colChoice = col;
-					break outerLoop;
-				}
-				if (token2 == 0 && token1 == target && token3 == target && token4 == target) {
-					colChoice = col + 1;
-					break outerLoop;
-				}
-				if (token3 == 0 && token1 == target && token2 == target && token4 == target) {
-					colChoice = col + 2;
-					break outerLoop;
-				}
-				if (token4 == 0 && token1 == target && token2 == target && token3 == target) {
-					colChoice = col + 3;
-					break outerLoop;
-				}
-			}
-		}
-		if (colChoice != -1) {
-			setChoice(colChoice, player);
-		}
-		return colChoice;
-	}
-
-	private int verticalCheck(int target, int player, int[][] gameBoard, int rowLength, int colLength) {
-
-		int colChoice = -1;
-		outerLoop: for (int col = 0; col < colLength; col++) {
-			for (int row = 0; col <= rowLength - 4; col++) {
-				int token1 = gameBoard[row][col];
-				int token2 = gameBoard[row + 1][col];
-				int token3 = gameBoard[row + 2][col];
-				int token4 = gameBoard[row + 3][col];
-
-				if (token1 == 0 && token2 == target && token3 == target && token4 == target) {
-					colChoice = col;
-					break outerLoop;
-				}
-				if (token2 == 0 && token1 == target && token3 == target && token4 == target) {
-					colChoice = col;
-					break outerLoop;
-				}
-				if (token3 == 0 && token1 == target && token2 == target && token4 == target) {
-					colChoice = col;
-					break outerLoop;
-				}
-				if (token4 == 0 && token1 == target && token2 == target && token3 == target) {
-					colChoice = col;
-					break outerLoop;
-				}
-			}
-		}
-		if (colChoice != -1) {
-			setChoice(colChoice, player);
-		}
-
-		return colChoice;
-	}
-
-	private int horizontalCheck(int target, int player, int[][] gameBoard, int rowLength, int colLength) {
-
-		int colChoice = -1;
-		outerLoop: for (int row = 0; row < rowLength; row++) {
-			for (int col = 0; col <= colLength - 4; col++) {
-				int token1 = gameBoard[row][col];
-				int token2 = gameBoard[row][col + 1];
-				int token3 = gameBoard[row][col + 2];
-				int token4 = gameBoard[row][col + 3];
-
-				if (token1 == 0 && token2 == target && token3 == target && token4 == target) {
-					colChoice = col;
-					break outerLoop;
-				}
-				if (token2 == 0 && token1 == target && token3 == target && token4 == target) {
-					colChoice = col + 1;
-					break outerLoop;
-				}
-				if (token3 == 0 && token1 == target && token2 == target && token4 == target) {
-					colChoice = col + 2;
-					break outerLoop;
-				}
-				if (token4 == 0 && token1 == target && token2 == target && token3 == target) {
-					colChoice = col + 3;
-					break outerLoop;
-				}
-			}
-		}
-		if (colChoice != -1) {
-			setChoice(colChoice, player);
-		}
-
-		return colChoice;
-	}
-
-	public int getRandomMove(int player) {
-		int col = -1;
-
-		while (col == -1) {
-			Random rand = new Random();
-			int max = c4logic.getGameBoard()[0].length - 1;
-			int min = 0;
-			int randomCol = rand.nextInt((max - min) + 1) + min;
-
-			col = setChoice(randomCol, player);
-		}
-
-		return col;
+			return choice;
 	}
 
 	private void getResponce() {
@@ -258,7 +72,7 @@ public class C4ServerSession extends C4Logic {
 			case RESET_GAME:
 				playAgain = true;
 				gameOver = false;
-				c4logic.resetGame();
+				newGame();
 				break;
 			case DISCONNECT:
 				playAgain = false;
@@ -278,18 +92,17 @@ public class C4ServerSession extends C4Logic {
 
 	private void setPlayerChoice(byte[] packet) {
 		int col = (int) packet[2];
-		int clientToken = 1;
-		col = c4logic.setChoice(col, clientToken);
+		col = setChoice(col, Identifier.Client);
 
 		if (col != -1) { // means it was a valid move
-			int row = c4logic.getUpmostRow(col);
+			int row = getNextEmptyRow(col);
 
-			if (c4logic.checkWin(col, clientToken)) {
+			if (checkWin(col, Identifier.Client)) {
 				gameOver = true;
 				sendWinPacket(row, col);
-			} else if (c4logic.checkDraw()) {
+			} else if (checkDraw()) {
 				gameOver = true;
-				sendTiePacket(row, col, clientToken);
+				sendTiePacket(row, col, Identifier.Client);
 			} else { // server turn to make a move
 				setServerChoice(row, col);
 			}
@@ -299,19 +112,17 @@ public class C4ServerSession extends C4Logic {
 	}
 
 	private void setServerChoice(int rowClient, int colClient) {
-		int serverToken = 2;
-		int clientToken = 1;
-		int colServer = decideMove(serverToken, clientToken);
+		int colServer = decideMove();
 
 		if (colServer != -1) { // means it was a valid move
-			int rowServer = c4logic.getUpmostRow(colServer);
+			int rowServer = getNextEmptyRow(colServer);
 
-			if (c4logic.checkWin(colServer, serverToken)) {
+			if (checkWin(colServer, Identifier.Server)) {
 				gameOver = true;
 				sendLosePacket(rowServer, colServer);
-			} else if (c4logic.checkDraw()) {
+			} else if (checkDraw()) {
 				gameOver = true;
-				sendTiePacket(rowServer, colServer, serverToken);
+				sendTiePacket(rowServer, colServer, Identifier.Server);
 			} else {
 				sendBackClientAndServerMove(rowClient, colClient, rowServer, colServer);
 			}
@@ -360,12 +171,12 @@ public class C4ServerSession extends C4Logic {
 		}
 	}
 
-	private void sendTiePacket(int row, int col, int player) {
+	private void sendTiePacket(int row, int col,Identifier player) {
 		try {
 			byte[] packet = null;
 			// to display the last move, on the client GUI and who was move made
 			// by
-			if (player == 1) // CLIENT
+			if (player == Identifier.Client) // CLIENT
 				packet = converser.createPacket(PACKET_TYPE.TIE.getValue(), row, col, -1, -1);
 			else // SERVER
 				packet = converser.createPacket(PACKET_TYPE.TIE.getValue(), -1, -1, row, col);

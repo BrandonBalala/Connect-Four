@@ -1,42 +1,43 @@
 package com.dc.ConnectFourGame.shared;
 
+
 public class C4Logic {
-	int[][] gameBoard;
-	private int playerMarker;
-	private int serverMarker;
+	Identifier[ ][ ] gameBoard;
+	private int playerMarkers;
+	private int serverMarkers;
 
 	public C4Logic() {
-		gameBoard = new int[6][7];
-		playerMarker = 21;
-		serverMarker = 21;
+		newGame();
 	}
 
-	public int[][] getGameBoard() {
+	public Identifier[][] getGameBoard() {
 		return gameBoard;
 	}
 
-	public int setChoice(int col, int player) {
-		if (col < 0 || col > gameBoard[0].length)
+	public int setChoice(int col, Identifier player){
+		col+=3;
+		if(col < 0 || col > gameBoard[0].length-4)
 			return -1;
-
+		
 		int colChosen = -1;
-
-		for (int row = gameBoard.length - 1; row >= 0; row--) {
-			if (gameBoard[row][col] != 0) {
+		
+		for(int row = gameBoard.length - 1; row >= 0; row--){
+			if(gameBoard[row][col] != null){
 				gameBoard[row][col] = player;
 				colChosen = col;
 			}
 		}
-
+		
 		if (colChosen != -1) {
-			if (player == 1)
-				playerMarker--;
-			else if (player == 2)
-				serverMarker--;
+			if (player == Identifier.Client)
+				playerMarkers--;
+			else if (player == Identifier.Server)
+				serverMarkers--;
 		}
 
 		return colChosen;
 	}
+	
 
 	/**
 	 * This method checks whether the last move invoked a win
@@ -45,124 +46,185 @@ public class C4Logic {
 	 * @param col
 	 * @return
 	 */
-	public boolean checkWin(int col, int player) {
-		int row = getUpmostRow(col);
-		int min = 0;
-		int rowMax = gameBoard.length;
-		int colMax = gameBoard[0].length;
-
-		// Horizontal Check
-		// Left
-		int fourInARow = 1;
-		for (int c = col - 1; c >= min; c--) {
-			if (gameBoard[row][c] == player)
-				fourInARow++;
-			else
-				break;
-		}
-
-		// Right
-		for (int c = col + 1; c < colMax; c++) {
-			if (gameBoard[row][c] == player)
-				fourInARow++;
-			else
-				break;
-		}
-
-		if (fourInARow >= 4) {
-			return true;
-		} else
-			fourInARow = 1;
-
-		// Vertical Check
-		// Up
-		for (int r = row - 1; r >= min; r--) {
-			if (gameBoard[r][row] == player)
-				fourInARow++;
-			else
-				break;
-		}
-
-		// Down
-		for (int r = row + 1; r < rowMax; r++) {
-			if (gameBoard[r][col] == player)
-				fourInARow++;
-			else
-				break;
-		}
-
-		if (fourInARow >= 4) {
-			return true;
-		} else
-			fourInARow = 1;
-
-		// Diagonal Upward Check
-		// South-West
-		for (int r = row + 1, c = col - 1; r < rowMax && c >= min; r++, c--) {
-			if (gameBoard[r][c] == player)
-				fourInARow++;
-			else
-				break;
-		}
-		// Nort-East
-		for (int r = row - 1, c = col + 1; r >= 0 && min < colMax; r--, c++) {
-			if (gameBoard[r][c] == player)
-				fourInARow++;
-			else
-				break;
-		}
-
-		if (fourInARow >= 4) {
-			return true;
-		} else
-			fourInARow = 1;
-
-		// Diagonal Downward Check
-		// North-West
-		for (int r = row - 1, c = col - 1; r >= min && c >= min; r--, c--) {
-			if (gameBoard[r][c] == player)
-				fourInARow++;
-			else
-				break;
-		}
-		// Nort-East
-		for (int r = row + 1, c = col + 1; r < rowMax && c < colMax; r++, c++) {
-			if (gameBoard[r][c] == player)
-				fourInARow++;
-			else
-				break;
-		}
-
-		if (fourInARow >= 4) {
-			return true;
-		} else
-			fourInARow = 1;
-
-		return false;
+	public boolean checkWin(int column, Identifier player){
+		int checkType = 0;
+		int repeatNum = 0;
+		column+=3;
+		int row = getNextEmptyRow(column);
+		int r=row,c=column;
+		boolean repeated=true;
+					
+						while(checkType < 7)
+						{
+							while(repeated && repeatNum < 3)
+							{
+								switch(checkType)
+								{
+									case(0):  c++;
+											  break;
+									case(1):  c--;
+											  break;
+									case(2):  r++;
+									          break;
+									case(3):  c--;
+											  r--;
+									          break;
+									case(4):  c++;
+									  		  r++;
+									  		  break;
+									case(5):  c++;
+									 		  r--;
+									 		  break;
+									case(6):  c--;
+											  r++;
+											  break;
+								}
+								
+								if(player.equals(gameBoard[r][c]))
+								{
+									repeatNum++;
+								}
+								else
+								{
+									repeated = false;
+									repeatNum = 0;
+								}
+								
+							}
+							if(repeated)
+								return repeated;
+							else
+							{
+								checkType++;
+								r=row;
+								c=column;
+							}
+						}
+		return repeated;
 	}
 
+
+	public int getRank(int column,Identifier player)
+	{
+		Identifier opponent =(player!=Identifier.Client)?Identifier.Client:Identifier.Server;
+		int rank=0;
+		int checkType = 0;
+		int opponentCount,playerCount,repeatNum;
+		boolean repeated=true;
+		int row=getNextEmptyRow(column);
+		int r=row,c=column;
+		
+		while(checkType < 7)
+		{
+			opponentCount = 0;
+			playerCount = 0;
+			repeatNum = 0;
+			while(repeated && repeatNum < 3)
+			{
+				switch(checkType)
+				{
+					case(0):  c++;
+							  break;
+					case(1):  c--;
+							  break;
+					case(2):  r++;
+					          break;
+					case(3):  c--;
+							  r--;
+					          break;
+					case(4):  c++;
+					  		  r++;
+					  		  break;
+					case(5):  c++;
+					 		  r--;
+					 		  break;
+					case(6):  c--;
+							  r++;
+							  break;
+				}
+				
+				
+				if(player.equals(gameBoard[r][c]))
+				{
+					if(opponentCount > 0)
+						repeated = false;
+					else
+						playerCount++;
+				}
+				else if (opponent.equals(gameBoard[r][c]))
+				{
+					if(playerCount > 0)
+						repeated = false;
+					else
+						opponentCount++;
+				}
+				repeatNum++;
+			}
+			
+			//The values (value of last * 7) make sure that just because there are 6 options
+			// of one move, the rank does not end up summing to higher then a more important move 
+			//( example 6 options to block opponent with 3 tokens does not take priority over placing a 4th and winning)
+			if(opponentCount > 0 && playerCount == 0 )
+			{
+				switch(opponentCount)
+				{
+				case 2: rank += 7;
+						break;
+				case 3: rank += 343;
+						break;
+				default: rank += 1;
+				}
+			}
+			else if(playerCount> 0 && opponentCount == 0 )
+			{
+				switch(playerCount)
+				{
+				case 2: rank += 49;
+						break;
+				case 3: rank += 2401;
+						break;
+				default: rank += 1;
+				}
+			}
+			checkType++;
+			r=row;
+			c=column;
+		}
+		
+		return rank;
+	}
+	
 	public boolean checkDraw() {
-		if (playerMarker == 0 & serverMarker == 0)
+		if (playerMarkers == 0 & serverMarkers == 0)
 			return true;
 
 		return false;
 	}
 
-	public int getUpmostRow(int col) {
+	public boolean isValidMove(int row,int column)
+	{
+		if(gameBoard[row+2][column+2]==null && row == getNextEmptyRow(column))
+			return true;
+		else 
+			return false;
+		
+	}
+	public int getNextEmptyRow(int column) {
 		int row = -1;
 
-		for (int cntr = 0; cntr < gameBoard.length; cntr++) {
-			if (gameBoard[cntr][col] != 0) {
-				row = cntr;
+		for (int cntr = 3; cntr < gameBoard.length-2; cntr++) 
+		{
+			if (gameBoard[cntr][column] != null) {
+				row = cntr + 1;
 			}
 		}
 
 		return row;
 	}
 
-	public void resetGame() {
-		gameBoard = new int[6][7];
-		playerMarker = 21;
-		serverMarker = 21;
+	public void newGame() {
+		gameBoard = new Identifier[12][13];
+		playerMarkers = 21;
+		serverMarkers = 21;
 	}
 }
