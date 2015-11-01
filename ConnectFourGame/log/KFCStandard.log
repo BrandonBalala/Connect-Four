@@ -485,3 +485,134 @@ Caused by: java.lang.IllegalArgumentException: Can not set javafx.scene.layout.V
 [INFO ] 2015-11-01 03:01:47.494 [JavaFX Application Thread] MainAppFX - Program Begins
 [INFO ] 2015-11-01 03:01:48.970 [JavaFX Application Thread] MainAppFX - Program Begins
 [INFO ] 2015-11-01 03:02:22.320 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:10:49.447 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-11-01 11:10:50.352 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/ofern/git/ConnectFour/ConnectFourGame/target/classes/fxml/board.fxml:151
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureMainStage(MainAppFX.java:78) ~[classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:50) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$163(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$176(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$174(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$175(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$149(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+Caused by: java.lang.UnsupportedOperationException: Cannot determine type for property.
+	at com.sun.javafx.fxml.BeanAdapter.getSetterMethod(BeanAdapter.java:177) ~[jfxrt.jar:?]
+	at com.sun.javafx.fxml.BeanAdapter.put(BeanAdapter.java:250) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:618) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532) ~[jfxrt.jar:?]
+	... 13 more
+[INFO ] 2015-11-01 11:11:19.007 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:13:32.036 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:14:48.816 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:15:06.335 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:23:28.136 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:25:24.988 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:28:53.263 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-11-01 11:28:53.434 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/ofern/git/ConnectFour/ConnectFourGame/target/classes/fxml/board.fxml:105
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureMainStage(MainAppFX.java:78) ~[classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:50) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$163(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$176(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$174(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$175(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$149(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+Caused by: java.lang.IllegalArgumentException: Can not set javafx.scene.layout.VBox field com.dc.ConnectFourGame.controllers.BoardController.SecondColumn to javafx.scene.layout.GridPane
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167) ~[?:1.8.0_60]
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171) ~[?:1.8.0_60]
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81) ~[?:1.8.0_60]
+	at java.lang.reflect.Field.set(Field.java:764) ~[?:1.8.0_60]
+	at javafx.fxml.FXMLLoader.injectFields(FXMLLoader.java:1163) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$1600(FXMLLoader.java:103) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processValue(FXMLLoader.java:857) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:751) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527) ~[jfxrt.jar:?]
+	... 13 more
+[INFO ] 2015-11-01 11:30:12.307 [JavaFX Application Thread] MainAppFX - Program Begins
+[ERROR] 2015-11-01 11:30:12.477 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/ofern/git/ConnectFour/ConnectFourGame/target/classes/fxml/board.fxml:105
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureMainStage(MainAppFX.java:78) ~[classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:50) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$163(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$176(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$174(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$175(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$149(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+Caused by: java.lang.IllegalArgumentException: Can not set javafx.scene.layout.VBox field com.dc.ConnectFourGame.controllers.BoardController.SecondColumn to javafx.scene.layout.GridPane
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167) ~[?:1.8.0_60]
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171) ~[?:1.8.0_60]
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81) ~[?:1.8.0_60]
+	at java.lang.reflect.Field.set(Field.java:764) ~[?:1.8.0_60]
+	at javafx.fxml.FXMLLoader.injectFields(FXMLLoader.java:1163) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$1600(FXMLLoader.java:103) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processValue(FXMLLoader.java:857) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:751) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527) ~[jfxrt.jar:?]
+	... 13 more
+[INFO ] 2015-11-01 11:31:59.820 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:37:04.629 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:38:06.836 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:38:58.482 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 11:39:33.438 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:03:00.559 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:06:51.882 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:17:53.626 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:21:27.665 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:22:16.717 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:23:38.497 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:27:22.986 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:28:28.434 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:29:45.422 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:30:45.590 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:39:41.206 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:43:06.919 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 12:51:38.091 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 13:17:46.479 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 13:20:13.885 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 13:24:55.387 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 13:28:43.771 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 13:55:49.906 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 14:06:40.582 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 14:06:58.644 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 14:17:13.744 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 14:18:20.758 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 14:18:49.848 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 14:20:08.702 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 14:24:21.257 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 14:25:03.979 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 14:25:27.460 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-01 14:26:23.818 [JavaFX Application Thread] MainAppFX - Program Begins

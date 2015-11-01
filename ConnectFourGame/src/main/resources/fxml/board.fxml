@@ -100,9 +100,9 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
          <children>
-            <VBox fx:id="SecondColumn" onMouseClicked="#userClick" prefHeight="264.0" prefWidth="93.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="6">
+            <VBox onMouseClicked="#userClick" prefHeight="264.0" prefWidth="93.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="6">
                <children>
-                  <GridPane gridLinesVisible="true" prefHeight="292.0" prefWidth="93.0">
+                  <GridPane fx:id="SecondColumn" gridLinesVisible="true" prefHeight="292.0" prefWidth="93.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
@@ -149,9 +149,9 @@
                   </GridPane>
                </children>
             </VBox>
-            <VBox fx:id="ThirdColumn" onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="6">
+            <VBox onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="6">
                <children>
-                  <GridPane gridLinesVisible="true" prefHeight="292.0" prefWidth="94.0">
+                  <GridPane fx:id="ThirdColumn" gridLinesVisible="true" prefHeight="292.0" prefWidth="94.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
@@ -198,9 +198,9 @@
                   </GridPane>
                </children>
             </VBox>
-            <VBox fx:id="FourthColumn" onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="6">
+            <VBox onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="6">
                <children>
-                  <GridPane gridLinesVisible="true" prefHeight="292.0" prefWidth="83.0">
+                  <GridPane fx:id="FourthColumn" gridLinesVisible="true" prefHeight="292.0" prefWidth="83.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
@@ -247,9 +247,9 @@
                   </GridPane>
                </children>
             </VBox>
-            <VBox fx:id="FifthColumn" onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowSpan="7">
+            <VBox onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowSpan="7">
                <children>
-                  <GridPane gridLinesVisible="true" prefHeight="292.0" prefWidth="83.0">
+                  <GridPane fx:id="FifthColumn" gridLinesVisible="true" prefHeight="292.0" prefWidth="83.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
@@ -296,9 +296,9 @@
                   </GridPane>
                </children>
             </VBox>
-            <VBox fx:id="SixthColumn" onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="1" GridPane.rowSpan="6">
+            <VBox onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="1" GridPane.rowSpan="6">
                <children>
-                  <GridPane gridLinesVisible="true" prefHeight="292.0" prefWidth="94.0">
+                  <GridPane fx:id="SixthColumn" gridLinesVisible="true" prefHeight="292.0" prefWidth="94.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
@@ -345,9 +345,9 @@
                   </GridPane>
                </children>
             </VBox>
-            <VBox fx:id="SeventhColumn" onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.rowSpan="6">
+            <VBox onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.rowSpan="6">
                <children>
-                  <GridPane gridLinesVisible="true" prefHeight="292.0" prefWidth="94.0">
+                  <GridPane fx:id="SeventhColumn" gridLinesVisible="true" prefHeight="292.0" prefWidth="94.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
@@ -394,9 +394,9 @@
                   </GridPane>
                </children>
             </VBox>
-            <VBox fx:id="FirstColumn" onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1" GridPane.rowSpan="6">
+            <VBox onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1" GridPane.rowSpan="6">
                <children>
-                  <GridPane gridLinesVisible="true" onMouseClicked="#userClick" prefHeight="292.0" prefWidth="82.0">
+                  <GridPane fx:id="FirstColumn" gridLinesVisible="true" onMouseClicked="#userClick" prefHeight="292.0" prefWidth="82.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>

@@ -14,9 +14,10 @@ public class C4Logic {
 		return gameBoard;
 	}
 
-	public boolean setChoice(int row,int column, Identifier player){;
-	    row+=2;
-	    column+=2;
+	public int setChoice(int column, Identifier player){
+		int result =-1;
+	    int row = getNextEmptyRow(column);
+
 		if(isValidMove(row,column))
 		{
 			gameBoard[row][column] = player;
@@ -25,11 +26,10 @@ public class C4Logic {
 				playerMarkers--;
 			else if (player == Identifier.Server)
 				serverMarkers--;
-			
-			return true;
+			result = row;
 		}
-		else
-			return false;
+		return result;
+			
 	}
 	
 
@@ -212,11 +212,12 @@ public class C4Logic {
 	}
 	public int getNextEmptyRow(int column) {
 		int row = -1;
-
-		for (int cntr = 3; cntr < gameBoard.length-2; cntr++) 
+		
+		for (int cntr = gameBoard.length-4; cntr > 3 ; cntr--) 
 		{
-			if (gameBoard[cntr][column] != null) {
-				row = cntr + 1;
+			if (gameBoard[cntr][column] == null) {
+				row = cntr;
+				break;
 			}
 		}
 

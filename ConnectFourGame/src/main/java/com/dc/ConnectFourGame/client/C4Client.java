@@ -37,7 +37,7 @@ public class C4Client extends C4Logic {
 		try {
 			connection = new Socket(serverIp, serverPort);
 			converser = new C4Packet(connection);
-			byte [] packet = converser.createPacket(PACKET_TYPE.CONNECT.getValue(), -1, -1);
+			byte [] packet = converser.createPacket(PACKET_TYPE.CONNECT.getValue(), -1, -1, -1, -1);
 			converser.sendPacket(packet);
 			getResponce();
 		} catch (Exception e) {
@@ -90,7 +90,7 @@ public class C4Client extends C4Logic {
 	public void sendResetPacket() {
 		byte[] packet;
 		try {
-			packet = converser.createPacket(PACKET_TYPE.RESET_GAME.getValue(), -1, -1);
+			packet = converser.createPacket(PACKET_TYPE.RESET_GAME.getValue(), -1, -1, -1, -1);
 			converser.sendPacket(packet);
 			getResponce();
 
@@ -104,7 +104,7 @@ public class C4Client extends C4Logic {
 		// TODO Auto-generated method stub
 		byte[] packet;
 		try {
-			packet = converser.createPacket(PACKET_TYPE.DISCONNECT.getValue(), -1, -1);
+			packet = converser.createPacket(PACKET_TYPE.DISCONNECT.getValue(), -1, -1, -1, -1);
 			converser.sendPacket(packet);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -114,22 +114,25 @@ public class C4Client extends C4Logic {
 
 	public void makeMove(int column) throws Exception
 	{
-		int row =getNextEmptyRow(column);
-		if(setChoice(row,column, Identifier.Client))
+	    column+=3;
+	    System.out.println("\n column :" + column);
+		int row =setChoice(column, Identifier.Client);
+		if(row != -1)
 		{
 			try {
 				sendMovePacket(column,row);
 			} catch (IOException e) {
 				//rollback play
 				getGameBoard()[row][column] = null;
-				throw new Exception("Error encountered when attempting to play move");
+				throw new Exception("Error encountered when attempting to send move");
 			}
 		}
 		else
 			throw new Exception("Error encountered when attempting to play move");
 	}
 	public void sendMovePacket(int column,int row) throws IOException {
-			byte[] packet = converser.createPacket(PACKET_TYPE.MOVE.getValue(), row, column);
+	    System.out.println("\n column2 :" + column);
+		byte[] packet = converser.createPacket(PACKET_TYPE.MOVE.getValue(), row, column, -1, -1);
 			converser.sendPacket(packet);
 			getResponce();
 		

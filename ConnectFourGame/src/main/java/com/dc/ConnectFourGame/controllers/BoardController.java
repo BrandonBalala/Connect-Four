@@ -16,13 +16,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.WindowEvent;
 
 public class BoardController {
 	@FXML
-	private VBox FirstColumn;
+	private GridPane FirstColumn;
 
 	@FXML
 	private Label label00;
@@ -58,7 +59,7 @@ public class BoardController {
 	private GridPane boardPane;
 
 	@FXML
-	private VBox SecondColumn;
+	private GridPane SecondColumn;
 
 	@FXML
 	private Label label01;
@@ -79,7 +80,7 @@ public class BoardController {
 	private Label label51;
 
 	@FXML
-	private VBox ThirdColumn;
+	private GridPane ThirdColumn;
 
 	@FXML
 	private Label label02;
@@ -100,7 +101,7 @@ public class BoardController {
 	private Label label52;
 
 	@FXML
-	private VBox FourthColumn;
+	private GridPane FourthColumn;
 
 	@FXML
 	private Label label03;
@@ -121,7 +122,7 @@ public class BoardController {
 	private Label label53;
 
 	@FXML
-	private VBox FifthColumn;
+	private GridPane FifthColumn;
 
 	@FXML
 	private Label label04;
@@ -142,7 +143,7 @@ public class BoardController {
 	private Label label54;
 
 	@FXML
-	private VBox SixthColumn;
+	private GridPane SixthColumn;
 
 	@FXML
 	private Label label05;
@@ -163,7 +164,7 @@ public class BoardController {
 	private Label label55;
 
 	@FXML
-	private VBox SeventhColumn;
+	private GridPane SeventhColumn;
 
 	@FXML
 	private Label label06;
@@ -231,9 +232,9 @@ public class BoardController {
 	}
 
 	@FXML
-	void userClick(ActionEvent event) {
+	void userClick(MouseEvent event) {
 		if (isConnected) {
-			String id = ((Node) event.getSource()).getId();
+			String id = ((Node) event.getTarget()).getId();
 			int colChosen = -1;
 			switch (id) {
 			case "FirstColumn":

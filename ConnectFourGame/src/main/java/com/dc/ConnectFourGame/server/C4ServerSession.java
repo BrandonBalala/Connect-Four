@@ -49,12 +49,14 @@ public class C4ServerSession extends C4Logic {
 	// Moves are set onto the gameboard in getWinOrBlockMove or getRandomMove
 	public int decideMove() {
 		int[] ranks = new int[7];
-		for(int column = 0; column < 7; column++)
+		int i = 0;
+		for(int column = 3; column < 9; column++)
 		{
-			ranks[column] = getRank(column, Identifier.Server);
+			ranks[i] = getRank(column, Identifier.Server);
+			i++;
 		}
 		int choice = 0;
-		for(int i = 1; i < 7; i++)
+		for(i = 1; i < 7; i++)
 		{
 			if(ranks[i]>ranks[choice])
 				choice = i;
@@ -91,7 +93,7 @@ public class C4ServerSession extends C4Logic {
 		int column = (int) packet[2];
 		int row =(int) packet[1];
 		
-		if(setChoice(column, row, Identifier.Client))
+		if(setChoice(column, Identifier.Client) == row)
 		{
 			if (checkWin(column, row, Identifier.Client)) {
 				gameOver = true;
@@ -100,33 +102,35 @@ public class C4ServerSession extends C4Logic {
 				gameOver = true;
 				sendTiePacket(row, column, Identifier.Client);
 			} else { // server turn to make a move
-				setServerChoice();
+				setServerChoice(row, column);
 			}
 		} else { // means it was an invalid move
 			sendBadMovePacket();
 		}
 	}
 
-	private void setServerChoice() {
-		int column = decideMove();
-		int row = getNextEmptyRow(column);
+	private void setServerChoice(int rowClient, int colClient) {
+		int colServer = decideMove();
+		int rowServer = getNextEmptyRow(colServer);
 
-		if(isValidMove(row,column))
-			if (checkWin(column, row, Identifier.Server)) {
+		if(isValidMove(rowServer,colServer))
+			if (checkWin(colServer, rowServer, Identifier.Server)) {
 				gameOver = true;
-				sendLosePacket(row, column);
+				sendLosePacket(rowServer, colServer);
 			} else if (checkDraw()) {
 				gameOver = true;
-				sendTiePacket(row, column, Identifier.Server);
+				sendTiePacket(rowServer, colServer, Identifier.Server);
 			} else {
-				sendBackServerMove(row, column);
+				sendBackClientAndServerMove(rowClient, colClient, rowServer, colServer);
 			}
 		}
 	
 
-	private void sendBackServerMove(int row, int column) {
+	private void sendBackClientAndServerMove(int rowClient, int colClient, int rowServer, int colServer) {
 		try {
-			byte[] packet = converser.createPacket(PACKET_TYPE.MOVE.getValue(), row, column);
+
+			byte[] packet = converser.createPacket(PACKET_TYPE.MOVE.getValue(), rowClient, colClient, rowServer,
+					colServer);
 			converser.sendPacket(packet);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -137,7 +141,7 @@ public class C4ServerSession extends C4Logic {
 
 	private void sendBadMovePacket() {
 		try {
-			byte[] packet = converser.createPacket(PACKET_TYPE.BAD_MOVE.getValue(), -1, -1);
+			byte[] packet = converser.createPacket(PACKET_TYPE.BAD_MOVE.getValue(), -1, -1, -1, -1);
 			converser.sendPacket(packet);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -147,7 +151,7 @@ public class C4ServerSession extends C4Logic {
 	
 	private void sendConnectPacket() {
 		try {
-			byte[] packet = converser.createPacket(PACKET_TYPE.CONNECT.getValue(), -1, -1);
+			byte[] packet = converser.createPacket(PACKET_TYPE.CONNECT.getValue(), -1, -1, -1, -1);
 			converser.sendPacket(packet);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -157,7 +161,7 @@ public class C4ServerSession extends C4Logic {
 
 	private void sendLosePacket(int row, int col) {
 		try {
-			byte[] packet = converser.createPacket(PACKET_TYPE.LOSE.getValue(), row, col);
+			byte[] packet = converser.createPacket(PACKET_TYPE.LOSE.getValue(), -1, -1, row, col);
 			converser.sendPacket(packet);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -169,8 +173,11 @@ public class C4ServerSession extends C4Logic {
 		try {
 			byte[] packet = null;
 			// to display the last move, on the client GUI and who was move made
-			// by
-			packet = converser.createPacket(PACKET_TYPE.TIE.getValue(), row, col);
+			// by			
+			if (player == Identifier.Client) // CLIENT
+			packet = converser.createPacket(PACKET_TYPE.TIE.getValue(), row, col, -1, -1);
+				else // SERVER
+			packet = converser.createPacket(PACKET_TYPE.TIE.getValue(), -1, -1, row, col);
 			converser.sendPacket(packet);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -180,7 +187,7 @@ public class C4ServerSession extends C4Logic {
 
 	private void sendWinPacket(int row, int col) {
 		try {
-			byte[] packet = converser.createPacket(PACKET_TYPE.WIN.getValue(), row, col);
+			byte[] packet = converser.createPacket(PACKET_TYPE.WIN.getValue(), row, col, -1, -1);
 			converser.sendPacket(packet);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
