@@ -14,7 +14,7 @@ public class C4Client extends C4Logic {
 	private Socket connection;
 	private C4Packet converser;
 	private String address;
-
+	private boolean canPlay;
 	private int port = 62366;
 	private BoardController controller;
 
@@ -61,12 +61,14 @@ public class C4Client extends C4Logic {
 			case CONNECT:
 				controller.setStatusMessage("Prepare to lose. MUHAHA");
 				controller.setIsConnected(true);
+				canPlay=true;
 				break;
 			case RESET_GAME:
 				controller.resetBoard();
 				controller.setIsConnected(true);
 				controller.setNotWaiting(true);
 				newGame();
+				canPlay=true;
 				break;
 			case MOVE:
 				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
@@ -76,18 +78,22 @@ public class C4Client extends C4Logic {
 			case BAD_MOVE:
 				// DO NOTHING OR DISPLAY A MESSAGE SAYING IT WAS A BAD MOVE?
 				controller.setStatusMessage("Bad move");
+				canPlay=false;
 				break;
 			case WIN:
 				controller.setStatusMessage("YOU WON!");
 				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
+				canPlay=false;
 				break;
 			case LOSE:
 				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
 				controller.setStatusMessage("YOU LOSE...");
+				canPlay=false;
 				break;
 			case TIE:
 				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
 				controller.setStatusMessage("IT'S A DRAW.");
+				canPlay=false;
 				break;
 			default:
 				break;
@@ -125,6 +131,7 @@ public class C4Client extends C4Logic {
 
 	public void makeMove(int column) throws Exception
 	{
+		if(canPlay){
 	    column+=3;
 		int row = getNextEmptyRow(column);
 	    if(row != -1)
@@ -135,6 +142,7 @@ public class C4Client extends C4Logic {
 				//rollback play
 				getGameBoard()[row][column] = null;
 			}
+		}
 		}
 	}
 	public void sendMovePacket(int column,int row) throws IOException {
