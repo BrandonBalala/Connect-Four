@@ -312,8 +312,6 @@ public class BoardController implements Initializable{
 				arrayLabels[row][col].setText("");
 			}
 		}
-
-		setStatusMessage("");
 	}
 	
 	public C4Client getC4Client(){

@@ -159,6 +159,7 @@ public class C4ServerSession extends C4Logic {
 		try {
 			byte[] packet = converser.createPacket(PACKET_TYPE.BAD_MOVE.getValue(), -1, -1, -1, -1);
 			converser.sendPacket(packet);
+			getResponce();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -179,6 +180,7 @@ public class C4ServerSession extends C4Logic {
 		try {
 			byte[] packet = converser.createPacket(PACKET_TYPE.LOSE.getValue(), -1, -1, row, col);
 			converser.sendPacket(packet);
+			getResponce();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -195,6 +197,7 @@ public class C4ServerSession extends C4Logic {
 				else // SERVER
 			packet = converser.createPacket(PACKET_TYPE.TIE.getValue(), -1, -1, row, col);
 			converser.sendPacket(packet);
+			getResponce();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
