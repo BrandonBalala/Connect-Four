@@ -52,7 +52,7 @@ public class C4ServerSession extends C4Logic {
 	public int decideMove() {
 		int[] ranks = new int[7];
 		int i = 0;
-		for(int column = 3; column < 9; column++)
+		for(int column = 3; column < 10; column++)
 		{
 			ranks[i] = getRank(column, Identifier.Server);
 			i++;

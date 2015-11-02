@@ -47,7 +47,7 @@ public class C4Logic {
 		boolean repeated=true;
 					
 						while(checkType < 7)
-						{
+						{							
 							while(repeated && repeatNum < 3)
 							{
 								switch(checkType)

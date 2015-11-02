@@ -756,3 +756,6 @@ Caused by: java.lang.IllegalArgumentException: Can not set javafx.scene.layout.V
 [INFO ] 2015-11-02 00:16:26.145 [JavaFX Application Thread] MainAppFX - Program Begins
 [INFO ] 2015-11-02 00:20:12.758 [JavaFX Application Thread] MainAppFX - Program Begins
 [INFO ] 2015-11-02 00:31:12.757 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-02 13:51:11.558 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-02 13:59:47.672 [JavaFX Application Thread] MainAppFX - Program Begins
+[INFO ] 2015-11-02 14:00:02.655 [JavaFX Application Thread] MainAppFX - Program Begins
