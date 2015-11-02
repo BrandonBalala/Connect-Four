@@ -43,8 +43,6 @@ public class C4Logic {
 	public boolean checkWin(int column,int row, Identifier player){
 		int checkType = 0;
 		int repeatNum = 0;
-		column+=3;
-		row=+3;
 		int r=row,c=column;
 		boolean repeated=true;
 					

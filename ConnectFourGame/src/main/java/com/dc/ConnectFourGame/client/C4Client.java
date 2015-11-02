@@ -68,6 +68,8 @@ public class C4Client extends C4Logic {
 				break;
 			case MOVE:
 				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
+				setChoice(packet[2],Identifier.Client);
+				setChoice(packet[4],Identifier.Server);
 				break;
 			case BAD_MOVE:
 				// DO NOTHING OR DISPLAY A MESSAGE SAYING IT WAS A BAD MOVE?

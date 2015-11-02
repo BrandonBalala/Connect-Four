@@ -396,7 +396,7 @@
             </VBox>
             <VBox onMouseClicked="#userClick" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1" GridPane.rowSpan="6">
                <children>
-                  <GridPane fx:id="FirstColumn" gridLinesVisible="true" onMouseClicked="#userClick" prefHeight="292.0" prefWidth="82.0">
+                  <GridPane fx:id="FirstColumn" gridLinesVisible="true" prefHeight="292.0" prefWidth="82.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
