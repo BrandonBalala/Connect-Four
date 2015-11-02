@@ -80,17 +80,14 @@ public class C4Client extends C4Logic {
 			case WIN:
 				controller.setStatusMessage("YOU WON!");
 				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
-				controller.setIsConnected(false);
 				break;
 			case LOSE:
 				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
 				controller.setStatusMessage("YOU LOSE...");
-				controller.setIsConnected(false);
 				break;
 			case TIE:
 				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
 				controller.setStatusMessage("IT'S A DRAW.");
-				controller.setIsConnected(false);
 				break;
 			default:
 				break;
