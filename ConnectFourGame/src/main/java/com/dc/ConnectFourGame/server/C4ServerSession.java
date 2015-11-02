@@ -64,7 +64,13 @@ public class C4ServerSession extends C4Logic {
 				choice = i;
 		}
 		if(rankTotal == 0 )
-			choice = (int) (Math.random()*8);
+		{
+			choice = (int) (Math.random()*7);
+		}
+		
+			while(ranks[choice] < 0)
+				choice = (int) (Math.random()*7);
+			
 			return choice;
 	}
 

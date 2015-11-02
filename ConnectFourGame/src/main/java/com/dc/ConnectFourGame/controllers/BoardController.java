@@ -300,8 +300,9 @@ public class BoardController implements Initializable{
 				+ "\nCOL CLIENT: " + colClient
 				+ "\nROW SERVER: " + rowServer
 				+ "\nCOL SERVER: " + colServer);
-				
+		if(rowClient != -4 && colClient != -4)
 		arrayLabels[rowClient][colClient].setText("X");
+		if(rowServer != -4 && colServer != -4)
 		arrayLabels[rowServer][colServer].setText("O");
 	}
 

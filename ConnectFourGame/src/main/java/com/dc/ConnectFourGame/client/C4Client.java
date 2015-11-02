@@ -83,10 +83,12 @@ public class C4Client extends C4Logic {
 				controller.setIsConnected(false);
 				break;
 			case LOSE:
+				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
 				controller.setStatusMessage("YOU LOSE...");
 				controller.setIsConnected(false);
 				break;
 			case TIE:
+				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
 				controller.setStatusMessage("IT'S A DRAW.");
 				controller.setIsConnected(false);
 				break;
@@ -128,8 +130,6 @@ public class C4Client extends C4Logic {
 	{
 	    column+=3;
 		int row = getNextEmptyRow(column);
-	    System.out.println("\n column :" + column);
-	    System.out.println("\n row :" + row);
 	    if(row != -1)
 		{
 			try {
