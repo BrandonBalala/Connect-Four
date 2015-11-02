@@ -50,6 +50,9 @@ public class C4ServerSession extends C4Logic {
 
 	// Moves are set onto the gameboard in getWinOrBlockMove or getRandomMove
 	public int decideMove() {
+
+		System.out.println("DECIDING CRAP");
+		boolean identicalValues = true;
 		int[] ranks = new int[7];
 		int i = 0;
 		for(int column = 3; column < 10; column++)
@@ -58,17 +61,27 @@ public class C4ServerSession extends C4Logic {
 			i++;
 		}
 		int choice = 0;
-		int rankTotal = 0;
-		for(i = 1; i < 7; i++)
+		for(i = 1; i < 6; i++)
 		{
-			rankTotal=+ranks[i];
-			if(ranks[i]>ranks[choice])
-				choice = i;
+			if(ranks[i] != ranks[i+1])
+			{
+				identicalValues = false;
+			}
 		}
-		if(rankTotal == 0 )
+		
+		if(!identicalValues)
+		{
+			for(i = 1; i < 7; i++)
+			{
+				if(ranks[i]>ranks[choice])
+					choice = i;
+			}
+		}
+		else
 		{
 			choice = (int) (Math.random()*7);
 		}
+		
 		if(ranks[choice] < 0)
 		{
 			List<Integer> list = new ArrayList<Integer>();
@@ -79,9 +92,7 @@ public class C4ServerSession extends C4Logic {
 			}
 			choice = (int) (Math.random()*list.size());
 		}
-	
-				
-			
+			System.out.println(" CHOICE   : " + choice);
 			return choice;
 	}
 
@@ -136,6 +147,7 @@ public class C4ServerSession extends C4Logic {
 		//When you fill up several rows this causes a hang!!@#!#@#$ TODO FIX
 		while(!isValidMove(rowServer,colServer))
 		{
+			System.out.println("ROW   : " + rowServer + "   COLUMN : " +colServer);
 			colServer = decideMove();
 			rowServer = getNextEmptyRow(colServer);
 		}
