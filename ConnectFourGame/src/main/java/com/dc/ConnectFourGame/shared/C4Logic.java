@@ -79,13 +79,11 @@ public class C4Logic {
 								else
 								{
 									repeated = false;
-									repeatNum = 0;
 								}
 								
 							}
 							if(repeated)
 							{
-								System.out.println("FUCKFUCKFUCK");
 								return repeated;
 								
 							}
@@ -94,9 +92,11 @@ public class C4Logic {
 								checkType++;
 								r=row;
 								c=column;
+								repeated = true;
+								repeatNum = 0;
 							}
 						}
-		return repeated;
+		return false;
 	}
 
 
@@ -173,7 +173,7 @@ public class C4Logic {
 				default: rank += 1;
 				}
 			}
-			else if(playerCount> 0 && opponentCount == 0 )
+			else if(playerCount > 0 && opponentCount == 0 )
 			{
 				switch(playerCount)
 				{

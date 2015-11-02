@@ -272,6 +272,7 @@ public class BoardController implements Initializable{
 			try {
 				notWaiting=false;
 				client.makeMove(colChosen);
+				notWaiting=true;
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -299,7 +300,7 @@ public class BoardController implements Initializable{
 		arrayLabels[rowClient][colClient].setText("X");
 		arrayLabels[rowServer][colServer].setText("O");
 
-		notWaiting=true;
+		
 	}
 
 	public void resetBoard() {

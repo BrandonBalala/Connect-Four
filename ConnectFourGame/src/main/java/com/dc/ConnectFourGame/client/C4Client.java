@@ -77,6 +77,7 @@ public class C4Client extends C4Logic {
 				break;
 			case WIN:
 				controller.setStatusMessage("YOU WON!");
+				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
 				controller.setIsConnected(false);
 				break;
 			case LOSE:
@@ -134,11 +135,8 @@ public class C4Client extends C4Logic {
 			} catch (IOException e) {
 				//rollback play
 				getGameBoard()[row][column] = null;
-				throw new Exception("Error encountered when attempting to send move");
 			}
 		}
-		else
-			throw new Exception("Error encountered when attempting to play move");
 	}
 	public void sendMovePacket(int column,int row) throws IOException {
 		byte[] packet = converser.createPacket(PACKET_TYPE.MOVE.getValue(), row, column, -1, -1);
