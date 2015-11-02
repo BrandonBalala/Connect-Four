@@ -68,8 +68,8 @@ public class C4Client extends C4Logic {
 				break;
 			case MOVE:
 				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
-				setChoice(packet[2],Identifier.Client);
-				setChoice(packet[4],Identifier.Server);
+				setChoice(packet[2]+3,Identifier.Client);
+				setChoice(packet[4]+3,Identifier.Server);
 				break;
 			case BAD_MOVE:
 				// DO NOTHING OR DISPLAY A MESSAGE SAYING IT WAS A BAD MOVE?
@@ -124,9 +124,10 @@ public class C4Client extends C4Logic {
 	public void makeMove(int column) throws Exception
 	{
 	    column+=3;
+		int row = getNextEmptyRow(column);
 	    System.out.println("\n column :" + column);
-		int row =setChoice(column, Identifier.Client);
-		if(row != -1)
+	    System.out.println("\n row :" + row);
+	    if(row != -1)
 		{
 			try {
 				sendMovePacket(column,row);
@@ -140,7 +141,6 @@ public class C4Client extends C4Logic {
 			throw new Exception("Error encountered when attempting to play move");
 	}
 	public void sendMovePacket(int column,int row) throws IOException {
-	    System.out.println("\n column2 :" + column);
 		byte[] packet = converser.createPacket(PACKET_TYPE.MOVE.getValue(), row, column, -1, -1);
 			converser.sendPacket(packet);
 			getResponce();

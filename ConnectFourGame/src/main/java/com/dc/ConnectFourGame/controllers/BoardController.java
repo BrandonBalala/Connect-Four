@@ -27,7 +27,20 @@ import javafx.stage.WindowEvent;
 public class BoardController implements Initializable{
 	@FXML
 	private GridPane FirstColumn;
-
+	@FXML
+	private VBox VBox1;
+	@FXML
+	private VBox VBox2;
+	@FXML
+	private VBox VBox3;
+	@FXML
+	private VBox VBox4;
+	@FXML
+	private VBox VBox5;
+	@FXML
+	private VBox VBox6;
+	@FXML
+	private VBox VBox7;
 	@FXML
 	private Label label00;
 
@@ -298,7 +311,14 @@ public class BoardController implements Initializable{
 
 		setStatusMessage("");
 	}
-
+	public C4Client getC4Client(){
+		return client;
+	}
+	
+	public boolean getIsConnected(){
+		return isConnected;
+	}
+  
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		arrayLabels = new Label[][]{ { label00, label01, label02, label03, label04, label05, label06 },

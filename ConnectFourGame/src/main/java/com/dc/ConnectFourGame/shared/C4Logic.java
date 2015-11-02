@@ -84,7 +84,11 @@ public class C4Logic {
 								
 							}
 							if(repeated)
+							{
+								System.out.println("FUCKFUCKFUCK");
 								return repeated;
+								
+							}
 							else
 							{
 								checkType++;
@@ -104,6 +108,8 @@ public class C4Logic {
 		int opponentCount,playerCount,repeatNum;
 		boolean repeated=true;
 		int row=getNextEmptyRow(column);
+		if(row != -1)
+		{
 		int r=row,c=column;
 		
 		while(checkType < 7)
@@ -182,7 +188,9 @@ public class C4Logic {
 			r=row;
 			c=column;
 		}
-		
+		}
+		else
+			rank=-1;
 		return rank;
 	}
 	
@@ -199,8 +207,7 @@ public class C4Logic {
 			column > 2 &&
 			column < gameBoard[0].length-3 &&
 			row >2 && row<gameBoard.length-3 &&
-			gameBoard[row][column]==null &&
-			row == getNextEmptyRow(column)){
+			gameBoard[row][column]==null){
 			
 			return true;
 		}
@@ -211,14 +218,13 @@ public class C4Logic {
 	public int getNextEmptyRow(int column) {
 		int row = -1;
 		
-		for (int cntr = gameBoard.length-4; cntr > 3 ; cntr--) 
+		for (int cntr = gameBoard.length-4; cntr > 2 ; cntr--) 
 		{
 			if (gameBoard[cntr][column] == null) {
 				row = cntr;
 				break;
 			}
 		}
-
 		return row;
 	}
 

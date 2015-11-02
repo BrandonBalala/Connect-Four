@@ -63,7 +63,7 @@ public class C4ServerSession extends C4Logic {
 			if(ranks[i]>ranks[choice])
 				choice = i;
 		}
-		if(rankTotal == 0)
+		if(rankTotal == 0 )
 			choice = (int) (Math.random()*8);
 			return choice;
 	}
@@ -97,7 +97,7 @@ public class C4ServerSession extends C4Logic {
 		int column = (int) packet[2];
 		int row =(int) packet[1];
 		
-		if(setChoice(column, Identifier.Client) == row)
+		if( setChoice(column, Identifier.Client) == row)
 		{
 			if (checkWin(column, row, Identifier.Client)) {
 				gameOver = true;
