@@ -76,6 +76,7 @@ public class C4ServerSession extends C4Logic {
 				playAgain = true;
 				gameOver = false;
 				newGame();
+				sendResetGamePacket();
 				break;
 			case DISCONNECT:
 				playAgain = false;
@@ -198,6 +199,19 @@ public class C4ServerSession extends C4Logic {
 		try {
 			byte[] packet = converser.createPacket(PACKET_TYPE.WIN.getValue(), row, col, -1, -1);
 			converser.sendPacket(packet);
+			getResponce();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void sendResetGamePacket() {
+		// TODO Auto-generated method stub
+		try {
+			byte[] packet = converser.createPacket(PACKET_TYPE.RESET_GAME.getValue(), -1, -1, -1, -1);
+			converser.sendPacket(packet);
+			getResponce();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -215,6 +215,10 @@ public class BoardController implements Initializable{
 	public void setIsConnected(boolean isConnected) {
 		this.isConnected = isConnected;
 	}
+	
+	public void setNotWaiting(boolean notWaiting) {
+		this.notWaiting = notWaiting;
+	}
 
 	@FXML
 	void IPClick(ActionEvent event) throws IOException {
@@ -299,8 +303,6 @@ public class BoardController implements Initializable{
 				
 		arrayLabels[rowClient][colClient].setText("X");
 		arrayLabels[rowServer][colServer].setText("O");
-
-		
 	}
 
 	public void resetBoard() {
@@ -312,6 +314,7 @@ public class BoardController implements Initializable{
 
 		setStatusMessage("");
 	}
+	
 	public C4Client getC4Client(){
 		return client;
 	}

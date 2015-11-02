@@ -65,6 +65,8 @@ public class C4Client extends C4Logic {
 			case RESET_GAME:
 				controller.resetBoard();
 				controller.setIsConnected(true);
+				controller.setNotWaiting(true);
+				newGame();
 				break;
 			case MOVE:
 				controller.setMovesOnBoard(convertPacketToSmallBoard(packet));
