@@ -122,6 +122,7 @@ public class C4ServerSession extends C4Logic {
 			colServer = decideMove();
 			rowServer = getNextEmptyRow(colServer);
 		}
+			setChoice(colServer,Identifier.Server);
 			if (checkWin(colServer, rowServer, Identifier.Server)) {
 				gameOver = true;
 				sendLosePacket(rowServer, colServer);
