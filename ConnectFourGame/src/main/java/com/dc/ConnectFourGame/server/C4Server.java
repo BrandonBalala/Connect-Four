@@ -9,7 +9,7 @@ public class C4Server {
 
 	private ServerSocket servSock;
 	private InetAddress serverInfo;
-	private int port = 62366;
+	private int port = 50000;
 
 	// constructor
 	public C4Server() throws IOException {

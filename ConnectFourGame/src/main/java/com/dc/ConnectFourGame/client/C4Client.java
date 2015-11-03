@@ -15,7 +15,7 @@ public class C4Client extends C4Logic {
 	private C4Packet converser;
 	private String address;
 	private boolean canPlay;
-	private int port = 62366;
+	private int port = 50000;
 	private BoardController controller;
 
 	
