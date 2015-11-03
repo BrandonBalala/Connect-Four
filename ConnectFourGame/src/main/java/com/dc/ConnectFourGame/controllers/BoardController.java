@@ -144,6 +144,10 @@ public class BoardController implements Initializable {
 	// Button used to connect to server
 	@FXML
 	private Button doneBtn;
+	
+	// Button used to close a connection to server
+	@FXML
+	private Button quitBtn;
 
 	// TextField in which user writes the IP address
 	@FXML
@@ -279,10 +283,13 @@ public class BoardController implements Initializable {
 		if (isConnected && notWaiting) {
 			String id = ((Node) event.getTarget()).getId();
 			//Take care of the odd behavior that occurs when clicking the circles themselves.
+			System.out.println(id);
 			if(id == null)
 			id = ((LabeledText)event.getTarget()).getParent().getId();
 			
 			id = id.substring(id.length()-1);
+			
+			System.out.println(id);
 			int colChosen = -1;
 
 				// Get the integer equivalent of the column that was chosen
@@ -357,6 +364,8 @@ public class BoardController implements Initializable {
     public void disableConnectButton() {
         doneBtn.setDisable(true);
         serverIpField.setDisable(true);
+        replayBtn.setDisable(false);
+        quitBtn.setDisable(false);
     }
 	/**
 	 * Initialize method is called after all fxml elements have been loaded This
@@ -376,5 +385,7 @@ public class BoardController implements Initializable {
 	 					arrayLabels[i][j].setText("\u25CF");
 	 					arrayLabels[i][j].setTextFill(Color.WHITE);
 	 				}
+	 			 replayBtn.setDisable(true);
+	 	        quitBtn.setDisable(true);
 	}
 }

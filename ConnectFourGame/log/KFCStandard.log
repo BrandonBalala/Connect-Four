@@ -848,3 +848,9 @@ Message: http://www.w3.org/TR/1999/REC-xml-names-19990114#AttributeNotUnique?Lab
 	at javax.xml.stream.util.StreamReaderDelegate.next(StreamReaderDelegate.java:88) ~[?:1.8.0_60]
 	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2513) ~[jfxrt.jar:?]
 	... 13 more
+[INFO ] 2015-11-03 08:10:59.138 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-03 08:12:09.549 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-03 08:12:47.314 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-03 08:16:40.636 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-03 08:20:33.865 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-03 08:20:58.238 [JavaFX Application Thread] MainAppFX - Program begins
