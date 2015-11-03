@@ -6,6 +6,9 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.net.SocketException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * This class deals with everything packet related. It is able to create packets
  * given you have the provided fields It is also able to send and receive
@@ -18,7 +21,7 @@ public class C4Packet {
 	private OutputStream send;
 	private InputStream receive;
 	private Socket socket;
-
+	private final Logger log = LoggerFactory.getLogger(getClass().getName());
 	/**
 	 * Constructor
 	 * 
@@ -61,7 +64,7 @@ public class C4Packet {
 	 */
 	public void sendPacket(byte[] packet) throws IOException {
 		send.write(packet);
-		System.out.println("\nSENT\nTYPE: " + packet[0] + "\nROW CLIENT: " + packet[1] + "\nCOL CLIENT: " + packet[2]
+		log.info("\nSENT\nTYPE: " + packet[0] + "\nROW CLIENT: " + packet[1] + "\nCOL CLIENT: " + packet[2]
 				+ "\nROW SERVER: " + packet[3] + "\nCOL SERVER: " + packet[4]);
 		send.flush();
 	}
@@ -82,7 +85,7 @@ public class C4Packet {
 				throw new SocketException("Connection closed prematurely.");
 			totalBytes += bytesReceived;
 		}
-		System.out.println("\nRECEIVED\nTYPE: " + packet[0] + "\nROW CLIENT: " + packet[1] + "\nCOL CLIENT: " + packet[2]
+		log.info("\nRECEIVED\nTYPE: " + packet[0] + "\nROW CLIENT: " + packet[1] + "\nCOL CLIENT: " + packet[2]
 				+ "\nROW SERVER: " + packet[3] + "\nCOL SERVER: " + packet[4]);
 		
 		return packet;

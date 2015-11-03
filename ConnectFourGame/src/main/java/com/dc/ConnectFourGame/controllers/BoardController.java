@@ -283,13 +283,11 @@ public class BoardController implements Initializable {
 		if (isConnected && notWaiting) {
 			String id = ((Node) event.getTarget()).getId();
 			//Take care of the odd behavior that occurs when clicking the circles themselves.
-			System.out.println(id);
 			if(id == null)
 			id = ((LabeledText)event.getTarget()).getParent().getId();
 			
 			id = id.substring(id.length()-1);
-			
-			System.out.println(id);
+
 			int colChosen = -1;
 
 				// Get the integer equivalent of the column that was chosen
