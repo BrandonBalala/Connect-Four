@@ -26,11 +26,12 @@ public class C4Client extends C4Logic {
 	private BoardController controller;
 	private final String CONNECTED_MSG = "Prepare to lose. MUHAHA";
 	private final String RESET_MSG = "New game. Prepare to lose again. MUHAHA";
-	private final String MOVE_MSG = "";
+	private final String MOVE_MSG = "Make Your Move";
 	private final String BAD_MOVE_MSG = "Bad move";
 	private final String WIN_MSG = "YOU WON!";
 	private final String LOSE_MSG = "YOU LOSE...";
 	private final String TIE_MSG = "IT'S A DRAW.";
+	private final String SERVER_NOT_FOUND_MSG = "Server not found";
 
 	/**
 	 * Get the C4Packet
@@ -58,10 +59,10 @@ public class C4Client extends C4Logic {
 	 * @param controller
 	 * @throws IOException
 	 */
-	public void readIp(BoardController controller) throws IOException {
+	public void readIp(BoardController controller) throws IOException{
 		this.controller = controller;
 		address = controller.getConnectingIP();
-		startConnection(address, port);
+			startConnection(address, port);
 	}
 
 	/**
@@ -90,7 +91,7 @@ public class C4Client extends C4Logic {
 			getResponce();
 			connected = true;
 		} catch (Exception e) {
-			return connected;
+			controller.setStatusMessage(SERVER_NOT_FOUND_MSG);
 		}
 		return connected;
 	}

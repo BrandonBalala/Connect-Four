@@ -409,7 +409,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label fx:id="label00" alignment="TOP_CENTER" contentDisplay="TOP" style="-fx-alignment: #C0C0C0;" GridPane.halignment="CENTER">
+                        <Label fx:id="label00" alignment="TOP_CENTER" contentDisplay="TOP"  GridPane.halignment="CENTER">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
