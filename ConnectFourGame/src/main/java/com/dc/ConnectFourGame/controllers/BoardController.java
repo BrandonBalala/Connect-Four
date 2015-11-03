@@ -24,217 +24,209 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.WindowEvent;
 
-public class BoardController implements Initializable{
+public class BoardController implements Initializable {
+
 	@FXML
 	private GridPane FirstColumn;
 	@FXML
-	private VBox VBox1;
-	@FXML
-	private VBox VBox2;
-	@FXML
-	private VBox VBox3;
-	@FXML
-	private VBox VBox4;
-	@FXML
-	private VBox VBox5;
-	@FXML
-	private VBox VBox6;
-	@FXML
-	private VBox VBox7;
-	@FXML
-	private Label label00;
-
-	@FXML
-	private Label label10;
-
-	@FXML
-	private Label label30;
-
-	@FXML
-	private Label label20;
-
-	@FXML
-	private Label label40;
-
-	@FXML
-	private Label label50;
-
-	@FXML
-	private Label labelStatus;
-
-	@FXML
-	private Button replayBtn;
-
-	@FXML
-	private TextField serverIpField;
-
-	@FXML
-	private Button doneBtn;
-
-	@FXML
-	private GridPane boardPane;
-
-	@FXML
 	private GridPane SecondColumn;
-
-	@FXML
-	private Label label01;
-
-	@FXML
-	private Label label11;
-
-	@FXML
-	private Label label21;
-
-	@FXML
-	private Label label31;
-
-	@FXML
-	private Label label41;
-
-	@FXML
-	private Label label51;
-
 	@FXML
 	private GridPane ThirdColumn;
-
-	@FXML
-	private Label label02;
-
-	@FXML
-	private Label label12;
-
-	@FXML
-	private Label label22;
-
-	@FXML
-	private Label label32;
-
-	@FXML
-	private Label label42;
-
-	@FXML
-	private Label label52;
-
 	@FXML
 	private GridPane FourthColumn;
-
-	@FXML
-	private Label label03;
-
-	@FXML
-	private Label label33;
-
-	@FXML
-	private Label label13;
-
-	@FXML
-	private Label label23;
-
-	@FXML
-	private Label label43;
-
-	@FXML
-	private Label label53;
-
 	@FXML
 	private GridPane FifthColumn;
-
-	@FXML
-	private Label label04;
-
-	@FXML
-	private Label label14;
-
-	@FXML
-	private Label label24;
-
-	@FXML
-	private Label label34;
-
-	@FXML
-	private Label label44;
-
-	@FXML
-	private Label label54;
-
 	@FXML
 	private GridPane SixthColumn;
-
-	@FXML
-	private Label label05;
-
-	@FXML
-	private Label label15;
-
-	@FXML
-	private Label label25;
-
-	@FXML
-	private Label label35;
-
-	@FXML
-	private Label label45;
-
-	@FXML
-	private Label label55;
-
 	@FXML
 	private GridPane SeventhColumn;
 
 	@FXML
-	private Label label06;
+	private Label label00;
+	@FXML
+	private Label label10;
+	@FXML
+	private Label label20;
+	@FXML
+	private Label label30;
+	@FXML
+	private Label label40;
+	@FXML
+	private Label label50;
 
+	@FXML
+	private Label label01;
+	@FXML
+	private Label label11;
+	@FXML
+	private Label label21;
+	@FXML
+	private Label label31;
+	@FXML
+	private Label label41;
+	@FXML
+	private Label label51;
+
+	@FXML
+	private Label label02;
+	@FXML
+	private Label label12;
+	@FXML
+	private Label label22;
+	@FXML
+	private Label label32;
+	@FXML
+	private Label label42;
+	@FXML
+	private Label label52;
+
+	@FXML
+	private Label label03;
+	@FXML
+	private Label label13;
+	@FXML
+	private Label label23;
+	@FXML
+	private Label label33;
+	@FXML
+	private Label label43;
+	@FXML
+	private Label label53;
+
+	@FXML
+	private Label label04;
+	@FXML
+	private Label label14;
+	@FXML
+	private Label label24;
+	@FXML
+	private Label label34;
+	@FXML
+	private Label label44;
+	@FXML
+	private Label label54;
+
+	@FXML
+	private Label label05;
+	@FXML
+	private Label label15;
+	@FXML
+	private Label label25;
+	@FXML
+	private Label label35;
+	@FXML
+	private Label label45;
+	@FXML
+	private Label label55;
+
+	@FXML
+	private Label label06;
 	@FXML
 	private Label label16;
-
 	@FXML
 	private Label label26;
-
 	@FXML
 	private Label label36;
-
 	@FXML
 	private Label label46;
-
 	@FXML
 	private Label label56;
 
+	// Label used to display messages
+	@FXML
+	private Label labelStatus;
+
+	// Button used for resetting the game
+	@FXML
+	private Button replayBtn;
+
+	// Button used to connect to server
+	@FXML
+	private Button doneBtn;
+
+	// TextField in which user writes the IP address
+	@FXML
+	private TextField serverIpField;
+
+	// Array containing all the labels in the correct position
 	private Label[][] arrayLabels;
 
+	// The C4Client it interacts with
 	private C4Client client;
+
+	// Variable used to know if client is connected to the server or not
 	private boolean isConnected;
+
+	// Variable used to know if client is waiting for a packet from the server
 	private boolean notWaiting;
-	
+
+	/**
+	 * Constructor
+	 */
 	public BoardController() {
 		this.client = new C4Client();
 		isConnected = false;
 		notWaiting = true;
 	}
 
+	/**
+	 * Returns the server ip adddress inside of the serverIpField TextField
+	 * 
+	 * @return server ip address
+	 */
+	public String getConnectingIP() {
+		return serverIpField.getText();
+	}
+
+	/**
+	 * Returns whether client is connected to the server or not
+	 * 
+	 * @param isConnected
+	 */
 	public void setIsConnected(boolean isConnected) {
 		this.isConnected = isConnected;
 	}
-	
+
+	/**
+	 * Returns whether client is waiting for a package from the server
+	 * 
+	 * @param notWaiting
+	 */
 	public void setNotWaiting(boolean notWaiting) {
 		this.notWaiting = notWaiting;
 	}
 
+	/**
+	 * Handles button click for connect button and tries establishing a
+	 * connection to the server
+	 * 
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	void IPClick(ActionEvent event) throws IOException {
 		client.readIp(this);
 	}
 
-	public String getConnectingIP() {
-		return serverIpField.getText();
-	}
-
+	/**
+	 * Handles button click for replay button and sends a reset packet to the
+	 * server
+	 * 
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	void ReplayGame(ActionEvent event) {
 		if (isConnected)
 			client.sendResetPacket();
 	}
 
+	/**
+	 * Handles button click for exit button and sends a disconnect packet to the
+	 * server
+	 * 
+	 * @param event
+	 */
 	@FXML
 	void quitGame(ActionEvent event) {
 		if (isConnected) {
@@ -242,7 +234,8 @@ public class BoardController implements Initializable{
 			Platform.exit();
 		}
 	}
-
+	
+	
 	@FXML
 	void userClick(MouseEvent event) {
 		if (isConnected && notWaiting) {
@@ -271,16 +264,16 @@ public class BoardController implements Initializable{
 				colChosen = 6;
 				break;
 			}
-			if(colChosen != -1)
-			//HANDLE this exception here
-			try {
-				notWaiting=false;
-				client.makeMove(colChosen);
-				notWaiting=true;
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			if (colChosen != -1)
+				// HANDLE this exception here
+				try {
+					notWaiting = false;
+					client.makeMove(colChosen);
+					notWaiting = true;
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 		}
 	}
 
@@ -294,16 +287,12 @@ public class BoardController implements Initializable{
 		int rowServer = (int) packet[3];
 		int colServer = (int) packet[4];
 
-		
-		System.out.println("Move attempting to chance board: "
-				+ "\nROW CLIENT: " + rowClient
-				+ "\nCOL CLIENT: " + colClient
-				+ "\nROW SERVER: " + rowServer
-				+ "\nCOL SERVER: " + colServer);
-		if(rowClient != -4 && colClient != -4)
-		arrayLabels[rowClient][colClient].setText("X");
-		if(rowServer != -4 && colServer != -4)
-		arrayLabels[rowServer][colServer].setText("O");
+		System.out.println("Move attempting to chance board: " + "\nROW CLIENT: " + rowClient + "\nCOL CLIENT: "
+				+ colClient + "\nROW SERVER: " + rowServer + "\nCOL SERVER: " + colServer);
+		if (rowClient != -4 && colClient != -4)
+			arrayLabels[rowClient][colClient].setText("X");
+		if (rowServer != -4 && colServer != -4)
+			arrayLabels[rowServer][colServer].setText("O");
 	}
 
 	public void resetBoard() {
@@ -312,25 +301,25 @@ public class BoardController implements Initializable{
 				arrayLabels[row][col].setText("");
 			}
 		}
-		
+
 		labelStatus.setText("Prepare to lose. MUHAHA");
 	}
-	
-	public C4Client getC4Client(){
+
+	public C4Client getC4Client() {
 		return client;
 	}
-	
-	public boolean getIsConnected(){
+
+	public boolean getIsConnected() {
 		return isConnected;
 	}
-  
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		arrayLabels = new Label[][]{ { label00, label01, label02, label03, label04, label05, label06 },
-			{ label10, label11, label12, label13, label14, label15, label16 },
-			{ label20, label21, label22, label23, label24, label25, label26 },
-			{ label30, label31, label32, label33, label34, label35, label36 },
-			{ label40, label41, label42, label43, label44, label45, label46 },
-			{ label50, label51, label52, label53, label54, label55, label56 } };
+		arrayLabels = new Label[][] { { label00, label01, label02, label03, label04, label05, label06 },
+				{ label10, label11, label12, label13, label14, label15, label16 },
+				{ label20, label21, label22, label23, label24, label25, label26 },
+				{ label30, label31, label32, label33, label34, label35, label36 },
+				{ label40, label41, label42, label43, label44, label45, label46 },
+				{ label50, label51, label52, label53, label54, label55, label56 } };
 	}
 }

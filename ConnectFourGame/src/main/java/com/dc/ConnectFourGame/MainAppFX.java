@@ -20,9 +20,7 @@ import java.io.IOException;
 /**
  * Basic class for starting a JavaFX application
  *
- * #KFCStandard and JavaFX8
- *
- * @author Ken Fogel
+ * @author Irina Patrocinio-Frazao, Ofer Nitka-Nakash, Brandon Yvan Balala
  */
 public class MainAppFX extends Application {
 
@@ -48,10 +46,11 @@ public class MainAppFX extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-		log.info("Program Begins");
+		log.info("Program begins");
 
 		// The Stage comes from the framework so make a copy to use elsewhere
 		this.primaryStage = primaryStage;
+		
 		// Create the Scene and put it on the Stage
 		configureMainStage();
 
@@ -64,11 +63,7 @@ public class MainAppFX extends Application {
 	}
 
 	/**
-	 * Load the FXML and bundle, create a Scene and put the Scene on Stage.
-	 *
-	 * Using this approach allows you to use loader.getController() to get a
-	 * reference to the fxml's controller should you need to pass data to it.
-	 * Not used in this archetype.
+	 * Load the FXML, create a Scene and put the Scene on Stage.
 	 */
 	  private void configureMainStage() {
 			try {
@@ -88,10 +83,12 @@ public class MainAppFX extends Application {
 				// Put the Scene on Stage
 				primaryStage.setScene(scene);
 				
+				//Setting up handler for when user clicks the top right X button
 		        primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 		            public void handle(WindowEvent we) {
 		            	BoardController controller = loader.getController();
 		            	
+		            	//If client is connected it sends a disconnect packet before closing
 		            	if(controller.getIsConnected())
 		            		controller.getC4Client().sendDisconnectPacket();
 		            	
