@@ -1,10 +1,12 @@
 package com.dc.ConnectFourGame.controllers;
 
+import java.awt.Event;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import com.dc.ConnectFourGame.client.C4Client;
+import com.sun.javafx.scene.control.skin.LabeledText;
 
 import javafx.scene.Node;
 
@@ -28,19 +30,19 @@ import javafx.scene.text.Font;
 public class BoardController implements Initializable {
 
 	@FXML
-	private GridPane FirstColumn;
+	private GridPane Column0;
 	@FXML
-	private GridPane SecondColumn;
+	private GridPane Column1;
 	@FXML
-	private GridPane ThirdColumn;
+	private GridPane Column2;
 	@FXML
-	private GridPane FourthColumn;
+	private GridPane Column3;
 	@FXML
-	private GridPane FifthColumn;
+	private GridPane Column4;
 	@FXML
-	private GridPane SixthColumn;
+	private GridPane Column5;
 	@FXML
-	private GridPane SeventhColumn;
+	private GridPane Column6;
 
 	@FXML
 	private Label label00;
@@ -267,9 +269,9 @@ public class BoardController implements Initializable {
 
 	/**
 	 * This method handles button click action for all 7 gridPanes containing an
-	 * fxid ranging from first to seventh. Once client clicks on one of the
-	 * gridpanes, it finds thanks to the id the column that was chosen and sends
-	 * the col to the C4Client for it to deal with verificaition and sending of
+	 * fxid ranging from zeroth to sixth. Once the client clicks on one of the
+	 * gridpanes or LabeledTexts, it finds, thanks to the id, the column that was chosen and sends
+	 * the col to the C4Client for it to deal with verification and sending of
 	 * packets
 	 * 
 	 * @param event
@@ -278,29 +280,34 @@ public class BoardController implements Initializable {
 	void userClick(MouseEvent event) {
 		if (isConnected && notWaiting) {
 			String id = ((Node) event.getTarget()).getId();
+			//Take care of the odd behavior that occurs when clicking the circles themselves.
+			if(id == null)
+			id = ((LabeledText)event.getTarget()).getParent().getId();
+			
+			id = id.substring(id.length()-1);
 			int colChosen = -1;
 
 				// Get the integer equivalent of the column that was chosen
 				switch (id) {
-				case "FirstColumn":
+				case "0":
 					colChosen = 0;
 					break;
-				case "SecondColumn":
+				case "1":
 					colChosen = 1;
 					break;
-				case "ThirdColumn":
+				case "2":
 					colChosen = 2;
 					break;
-				case "FourthColumn":
+				case "3":
 					colChosen = 3;
 					break;
-				case "FifthColumn":
+				case "4":
 					colChosen = 4;
 					break;
-				case "SixthColumn":
+				case "5":
 					colChosen = 5;
 					break;
-				case "SeventhColumn":
+				case "6":
 					colChosen = 6;
 					break;
 				}			try {
@@ -313,6 +320,7 @@ public class BoardController implements Initializable {
 				// ERROR CAUSED BY Clicking on edge of columns
 			}
 		}
+		event.consume();
 	}
 
 	/**
@@ -368,7 +376,7 @@ public class BoardController implements Initializable {
 	 				for(int j = 0;j < arrayLabels[0].length;j++) 				
 	 				{ 				
 	 					arrayLabels[i][j].setText("\u25CF");
-	 					arrayLabels[i][j].setTextFill(Color.WHITE); 				
+	 					arrayLabels[i][j].setTextFill(Color.WHITE);
 	 				}
 	}
 }
