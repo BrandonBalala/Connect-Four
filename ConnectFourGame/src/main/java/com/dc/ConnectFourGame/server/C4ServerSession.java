@@ -5,6 +5,9 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.dc.ConnectFourGame.shared.C4Logic;
 import com.dc.ConnectFourGame.shared.C4Packet;
 import com.dc.ConnectFourGame.shared.Identifier;
@@ -24,6 +27,7 @@ public class C4ServerSession extends C4Logic {
 	private boolean gameOver;
 	private C4Packet converser;
 
+	private final Logger log = LoggerFactory.getLogger(getClass().getName());
 	/**
 	 * C4ServerSession constructor. Creates the C4Packet object that will be
 	 * needed.
@@ -35,6 +39,7 @@ public class C4ServerSession extends C4Logic {
 	 */
 	public C4ServerSession(Socket connection) throws IOException {
 		converser = new C4Packet(connection);
+		log.info("Session connected to " + connection.getInetAddress().getHostAddress());
 		start();
 
 	}
@@ -66,6 +71,7 @@ public class C4ServerSession extends C4Logic {
 	 *             if there is any problem with the sockets
 	 */
 	public void startGameSession() throws IOException {
+		log.info("Session Started");
 		while (playAgain) {
 			while (!gameOver) {
 				getResponce();
@@ -148,10 +154,12 @@ public class C4ServerSession extends C4Logic {
 				// resets board and markers
 				newGame();
 				sendResetGamePacket();
+				log.info("Game restarted");
 				break;
 			case DISCONNECT:
 				playAgain = false;
 				gameOver = true;
+				log.info("DISCONNECTED");
 				break;
 			case MOVE:
 				// receiving a move from the client
@@ -299,6 +307,7 @@ public class C4ServerSession extends C4Logic {
 					colServer);
 			converser.sendPacket(packet);
 			getResponce();
+			log.info("Client Lost");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -323,6 +332,7 @@ public class C4ServerSession extends C4Logic {
 					colServer);
 			converser.sendPacket(packet);
 			getResponce();
+			log.info("Game Tied");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -342,6 +352,7 @@ public class C4ServerSession extends C4Logic {
 			byte[] packet = converser.createPacket(PACKET_TYPE.WIN.getValue(), row, col, -1, -1);
 			converser.sendPacket(packet);
 			getResponce();
+			log.info("Client Won");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

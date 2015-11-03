@@ -270,7 +270,7 @@ public class BoardController implements Initializable {
 	void quitGame(ActionEvent event) {
 		if (isConnected) {
 			client.sendDisconnectPacket();
-			Platform.exit();
+			enableConnectButton();
 		}
 	}
 
@@ -372,6 +372,16 @@ public class BoardController implements Initializable {
         serverIpField.setDisable(true);
         replayBtn.setDisable(false);
         quitBtn.setDisable(false);
+    }
+    
+	/**
+	 * Enables the button and the text field used for connecting to server
+     */
+    public void enableConnectButton() {
+        doneBtn.setDisable(false);
+        serverIpField.setDisable(false);
+        replayBtn.setDisable(true);
+        quitBtn.setDisable(true);
     }
 	/**
 	 * Initialize method is called after all fxml elements have been loaded This

@@ -60,8 +60,8 @@
             <Button fx:id="doneBtn" mnemonicParsing="false" onAction="#IPClick" prefHeight="25.0" prefWidth="96.0" text="Connect" GridPane.columnIndex="2" />
             <HBox alignment="CENTER" prefHeight="66.0" prefWidth="580.0" spacing="100.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="replayBtn" mnemonicParsing="false" onAction="#ReplayGame" text="REPLAY GAME!" />
-                  <Button fx:id="quitBtn" mnemonicParsing="false" onAction="#quitGame" text="QUIT GAME!" />
+                  <Button fx:id="replayBtn" mnemonicParsing="false" onAction="#ReplayGame" text="RESTART GAME!" />
+                  <Button fx:id="quitBtn" mnemonicParsing="false" onAction="#quitGame" text="DISCONNECT!" />
                </children>
                <GridPane.margin>
                   <Insets top="10.0" />
@@ -409,7 +409,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label fx:id="label00" alignment="TOP_CENTER" contentDisplay="TOP"  GridPane.halignment="CENTER">
+                        <Label fx:id="label00" alignment="TOP_CENTER" contentDisplay="TOP" GridPane.halignment="CENTER">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>

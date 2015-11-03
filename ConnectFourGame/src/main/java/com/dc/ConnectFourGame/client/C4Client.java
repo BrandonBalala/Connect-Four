@@ -214,6 +214,11 @@ public class C4Client extends C4Logic {
 		try {
 			packet = converser.createPacket(PACKET_TYPE.DISCONNECT.getValue(), -1, -1, -1, -1);
 			converser.sendPacket(packet);
+			converser.connectionClose();
+			controller.resetBoard(); //Reset the GUI's labels
+			controller.setIsConnected(true);
+			controller.setNotWaiting(true);
+			newGame(); //Resets the actual client site game board
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
