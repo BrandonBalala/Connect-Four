@@ -200,6 +200,61 @@ public class C4Logic {
 		int opponentCount = 0;
 		int playerCount = 0;
 		if (row != -1) {
+			
+			while (checkType < 2) {
+				switch (direction) {
+				case 0:
+					c++;
+					break;
+
+				case 1:
+					c--;
+					break;
+				}
+				while (repeated) {
+					
+					switch (direction)
+					{
+					case 0:
+						c++;
+						r++;
+						break;
+
+					case 1:
+						c--;
+						r--;
+						break;
+					}
+
+					if (player.equals(gameBoard[r][c])) {
+						if (opponentCount > 0)
+							repeated = false;
+						else
+							playerCount++;
+					} else if (opponent.equals(gameBoard[r][c])) {
+						if (playerCount > 0)
+							repeated = false;
+						else
+							opponentCount++;
+					} else {
+						repeated = false;
+					}
+				}
+				r = row;
+				c = column;
+				direction++;
+				checkType++;
+				repeated = true;
+			}
+			// MAKES SURE YOU DO NOT BUILD THEM UP FOR A WIN!
+			if (opponentCount > 2)
+				return 0;
+			
+			opponentCount = 0;
+			playerCount = 0;
+			direction = 0;
+			checkType = 0;
+			
 			while (checkType < 2) {
 				while (repeated) {
 					switch (direction) {
@@ -239,10 +294,10 @@ public class C4Logic {
 			} else
 				totalRank += 1;
 
-			if (opponentCount > 1) {
-				totalRank += 5;
-			} else if (opponentCount > 2) {
+			if (opponentCount > 2) {
 				totalRank += 85;
+			} else if (opponentCount > 1) {
+				totalRank += 5;
 			} else
 				totalRank += 1;
 
@@ -292,10 +347,10 @@ public class C4Logic {
 			} else
 				totalRank += 1;
 
-			if (opponentCount > 1) {
-				totalRank += 5;
-			} else if (opponentCount > 2) {
+			if (opponentCount > 2) {
 				totalRank += 85;
+			} else if (opponentCount > 1) {
+				totalRank += 5;
 			} else
 				totalRank += 1;
 
@@ -344,15 +399,15 @@ public class C4Logic {
 				totalRank += 21;
 			} else
 				totalRank += 1;
-
-			if (opponentCount > 1) {
-				totalRank += 5;
-			} else if (opponentCount > 2) {
+			if (opponentCount > 2) {
 				totalRank += 85;
+			} else if (opponentCount > 1) {
+				totalRank += 5;
 			} else
 				totalRank += 1;
 
-			while (repeated) {
+			while (repeated)
+			{	
 				r++;
 
 				if (player.equals(gameBoard[r][c])) {
@@ -377,10 +432,10 @@ public class C4Logic {
 			} else
 				totalRank += 1;
 
-			if (opponentCount > 1) {
-				totalRank += 5;
-			} else if (opponentCount > 2) {
+			if (opponentCount > 2) {
 				totalRank += 85;
+			} else if (opponentCount > 1) {
+				totalRank += 5;
 			} else
 				totalRank += 1;
 

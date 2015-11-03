@@ -93,7 +93,7 @@ public class C4ServerSession extends C4Logic {
 			choice = (int) (Math.random()*list.size());
 		}
 			System.out.println(" CHOICE   : " + choice);
-			return choice;
+			return choice+3;
 	}
 
 	private void getResponce() {
@@ -143,14 +143,14 @@ public class C4ServerSession extends C4Logic {
 		int colServer = decideMove();
 		int rowServer = getNextEmptyRow(colServer);
 
-		
-		//When you fill up several rows this causes a hang!!@#!#@#$ TODO FIX
-		while(!isValidMove(rowServer,colServer))
-		{
-			System.out.println("ROW   : " + rowServer + "   COLUMN : " +colServer);
-			colServer = decideMove();
-			rowServer = getNextEmptyRow(colServer);
-		}
+//		//When you fill up several rows this causes a hang!!@#!#@#$ TODO FIX
+//		while(!isValidMove(rowServer,colServer))
+//		{
+//			colServer = decideMove();
+//			rowServer = getNextEmptyRow(colServer);
+//		}
+
+		System.out.println("ROW   : " + rowServer + "   COLUMN : " +colServer);
 			setChoice(colServer,Identifier.Server);
 			if (checkWin(colServer, rowServer, Identifier.Server)) {
 				gameOver = true;
