@@ -213,12 +213,12 @@ public class C4Logic {
 					}
 
 					if (player.equals(gameBoard[r][c])) {
-						if (opponentCount >= 0)
+						if (opponentCount > 0)
 							repeated = false;
 						else
 							playerCount++;
 					} else if (opponent.equals(gameBoard[r][c])) {
-						if (playerCount >= 0)
+						if (playerCount > 0)
 							repeated = false;
 						else
 							opponentCount++;
@@ -266,12 +266,12 @@ public class C4Logic {
 					}
 
 					if (player.equals(gameBoard[r][c])) {
-						if (opponentCount >= 0)
+						if (opponentCount > 0)
 							repeated = false;
 						else
 							playerCount++;
 					} else if (opponent.equals(gameBoard[r][c])) {
-						if (playerCount >= 0)
+						if (playerCount > 0)
 							repeated = false;
 						else
 							opponentCount++;
@@ -319,12 +319,12 @@ public class C4Logic {
 					}
 
 					if (player.equals(gameBoard[r][c])) {
-						if (opponentCount >= 0)
+						if (opponentCount > 0)
 							repeated = false;
 						else
 							playerCount++;
 					} else if (opponent.equals(gameBoard[r][c])) {
-						if (playerCount >= 0)
+						if (playerCount > 0)
 							repeated = false;
 						else
 							opponentCount++;
@@ -356,12 +356,12 @@ public class C4Logic {
 				r++;
 
 				if (player.equals(gameBoard[r][c])) {
-					if (opponentCount >= 0)
+					if (opponentCount > 0)
 						repeated = false;
 					else
 						playerCount++;
 				} else if (opponent.equals(gameBoard[r][c])) {
-					if (playerCount >= 0)
+					if (playerCount > 0)
 						repeated = false;
 					else
 						opponentCount++;

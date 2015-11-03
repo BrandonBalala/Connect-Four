@@ -71,7 +71,7 @@ public class C4ServerSession extends C4Logic {
 		
 		if(!identicalValues)
 		{
-			for(i = 1; i < 7; i++)
+			for(i = 0; i < 7; i++)
 			{
 				if(ranks[i]>ranks[choice])
 					choice = i;
