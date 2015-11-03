@@ -6,31 +6,44 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.net.SocketException;
 
+/**
+ * This class deals with everything packet related. It is able to create packets
+ * given you have the provided fields It is also able to send and receive
+ * packets based on the socket provided.
+ * 
+ * @author Irina Patrocinio-Frazao, Ofer Nitka-Nakash, Brandon Yvan Balala
+ */
 public class C4Packet {
 
 	private OutputStream send;
 	private InputStream receive;
 	private Socket socket;
-	
-	//WHAT OUR PACKETS SHOULD LOOK LIKE
-	//byte[] b = { THE TYPE OF PACKAGE, row client, col client, row server, col server };
-	//ROW AND COL CAN BE SET TO -1 IF THEY  ARE NOT NEEDED
-	
-	public C4Packet(Socket socket) throws IOException
-	{
+
+	/**
+	 * Constructor
+	 * 
+	 * @param socket
+	 * @throws IOException
+	 */
+	public C4Packet(Socket socket) throws IOException {
 		this.socket = socket;
 		receive = socket.getInputStream();
 		send = socket.getOutputStream();
 	}
+
 	/**
-	 * Creates a packet
+	 * Creates a packet which is in the form of a byte array
+	 * 
 	 * @param type
-	 * @param row
-	 * @param col
-	 * @return byte[]	the packet
+	 * @param rowClient
+	 * @param colClient
+	 * @param rowServer
+	 * @param colServer
+	 * @return
 	 * @throws IOException
 	 */
-	public byte[] createPacket(int type, int rowClient, int colClient, int rowServer, int colServer) throws IOException {
+	public byte[] createPacket(int type, int rowClient, int colClient, int rowServer, int colServer)
+			throws IOException {
 		byte[] packet = new byte[5];
 		packet[0] = (byte) type;
 		packet[1] = (byte) rowClient;
@@ -41,17 +54,23 @@ public class C4Packet {
 		return packet;
 	}
 
-
+	/**
+	 * Attempts to sends the packet to its destination
+	 * @param packet
+	 * @throws IOException
+	 */
 	public void sendPacket(byte[] packet) throws IOException {
 		send.write(packet);
-		System.out.println("SENT\nTYPE: " + packet[0] 
-						+ "\nROW CLIENT: " + packet[1] 
-						+ "\nCOL CLIENT: " + packet[2]
-						+ "\nROW SERVER: " + packet[3]
-						+ "\nCOL SERVER: " + packet[4]);
+		System.out.println("\nSENT\nTYPE: " + packet[0] + "\nROW CLIENT: " + packet[1] + "\nCOL CLIENT: " + packet[2]
+				+ "\nROW SERVER: " + packet[3] + "\nCOL SERVER: " + packet[4]);
 		send.flush();
 	}
 
+	/**
+	 * Attempts to receive a packet from its target
+	 * @return packet
+	 * @throws IOException
+	 */
 	public byte[] receivePacket() throws IOException {
 
 		byte[] packet = new byte[5];
@@ -63,23 +82,17 @@ public class C4Packet {
 				throw new SocketException("Connection closed prematurely.");
 			totalBytes += bytesReceived;
 		}
-		System.out.println("RECEIVED\nTYPE: " + packet[0] 
-				+ "\nROW CLIENT: " + packet[1] 
-				+ "\nCOL CLIENT: " + packet[2]
-				+ "\nROW SERVER: " + packet[3]
-				+ "\nCOL SERVER: " + packet[4]);
+		System.out.println("\nRECEIVED\nTYPE: " + packet[0] + "\nROW CLIENT: " + packet[1] + "\nCOL CLIENT: " + packet[2]
+				+ "\nROW SERVER: " + packet[3] + "\nCOL SERVER: " + packet[4]);
+		
 		return packet;
-
 	}
-	
-	public void connectionClose() throws IOException
-	{
+
+	/**
+	 * Closes the socket
+	 * @throws IOException
+	 */
+	public void connectionClose() throws IOException {
 		socket.close();
 	}
-	
-	public boolean isConnected() throws IOException
-	{
-		return socket.isConnected();
-	}
-
 }

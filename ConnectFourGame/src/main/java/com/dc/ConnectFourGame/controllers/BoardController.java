@@ -1,19 +1,15 @@
 package com.dc.ConnectFourGame.controllers;
 
 import java.io.IOException;
-import java.net.Socket;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import com.dc.ConnectFourGame.client.C4Client;
-import com.dc.ConnectFourGame.shared.Identifier;
-import com.dc.ConnectFourGame.shared.PACKET_TYPE;
 
 import javafx.scene.Node;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -21,9 +17,12 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.VBox;
-import javafx.stage.WindowEvent;
-
+/**
+ * This is the Board Controller, which allows us to manipulate elements on our
+ * GUI while also interacting with the C4Client
+ * 
+ * @author Irina Patrocinio-Frazao, Ofer Nitka-Nakash, Brandon Yvan Balala
+ */
 public class BoardController implements Initializable {
 
 	@FXML
@@ -148,9 +147,6 @@ public class BoardController implements Initializable {
 	@FXML
 	private TextField serverIpField;
 
-	// Array containing all the labels in the correct position
-	private Label[][] arrayLabels;
-
 	// The C4Client it interacts with
 	private C4Client client;
 
@@ -159,6 +155,13 @@ public class BoardController implements Initializable {
 
 	// Variable used to know if client is waiting for a packet from the server
 	private boolean notWaiting;
+
+	// Array containing all the labels in the correct position
+	private Label[][] arrayLabels;
+
+	private final String CLIENT_TOKEN = "X";
+	private final String SERVER_TOKEN = "O";
+	private final int NO_MOVE = -4;
 
 	/**
 	 * Constructor
@@ -179,7 +182,25 @@ public class BoardController implements Initializable {
 	}
 
 	/**
+	 * Returns the C4Client instance
+	 * 
+	 * @return client
+	 */
+	public C4Client getC4Client() {
+		return client;
+	}
+
+	/**
 	 * Returns whether client is connected to the server or not
+	 * 
+	 * @return isConnected
+	 */
+	public boolean getIsConnected() {
+		return isConnected;
+	}
+
+	/**
+	 * Set whether client is connected to the server or not
 	 * 
 	 * @param isConnected
 	 */
@@ -188,12 +209,21 @@ public class BoardController implements Initializable {
 	}
 
 	/**
-	 * Returns whether client is waiting for a package from the server
+	 * Set whether client is waiting for a package from the server
 	 * 
 	 * @param notWaiting
 	 */
 	public void setNotWaiting(boolean notWaiting) {
 		this.notWaiting = notWaiting;
+	}
+
+	/**
+	 * Sets a message on to the statusMessage label on the GUI
+	 * 
+	 * @param message
+	 */
+	public void setStatusMessage(String message) {
+		labelStatus.setText(message);
 	}
 
 	/**
@@ -234,85 +264,92 @@ public class BoardController implements Initializable {
 			Platform.exit();
 		}
 	}
-	
-	
+
+	/**
+	 * This method handles button click action for all 7 gridPanes containing an
+	 * fxid ranging from first to seventh. Once client clicks on one of the
+	 * gridpanes, it finds thanks to the id the column that was chosen and sends
+	 * the col to the C4Client for it to deal with verificaition and sending of
+	 * packets
+	 * 
+	 * @param event
+	 */
 	@FXML
 	void userClick(MouseEvent event) {
 		if (isConnected && notWaiting) {
 			String id = ((Node) event.getTarget()).getId();
 			int colChosen = -1;
-			switch (id) {
-			case "FirstColumn":
-				colChosen = 0;
-				break;
-			case "SecondColumn":
-				colChosen = 1;
-				break;
-			case "ThirdColumn":
-				colChosen = 2;
-				break;
-			case "FourthColumn":
-				colChosen = 3;
-				break;
-			case "FifthColumn":
-				colChosen = 4;
-				break;
-			case "SixthColumn":
-				colChosen = 5;
-				break;
-			case "SeventhColumn":
-				colChosen = 6;
-				break;
-			}
-			if (colChosen != -1)
-				// HANDLE this exception here
-				try {
+			try {
+				// Get the integer equivalent of the column that was chosen
+				switch (id) {
+				case "FirstColumn":
+					colChosen = 0;
+					break;
+				case "SecondColumn":
+					colChosen = 1;
+					break;
+				case "ThirdColumn":
+					colChosen = 2;
+					break;
+				case "FourthColumn":
+					colChosen = 3;
+					break;
+				case "FifthColumn":
+					colChosen = 4;
+					break;
+				case "SixthColumn":
+					colChosen = 5;
+					break;
+				case "SeventhColumn":
+					colChosen = 6;
+					break;
+				}
+				if (colChosen != -1) {
 					notWaiting = false;
 					client.makeMove(colChosen);
 					notWaiting = true;
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				}
+			} catch (Exception e) {
+				// ERROR CAUSED BY Clicking on edge of columns
+			}
 		}
 	}
 
-	public void setStatusMessage(String message) {
-		labelStatus.setText(message);
-	}
-
+	/**
+	 * Set the client's and server's move on the game board
+	 * 
+	 * @param packet
+	 */
 	public void setMovesOnBoard(byte[] packet) {
 		int rowClient = (int) packet[1];
 		int colClient = (int) packet[2];
 		int rowServer = (int) packet[3];
 		int colServer = (int) packet[4];
 
-		System.out.println("Move attempting to chance board: " + "\nROW CLIENT: " + rowClient + "\nCOL CLIENT: "
-				+ colClient + "\nROW SERVER: " + rowServer + "\nCOL SERVER: " + colServer);
-		if (rowClient != -4 && colClient != -4)
-			arrayLabels[rowClient][colClient].setText("X");
-		if (rowServer != -4 && colServer != -4)
-			arrayLabels[rowServer][colServer].setText("O");
+		// Checks whether a move was put in the packet for the client and for
+		// the server
+		if (rowClient != NO_MOVE && colClient != NO_MOVE)
+			arrayLabels[rowClient][colClient].setText(CLIENT_TOKEN);
+		if (rowServer != NO_MOVE && colServer != NO_MOVE)
+			arrayLabels[rowServer][colServer].setText(SERVER_TOKEN);
 	}
 
+	/**
+	 * This resets the whole game, by basically making all elements in the
+	 * labels array blank and displays a new message in the label status
+	 */
 	public void resetBoard() {
 		for (int row = 0; row < arrayLabels.length; row++) {
 			for (int col = 0; col < arrayLabels[0].length; col++) {
 				arrayLabels[row][col].setText("");
 			}
 		}
-
-		labelStatus.setText("Prepare to lose. MUHAHA");
 	}
 
-	public C4Client getC4Client() {
-		return client;
-	}
-
-	public boolean getIsConnected() {
-		return isConnected;
-	}
-
+	/**
+	 * Initialize method is called after all fxml elements have been loaded This
+	 * method initializes the arrayLabels
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		arrayLabels = new Label[][] { { label00, label01, label02, label03, label04, label05, label06 },

@@ -98,7 +98,7 @@ public class MainAppFX extends Application {
 
 			} catch (IOException ex) { // getting resources or files could fail
 				log.error(null, ex);
-				System.exit(1);
+				Platform.exit();
 			}
 		}
 	  
