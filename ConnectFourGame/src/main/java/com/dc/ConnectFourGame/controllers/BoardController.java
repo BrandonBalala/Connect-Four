@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.dc.ConnectFourGame.client.C4Client;
 import com.sun.javafx.scene.control.skin.LabeledText;
 
@@ -153,6 +156,8 @@ public class BoardController implements Initializable {
 	@FXML
 	private TextField serverIpField;
 
+	private final Logger log = LoggerFactory.getLogger(getClass().getName());
+	
 	// The C4Client it interacts with
 	private C4Client client;
 
@@ -280,6 +285,7 @@ public class BoardController implements Initializable {
 	 */
 	@FXML
 	void userClick(MouseEvent event) {
+		try {
 		if (isConnected && notWaiting) {
 			String id = ((Node) event.getTarget()).getId();
 			//Take care of the odd behavior that occurs when clicking the circles themselves.
@@ -313,18 +319,20 @@ public class BoardController implements Initializable {
 				case "6":
 					colChosen = 6;
 					break;
-				}			try {
+				}
 				if (colChosen != -1) {
 					notWaiting = false;
 					client.makeMove(colChosen);
 					notWaiting = true;
 				}
-			} catch (Exception e) {
-				// ERROR CAUSED BY Clicking on edge of columns
+			}} catch (Exception e) {
+				// ERROR CAUSED BY Clicking on edge of columns (lines)
+				log.info("A line between tiles or column was clicked, move ignored.");
 			}
-		}
 		event.consume();
-	}
+		}
+		
+
 
 	/**
 	 * Set the client's and server's move on the game board
