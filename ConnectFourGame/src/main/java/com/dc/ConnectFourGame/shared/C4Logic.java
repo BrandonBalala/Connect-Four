@@ -1,18 +1,44 @@
 package com.dc.ConnectFourGame.shared;
 
+/**
+ * Class that contains all the logic to update the board internally,
+ * check for win, draws, the ranks of moves for the ai and if a move is valid.
+ * 
+ *  @author Irina Patrocinio-Frazao, Ofer Nitka-Nakash, Brandon Yvan Balala
+ */
 public class C4Logic {
+	//2d array of enums: client or server
 	Identifier[][] gameBoard;
 	private int playerMarkers;
 	private int serverMarkers;
 
+	/**
+	 * Constructor that calls the intialization method.
+	 */
 	public C4Logic() {
 		newGame();
 	}
 
+	/**
+	 * Gets the board of the game
+	 * 
+	 * @return the 2d array representing the board
+	 */
 	public Identifier[][] getGameBoard() {
 		return gameBoard;
 	}
 
+	/**
+	 * Validates the move, sets it in the board
+	 * and updates the total number of markers.
+	 * 
+	 * @param column
+	 * 			the column that was choosen 
+	 * @param player
+	 * 			the enum of the user playing to put in board
+	 * 
+	 * @return the row the move was put on
+	 */
 	public int setChoice(int column, Identifier player) {
 		int result = -1;
 		int row = getNextEmptyRow(column);
@@ -34,8 +60,13 @@ public class C4Logic {
 	 * This method checks whether the last move invoked a win
 	 * 
 	 * @param row
+	 * 			the row played
 	 * @param col
-	 * @return
+	 * 			the column played
+	 * @param identity
+	 * 			the enum of the player it is checking for
+	 * 
+	 * @return if the play was a win or not
 	 */
 	public boolean checkWin(int column, int row, Identifier identity) {
 		int direction = 0;
@@ -44,7 +75,7 @@ public class C4Logic {
 		int r = row, c = column;
 		boolean repeated = true;
 
-		// Horizontal Check
+		// Horizontal Check (twice)
 		while (checkType < 2) {
 			while (repeated) {
 				switch (direction) {
@@ -62,12 +93,14 @@ public class C4Logic {
 				else
 					repeated = false;
 			}
+			//re-set values for next CASE
 			r = row;
 			c = column;
 			repeated = true;
 			direction++;
 			checkType++;
 		}
+		// if theres at least 4 markers in a row = win
 		if (repeatNum >= 3) {
 			return true;
 		}
@@ -80,7 +113,7 @@ public class C4Logic {
 		c = column;
 		repeated = true;
 
-		// Vertical Check
+		// Vertical Check (twice)
 		while (checkType < 2) {
 			while (repeated) {
 				switch (direction) {
@@ -98,12 +131,15 @@ public class C4Logic {
 				else
 					repeated = false;
 			}
+			
+			//re-set values for next CASE
 			r = row;
 			c = column;
 			repeated = true;
 			direction++;
 			checkType++;
 		}
+		// if theres at least 4 markers in a row = win
 		if (repeatNum >= 3) {
 			return true;
 		}
@@ -116,7 +152,7 @@ public class C4Logic {
 		c = column;
 		repeated = true;
 
-		// Diagonal-Upwards
+		// Diagonal-Upwards (twice)
 		while (checkType < 2) {
 			while (repeated) {
 				switch (direction) {
@@ -136,13 +172,14 @@ public class C4Logic {
 				else
 					repeated = false;
 			}
-
+			//re-set values for next CASE
 			r = row;
 			c = column;
 			repeated = true;
 			direction++;
 			checkType++;
 		}
+		// if theres at least 4 markers in a row = win
 		if (repeatNum >= 3) {
 			return true;
 		}
@@ -155,7 +192,7 @@ public class C4Logic {
 		c = column;
 		repeated = true;
 
-		// Diagonal-Downwards
+		// Diagonal-Downwards (twice)
 		while (checkType < 2) {
 			while (repeated) {
 				switch (direction) {
@@ -174,23 +211,36 @@ public class C4Logic {
 				else
 					repeated = false;
 			}
-
+			//re-set values for next CASE
 			r = row;
 			c = column;
 			repeated = true;
 			direction++;
 			checkType++;
 		}
-
+		// if theres at least 4 markers in a row = win
 		if (repeatNum >= 3) {
 			return true;
 		}
 
+		//no 4 or more markers in a row were found
 		return false;
 	}
 
+	/**
+	 * Gives a rank to a move for the ai to be able to 
+	 * decide which move is the best to play.
+	 * 
+	 * @param column
+	 * 			the row choosen to play
+	 * @param player
+	 * 			the enum of who is playing
+	 * 
+	 * @return the number(rank) a certain move got qualified as
+	 */
 	public int getRank(int column, Identifier player) {
-		Identifier opponent = (player != Identifier.Client) ? Identifier.Client : Identifier.Server;
+		Identifier opponent = 
+				(player != Identifier.Client) ? Identifier.Client : Identifier.Server;
 		int totalRank = 0;
 		int direction = 0;
 		int checkType = 0;
@@ -199,6 +249,7 @@ public class C4Logic {
 		boolean repeated = true;
 		int opponentCount = 0;
 		int playerCount = 0;
+		
 		if (row != -1) {
 			
 			while (checkType < 2) {
@@ -255,6 +306,7 @@ public class C4Logic {
 			direction = 0;
 			checkType = 0;
 			
+			//checking  horizontal 
 			while (checkType < 2) {
 				while (repeated) {
 					switch (direction) {
@@ -271,13 +323,16 @@ public class C4Logic {
 						if (opponentCount > 0)
 							repeated = false;
 						else
+							//found one marker of the play
 							playerCount++;
 					} else if (opponent.equals(gameBoard[r][c])) {
 						if (playerCount > 0)
 							repeated = false;
 						else
+							//found one marker of the opponent
 							opponentCount++;
 					} else {
+						//the sequence stopped
 						repeated = false;
 					}
 				}
@@ -287,25 +342,33 @@ public class C4Logic {
 				checkType++;
 				repeated = true;
 			}
+			//winning move
 			if (playerCount > 2) {
 				totalRank += 341;
+				//make a line of 3 of your own markers
 			} else if (playerCount > 1) {
 				totalRank += 21;
 			} else
+				//random move
 				totalRank += 1;
 
+			//blocking move of a line of 3
 			if (opponentCount > 2) {
 				totalRank += 85;
+				//block a line of 2
 			} else if (opponentCount > 1) {
 				totalRank += 5;
 			} else
+				//random move
 				totalRank += 1;
 
+			//set back to original value
 			opponentCount = 0;
 			playerCount = 0;
 			direction = 0;
 			checkType = 0;
 
+			//checking diagonal downwards
 			while (checkType < 2) {
 				while (repeated) {
 					switch (direction) {
@@ -324,13 +387,16 @@ public class C4Logic {
 						if (opponentCount > 0)
 							repeated = false;
 						else
+							//found a player marker
 							playerCount++;
 					} else if (opponent.equals(gameBoard[r][c])) {
 						if (playerCount > 0)
 							repeated = false;
 						else
+							//found an opponent marker
 							opponentCount++;
 					} else {
+						//sequence stopped
 						repeated = false;
 					}
 				}
@@ -340,18 +406,24 @@ public class C4Logic {
 				checkType++;
 				repeated = true;
 			}
+			//winning move
 			if (playerCount > 2) {
 				totalRank += 341;
+				//continue a line of 2
 			} else if (playerCount > 1) {
 				totalRank += 21;
 			} else
+				//random move
 				totalRank += 1;
 
+			//block line of 3
 			if (opponentCount > 2) {
 				totalRank += 85;
+				//block line of 2
 			} else if (opponentCount > 1) {
 				totalRank += 5;
 			} else
+				//random move
 				totalRank += 1;
 
 			opponentCount = 0;
@@ -359,6 +431,7 @@ public class C4Logic {
 			direction = 0;
 			checkType = 0;
 
+			//diagonal upwards
 			while (checkType < 2) {
 				while (repeated) {
 					switch (direction) {
@@ -377,11 +450,13 @@ public class C4Logic {
 						if (opponentCount > 0)
 							repeated = false;
 						else
+							//found one of our own markers
 							playerCount++;
 					} else if (opponent.equals(gameBoard[r][c])) {
 						if (playerCount > 0)
 							repeated = false;
 						else
+							//found an opponent marker
 							opponentCount++;
 					} else {
 						repeated = false;
@@ -393,19 +468,26 @@ public class C4Logic {
 				checkType++;
 				repeated = true;
 			}
+			//winning move
 			if (playerCount > 2) {
 				totalRank += 341;
 			} else if (playerCount > 1) {
+				//continue line of 2
 				totalRank += 21;
 			} else
+				//random move
 				totalRank += 1;
 			if (opponentCount > 2) {
+				//block winning move
 				totalRank += 85;
 			} else if (opponentCount > 1) {
+				//block line of 2
 				totalRank += 5;
 			} else
+				//random
 				totalRank += 1;
 
+			//check vertical
 			while (repeated)
 			{	
 				r++;
@@ -414,38 +496,52 @@ public class C4Logic {
 					if (opponentCount > 0)
 						repeated = false;
 					else
+						//found own marker
 						playerCount++;
 				} else if (opponent.equals(gameBoard[r][c])) {
 					if (playerCount > 0)
 						repeated = false;
 					else
+						//found oppponent marker
 						opponentCount++;
 				} else {
 					repeated = false;
 				}
 			}
 
+			//winning move
 			if (playerCount > 2) {
 				totalRank += 341;
 			} else if (playerCount > 1) {
+				//continue line of 2
 				totalRank += 21;
 			} else
+				//random move
 				totalRank += 1;
 
 			if (opponentCount > 2) {
+				//block winning move
 				totalRank += 85;
 			} else if (opponentCount > 1) {
+				//block line of 2
 				totalRank += 5;
 			} else
+				//random move
 				totalRank += 1;
 
-			System.out.println(totalRank);
 			return totalRank;
 		} else
+			//invalid move. row sent in was not valid 
 			return -1;
 
 	}
 
+	/**
+	 * Checks if the game is ended as a draw 
+	 * if both players dont have anymore markers
+	 * 
+	 * @return if the game is in a state of draw
+	 */
 	public boolean checkDraw() {
 		if (playerMarkers == 0 & serverMarkers == 0)
 			return true;
@@ -453,8 +549,20 @@ public class C4Logic {
 		return false;
 	}
 
+	/**
+	 * Checks if the move is within the four borders of the board
+	 * and if there isnt any move already in that spot. 
+	 * 
+	 * @param row 
+	 * 			the row of the move to check
+	 * @param column
+	 * 			the column of the move to check
+	 * 
+	 * @return whether or not the move is valid
+	 */
 	public boolean isValidMove(int row, int column) {
-		if (column > 2 && column < gameBoard[0].length - 3 && row > 2 && row < gameBoard.length - 3
+		if (column > 2 && column < gameBoard[0].length - 3 &&
+				row > 2 && row < gameBoard.length - 3
 				&& gameBoard[row][column] == null) {
 
 			return true;
@@ -463,6 +571,15 @@ public class C4Logic {
 
 	}
 
+	/**
+	 * Checks the board for the next empty row.
+	 * If the row is full, -1 will be returned.
+	 * 
+	 * @param column
+	 * 			the column for which to get the empty row
+	 * 
+	 * @return	the number of the row which is empty
+	 */
 	public int getNextEmptyRow(int column) {
 		int row = -1;
 
@@ -475,6 +592,10 @@ public class C4Logic {
 		return row;
 	}
 
+	/**
+	 * Resets the game variables, the enums in the board and
+	 * the markers, to play a new game.
+	 */
 	public void newGame() {
 		gameBoard = new Identifier[12][13];
 		playerMarkers = 21;
