@@ -24,7 +24,6 @@ import java.io.IOException;
  */
 public class MainAppFX extends Application {
 
-	// Real programmers use logging, not System.out.println
 	private final Logger log = LoggerFactory.getLogger(getClass().getName());
 
 	// The primary window or frame of this application

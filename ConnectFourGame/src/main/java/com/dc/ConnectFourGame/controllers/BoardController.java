@@ -1,6 +1,5 @@
 package com.dc.ConnectFourGame.controllers;
 
-import java.awt.Event;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,7 +19,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
 /**
  * This is the Board Controller, which allows us to manipulate elements on our
  * GUI while also interacting with the C4Client

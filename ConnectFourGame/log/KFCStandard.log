@@ -821,3 +821,30 @@ Caused by: java.lang.IllegalArgumentException: Can not set javafx.scene.layout.V
 [INFO ] 2015-11-03 02:18:49.666 [JavaFX Application Thread] MainAppFX - Program begins
 [INFO ] 2015-11-03 02:19:33.345 [JavaFX Application Thread] MainAppFX - Program begins
 [INFO ] 2015-11-03 02:20:32.885 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-03 02:26:31.965 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-03 02:31:38.145 [JavaFX Application Thread] MainAppFX - Program begins
+[ERROR] 2015-11-03 02:31:38.359 [JavaFX Application Thread] MainAppFX - null
+javafx.fxml.LoadException: 
+/C:/Users/ofern/git/ConnectFour/ConnectFourGame/target/classes/fxml/board.fxml:412
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2543) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409) ~[jfxrt.jar:?]
+	at com.dc.ConnectFourGame.MainAppFX.configureMainStage(MainAppFX.java:78) ~[classes/:?]
+	at com.dc.ConnectFourGame.MainAppFX.start(MainAppFX.java:55) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$163(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$176(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$174(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$175(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$149(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[412,155]
+Message: http://www.w3.org/TR/1999/REC-xml-names-19990114#AttributeNotUnique?Label&textFill
+	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:601) ~[?:1.8.0_60]
+	at javax.xml.stream.util.StreamReaderDelegate.next(StreamReaderDelegate.java:88) ~[?:1.8.0_60]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2513) ~[jfxrt.jar:?]
+	... 13 more
