@@ -49,7 +49,7 @@ public class C4Server {
 		// infinite loop to accept game proposals from client
 		for(;;){
 			// Get client connection
-			Socket clntSock = servSock.accept();;
+			Socket clntSock = servSock.accept();
 			// send client socket to session
 				new C4ServerSession(clntSock);	
 		}

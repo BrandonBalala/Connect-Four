@@ -17,6 +17,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 /**
  * This is the Board Controller, which allows us to manipulate elements on our
  * GUI while also interacting with the C4Client
@@ -159,8 +161,6 @@ public class BoardController implements Initializable {
 	// Array containing all the labels in the correct position
 	private Label[][] arrayLabels;
 
-	private final String CLIENT_TOKEN = "X";
-	private final String SERVER_TOKEN = "O";
 	private final int NO_MOVE = -4;
 
 	/**
@@ -279,7 +279,7 @@ public class BoardController implements Initializable {
 		if (isConnected && notWaiting) {
 			String id = ((Node) event.getTarget()).getId();
 			int colChosen = -1;
-			try {
+
 				// Get the integer equivalent of the column that was chosen
 				switch (id) {
 				case "FirstColumn":
@@ -303,7 +303,7 @@ public class BoardController implements Initializable {
 				case "SeventhColumn":
 					colChosen = 6;
 					break;
-				}
+				}			try {
 				if (colChosen != -1) {
 					notWaiting = false;
 					client.makeMove(colChosen);
@@ -329,9 +329,9 @@ public class BoardController implements Initializable {
 		// Checks whether a move was put in the packet for the client and for
 		// the server
 		if (rowClient != NO_MOVE && colClient != NO_MOVE)
-			arrayLabels[rowClient][colClient].setText(CLIENT_TOKEN);
+			arrayLabels[rowClient][colClient].setTextFill(Color.RED); 
 		if (rowServer != NO_MOVE && colServer != NO_MOVE)
-			arrayLabels[rowServer][colServer].setText(SERVER_TOKEN);
+			arrayLabels[rowServer][colServer].setTextFill(Color.BLACK); 
 	}
 
 	/**
@@ -341,11 +341,17 @@ public class BoardController implements Initializable {
 	public void resetBoard() {
 		for (int row = 0; row < arrayLabels.length; row++) {
 			for (int col = 0; col < arrayLabels[0].length; col++) {
-				arrayLabels[row][col].setText("");
+				arrayLabels[row][col].setTextFill(Color.WHITE);
 			}
 		}
 	}
-
+	/**
+	 * Disables the button and the text field used for connecting to server
+     */
+    public void disableConnectButton() {
+        doneBtn.setDisable(true);
+        serverIpField.setDisable(true);
+    }
 	/**
 	 * Initialize method is called after all fxml elements have been loaded This
 	 * method initializes the arrayLabels
@@ -358,5 +364,11 @@ public class BoardController implements Initializable {
 				{ label30, label31, label32, label33, label34, label35, label36 },
 				{ label40, label41, label42, label43, label44, label45, label46 },
 				{ label50, label51, label52, label53, label54, label55, label56 } };
+	 			for(int i = 0; i < arrayLabels.length;i++) 			
+	 				for(int j = 0;j < arrayLabels[0].length;j++) 				
+	 				{ 				
+	 					arrayLabels[i][j].setText("\u25CF");
+	 					arrayLabels[i][j].setTextFill(Color.WHITE); 				
+	 				}
 	}
 }

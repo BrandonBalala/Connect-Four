@@ -121,6 +121,7 @@ public class C4Client extends C4Logic {
 			case CONNECT:
 				controller.setStatusMessage(CONNECTED_MSG);
 				controller.setIsConnected(true);
+				controller.disableConnectButton();
 				canPlay = true;
 				break;
 			case RESET_GAME:
