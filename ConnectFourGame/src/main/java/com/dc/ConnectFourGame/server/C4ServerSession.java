@@ -21,7 +21,7 @@ import com.dc.ConnectFourGame.shared.PACKET_TYPE;
  * 
  * @author Irina Patrocinio-Frazao, Ofer Nitka-Nakash, Brandon Yvan Balala
  */
-public class C4ServerSession extends C4Logic {
+public class C4ServerSession extends C4Logic implements Runnable {
 
 	private boolean playAgain;
 	private boolean gameOver;
@@ -41,7 +41,6 @@ public class C4ServerSession extends C4Logic {
 		converser = new C4Packet(connection);
 		log.info("Session connected to " + connection.getInetAddress().getHostAddress());
 		start();
-
 	}
 
 	/**
@@ -368,6 +367,17 @@ public class C4ServerSession extends C4Logic {
 			converser.sendPacket(packet);
 			getResponce();
 		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void run() {
+		log.info("A new thread was spun: " );
+		try {
+			start();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

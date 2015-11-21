@@ -50,8 +50,14 @@ public class C4Server {
 		for(;;){
 			// Get client connection
 			Socket clntSock = servSock.accept();
+			
 			// send client socket to session
-				new C4ServerSession(clntSock);	
+			C4ServerSession session = new C4ServerSession(clntSock);	
+			
+			//put this game session in a separate thread and
+			//call the run method in c4serversession
+			Thread thread = new Thread(session);
+			thread.start();
 		}
 
 	}
