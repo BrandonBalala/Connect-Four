@@ -371,6 +371,10 @@ public class C4ServerSession extends C4Logic implements Runnable {
 		}
 	}
 
+	/**
+	 * Method to be run on thread start which 
+	 * will initiate the game
+	 */
 	@Override
 	public void run() {
 		log.info("A new thread was spun: " );
