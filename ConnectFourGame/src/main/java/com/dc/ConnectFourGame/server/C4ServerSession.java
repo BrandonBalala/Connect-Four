@@ -40,7 +40,6 @@ public class C4ServerSession extends C4Logic implements Runnable {
 	public C4ServerSession(Socket connection) throws IOException {
 		converser = new C4Packet(connection);
 		log.info("Session connected to " + connection.getInetAddress().getHostAddress());
-		start();
 	}
 
 	/**
