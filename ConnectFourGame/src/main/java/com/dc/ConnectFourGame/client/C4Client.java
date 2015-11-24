@@ -219,6 +219,7 @@ public class C4Client extends C4Logic {
 			controller.setIsConnected(true);
 			controller.setNotWaiting(true);
 			newGame(); //Resets the actual client site game board
+			controller.setStatusMessage("");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

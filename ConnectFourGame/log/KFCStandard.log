@@ -5774,3 +5774,4350 @@ ROW CLIENT: 8
 COL CLIENT: 8
 ROW SERVER: 7
 COL SERVER: 8
+[INFO ] 2015-11-24 12:27:48.760 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:27:51.018 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:27:55.697 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:27:57.339 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:27:57.345 [Thread-1] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:27:57.347 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:27:57.352 [Thread-1] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:27:57.352 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:27:57.353 [Thread-1] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:28:00.656 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:28:00.657 [Thread-2] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:28:00.661 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:00.661 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:00.663 [Thread-2] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:00.664 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:00.664 [Thread-2] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:28:02.490 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:02.490 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:02.493 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 4
+[INFO ] 2015-11-24 12:28:02.493 [Thread-1] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 4
+[INFO ] 2015-11-24 12:28:02.843 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:02.843 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:02.847 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:02.847 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:03.890 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:03.890 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:03.893 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:28:03.893 [Thread-1] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:28:05.858 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:05.858 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:05.861 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: 6
+COL SERVER: 8
+[INFO ] 2015-11-24 12:28:05.861 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: 6
+COL SERVER: 8
+[INFO ] 2015-11-24 12:28:08.858 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:08.858 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:08.860 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: 7
+COL SERVER: 3
+[INFO ] 2015-11-24 12:28:08.860 [Thread-1] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: 7
+COL SERVER: 3
+[INFO ] 2015-11-24 12:28:10.346 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:10.346 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:10.350 [Thread-1] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:28:10.350 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:28:11.171 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:11.171 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:11.173 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: 6
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:11.173 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: 6
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:12.954 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:12.954 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:12.956 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: 6
+COL SERVER: 3
+[INFO ] 2015-11-24 12:28:12.956 [Thread-1] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: 6
+COL SERVER: 3
+[INFO ] 2015-11-24 12:28:14.315 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:14.315 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:14.317 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 4
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: 5
+COL SERVER: 3
+[INFO ] 2015-11-24 12:28:14.317 [Thread-1] C4Packet - 
+SENT
+TYPE: 4
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: 5
+COL SERVER: 3
+[INFO ] 2015-11-24 12:28:15.738 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:15.738 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:15.741 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 5
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:15.741 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 5
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:16.426 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:16.426 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:16.427 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 4
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:16.429 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 4
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:17.042 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:17.042 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:17.044 [Thread-2] C4Packet - 
+SENT
+TYPE: 4
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 3
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:17.044 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 4
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 3
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:20.178 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:20.178 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:20.180 [Thread-1] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:28:20.181 [Thread-1] C4ServerSession - Client Lost
+[INFO ] 2015-11-24 12:28:21.850 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:21.850 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:21.852 [Thread-2] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:28:21.853 [Thread-2] C4ServerSession - Client Lost
+[INFO ] 2015-11-24 12:28:30.043 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:30.043 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:28:30.044 [Thread-3] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:28:30.045 [Thread-3] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:30.047 [Thread-3] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:30.047 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:30.048 [Thread-3] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:28:31.059 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:31.059 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:28:31.062 [Thread-4] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:28:31.063 [Thread-4] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:31.064 [Thread-4] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:31.064 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:31.065 [Thread-4] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:28:31.626 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:31.626 [Thread-4] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:31.628 [Thread-4] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:28:31.628 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:28:32.163 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:32.163 [Thread-4] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:32.165 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:28:32.165 [Thread-4] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:28:32.794 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:32.794 [Thread-4] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:32.796 [Thread-4] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:32.796 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:28:33.754 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:33.754 [Thread-4] C4Packet - 
+RECEIVED
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:33.758 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:33.758 [Thread-4] C4Packet - 
+SENT
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:35.058 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:35.058 [Thread-3] C4Packet - 
+RECEIVED
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:35.060 [Thread-3] C4Packet - 
+SENT
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:35.060 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:36.091 [Thread-3] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:36.091 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:36.092 [Thread-3] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:28:36.094 [Thread-3] C4ServerSession - Game restarted
+[INFO ] 2015-11-24 12:28:37.602 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:37.602 [Thread-4] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:28:37.604 [Thread-4] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:28:37.605 [Thread-4] C4ServerSession - Game restarted
+[INFO ] 2015-11-24 12:31:09.883 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:32:35.037 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:32:37.380 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:32:41.224 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:32:41.226 [Thread-5] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:32:41.234 [Thread-5] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:41.235 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:41.236 [Thread-5] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:41.237 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:41.237 [Thread-5] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:32:42.042 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:42.042 [Thread-5] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:42.044 [Thread-5] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 4
+[INFO ] 2015-11-24 12:32:42.044 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 4
+[INFO ] 2015-11-24 12:32:42.498 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:42.498 [Thread-5] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:42.501 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: 6
+COL SERVER: 6
+[INFO ] 2015-11-24 12:32:42.501 [Thread-5] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: 6
+COL SERVER: 6
+[INFO ] 2015-11-24 12:32:42.690 [JavaFX Application Thread] BoardController - A line between tiles or column was clicked, move ignored.
+[INFO ] 2015-11-24 12:32:43.482 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:43.482 [Thread-5] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:43.485 [Thread-5] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 7
+COL SERVER: 5
+[INFO ] 2015-11-24 12:32:43.485 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 7
+COL SERVER: 5
+[INFO ] 2015-11-24 12:32:43.722 [Thread-5] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:43.722 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:43.725 [Thread-5] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:32:43.725 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:32:44.482 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:44.482 [Thread-5] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:32:44.485 [Thread-5] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:33:08.823 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:33:08.825 [Thread-6] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:08.827 [Thread-6] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:08.828 [Thread-6] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:08.829 [Thread-6] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:09.553 [Thread-6] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:09.557 [Thread-6] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 7
+[INFO ] 2015-11-24 12:33:09.705 [Thread-6] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:09.709 [Thread-6] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 9
+[INFO ] 2015-11-24 12:33:12.499 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:12.499 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:12.502 [Thread-7] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:12.503 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:12.504 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:12.504 [Thread-7] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:12.505 [Thread-7] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:13.402 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:13.403 [Thread-8] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:13.413 [Thread-8] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:13.413 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:13.414 [Thread-8] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:13.414 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:13.414 [Thread-8] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:18.847 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:20.193 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:21.216 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:21.811 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:21.824 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:21.837 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:23.245 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.861 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.861 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.861 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.861 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.861 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.863 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.868 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.873 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.879 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.880 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.884 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.899 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:25.908 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:33:35.616 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:35.617 [Thread-9] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:35.627 [Thread-9] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:35.627 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:35.627 [Thread-9] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:35.628 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:35.628 [Thread-9] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:38.264 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:38.266 [Thread-10] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:38.269 [Thread-10] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:38.269 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:38.270 [Thread-10] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:38.271 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:38.271 [Thread-10] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:40.768 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:40.769 [Thread-11] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:40.774 [Thread-11] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:40.774 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:40.775 [Thread-11] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:40.776 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:40.776 [Thread-11] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:42.560 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:42.561 [Thread-12] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:42.565 [Thread-12] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:42.565 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:42.566 [Thread-12] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:42.566 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:42.567 [Thread-12] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:45.072 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:45.073 [Thread-13] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:45.077 [Thread-13] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:45.077 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:45.077 [Thread-13] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:45.078 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:45.078 [Thread-13] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:47.704 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:47.705 [Thread-14] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:47.713 [Thread-14] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:47.713 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:47.713 [Thread-14] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:47.714 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:47.715 [Thread-14] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:49.576 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:49.577 [Thread-15] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:49.581 [Thread-15] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:49.581 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:49.582 [Thread-15] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:49.582 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:49.583 [Thread-15] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:52.472 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:52.474 [Thread-16] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:52.477 [Thread-16] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:52.477 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:52.481 [Thread-16] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:52.482 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:52.487 [Thread-16] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:55.889 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:55.891 [Thread-17] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:55.895 [Thread-17] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:55.895 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:55.897 [Thread-17] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:55.898 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:55.899 [Thread-17] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:33:58.705 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:33:58.709 [Thread-18] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:33:58.723 [Thread-18] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:58.723 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:58.725 [Thread-18] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:58.727 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:33:58.728 [Thread-18] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:00.554 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:34:00.559 [Thread-19] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:00.566 [Thread-19] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:00.566 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:00.571 [Thread-19] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:00.572 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:00.572 [Thread-19] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:03.409 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:34:03.411 [Thread-20] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:03.421 [Thread-20] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:03.421 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:03.423 [Thread-20] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:03.424 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:03.425 [Thread-20] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:05.264 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:34:05.273 [Thread-21] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:05.278 [Thread-21] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:05.278 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:05.280 [Thread-21] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:05.282 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:05.283 [Thread-21] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:07.056 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:34:07.057 [Thread-22] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:07.061 [Thread-22] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:07.061 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:07.062 [Thread-22] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:07.063 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:07.064 [Thread-22] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:09.098 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:34:09.099 [Thread-23] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:09.106 [Thread-23] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:09.106 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:09.107 [Thread-23] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:09.108 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:09.109 [Thread-23] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:10.769 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:34:10.770 [Thread-24] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:10.774 [Thread-24] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:10.774 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:10.775 [Thread-24] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:10.776 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:10.776 [Thread-24] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:13.193 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:34:13.194 [Thread-25] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:13.198 [Thread-25] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:13.198 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:13.198 [Thread-25] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:13.199 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:13.200 [Thread-25] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:14.562 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:14.563 [Thread-26] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:14.565 [Thread-26] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:14.566 [Thread-26] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:14.567 [Thread-26] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:15.312 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:34:15.314 [Thread-27] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:15.318 [Thread-27] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:15.318 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:15.320 [Thread-27] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:15.321 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:15.322 [Thread-27] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:16.873 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:16.874 [Thread-28] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:16.875 [Thread-28] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:16.876 [Thread-28] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:16.877 [Thread-28] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:17.537 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:34:17.538 [Thread-29] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:17.542 [Thread-29] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:17.542 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:17.543 [Thread-29] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:17.544 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:17.544 [Thread-29] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:19.009 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:19.010 [Thread-30] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:19.012 [Thread-30] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:19.012 [Thread-30] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:19.013 [Thread-30] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:19.722 [Thread-29] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:19.722 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:19.723 [Thread-29] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:19.724 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:20.090 [Thread-27] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:20.090 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:20.091 [Thread-27] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 4
+[INFO ] 2015-11-24 12:34:20.091 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 4
+[INFO ] 2015-11-24 12:34:21.369 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:21.370 [Thread-31] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:21.372 [Thread-31] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:21.373 [Thread-31] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:21.374 [Thread-31] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:21.602 [Thread-17] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:21.602 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:21.604 [Thread-17] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:21.605 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:23.129 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:23.130 [Thread-32] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:23.131 [Thread-32] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:23.132 [Thread-32] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:23.132 [Thread-32] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:25.488 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:25.490 [Thread-33] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:25.491 [Thread-33] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:25.492 [Thread-33] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:25.493 [Thread-33] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:26.129 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:34:26.135 [Thread-34] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:26.138 [Thread-34] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:26.138 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:26.139 [Thread-34] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:26.140 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:26.140 [Thread-34] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:26.602 [JavaFX Application Thread] BoardController - A line between tiles or column was clicked, move ignored.
+[INFO ] 2015-11-24 12:34:27.002 [Thread-34] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:27.002 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:27.003 [Thread-34] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:27.003 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:27.586 [Thread-34] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:27.586 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:27.587 [Thread-34] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:27.588 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:27.624 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:27.626 [Thread-35] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:27.627 [Thread-35] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:27.628 [Thread-35] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:27.628 [Thread-35] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:28.402 [Thread-29] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:28.402 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:28.403 [Thread-29] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:28.404 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:28.810 [Thread-29] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:28.810 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:28.811 [Thread-29] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:28.812 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:29.808 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:29.810 [Thread-36] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:29.810 [Thread-36] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:29.811 [Thread-36] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:29.812 [Thread-36] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:30.266 [Thread-13] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:30.266 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:30.268 [Thread-13] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:30.268 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:30.745 [Thread-13] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:30.745 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:30.746 [Thread-13] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:30.747 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:31.178 [Thread-13] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:31.178 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:31.179 [Thread-13] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: 7
+COL SERVER: 7
+[INFO ] 2015-11-24 12:34:31.181 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: 7
+COL SERVER: 7
+[INFO ] 2015-11-24 12:34:31.769 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:31.772 [Thread-37] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:31.775 [Thread-37] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:31.777 [Thread-37] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:31.778 [Thread-37] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:32.449 [Thread-20] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:32.449 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:32.450 [Thread-20] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:32.452 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:32.945 [Thread-20] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:32.945 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:32.946 [Thread-20] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: 6
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:32.949 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: 6
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:33.425 [Thread-20] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:33.425 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:33.427 [Thread-20] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:33.429 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:33.737 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:33.738 [Thread-38] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:33.739 [Thread-38] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:33.740 [Thread-38] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:33.742 [Thread-38] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:34.866 [Thread-11] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:34.866 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:34.868 [Thread-11] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:34.869 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:35.457 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:35.459 [Thread-39] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:35.464 [Thread-39] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:35.467 [Thread-39] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:35.469 [Thread-39] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:36.385 [Thread-11] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:36.385 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:36.389 [Thread-11] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 4
+[INFO ] 2015-11-24 12:34:36.391 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 4
+[INFO ] 2015-11-24 12:34:37.888 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:37.891 [Thread-40] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:37.896 [Thread-40] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:37.899 [Thread-40] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:37.903 [Thread-40] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:38.226 [Thread-9] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:38.226 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:38.229 [Thread-9] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:38.230 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:38.561 [Thread-9] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:38.561 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:38.568 [Thread-9] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 7
+[INFO ] 2015-11-24 12:34:38.571 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 7
+[INFO ] 2015-11-24 12:34:39.146 [Thread-9] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:39.146 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:39.148 [Thread-9] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 9
+[INFO ] 2015-11-24 12:34:39.149 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 9
+[INFO ] 2015-11-24 12:34:39.545 [Thread-9] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:39.545 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:39.547 [Thread-9] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:39.547 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:39.809 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:39.810 [Thread-41] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:39.811 [Thread-41] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:39.812 [Thread-41] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:39.813 [Thread-41] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:42.184 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:42.186 [Thread-42] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:42.187 [Thread-42] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:42.188 [Thread-42] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:42.189 [Thread-42] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:42.849 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:42.850 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:42.851 [Thread-7] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:34:42.851 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:34:43.218 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:43.218 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:43.218 [Thread-7] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:43.219 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:43.682 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:43.682 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:43.682 [Thread-7] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 4
+ROW SERVER: 6
+COL SERVER: 4
+[INFO ] 2015-11-24 12:34:43.683 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 4
+ROW SERVER: 6
+COL SERVER: 4
+[INFO ] 2015-11-24 12:34:43.897 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:43.897 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:43.898 [Thread-7] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:43.899 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:44.272 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:44.276 [Thread-43] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:44.277 [Thread-43] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:44.278 [Thread-43] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:44.280 [Thread-43] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:44.393 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:44.393 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:44.394 [Thread-7] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:44.395 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 5
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:44.561 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:44.561 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:44.562 [Thread-7] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: 5
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:44.562 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: 5
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:44.802 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:44.802 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:44.802 [Thread-7] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:44.803 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 3
+[INFO ] 2015-11-24 12:34:45.001 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:45.001 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:45.002 [Thread-7] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 7
+ROW SERVER: 6
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:45.003 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 7
+ROW SERVER: 6
+COL SERVER: 6
+[INFO ] 2015-11-24 12:34:45.754 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:45.754 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:45.755 [Thread-7] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 5
+ROW SERVER: 4
+COL SERVER: 7
+[INFO ] 2015-11-24 12:34:45.756 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 5
+ROW SERVER: 4
+COL SERVER: 7
+[INFO ] 2015-11-24 12:34:46.369 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:46.370 [Thread-44] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:46.371 [Thread-44] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:46.373 [Thread-44] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:46.374 [Thread-44] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:48.321 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:48.322 [Thread-45] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:48.323 [Thread-45] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:48.324 [Thread-45] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:48.325 [Thread-45] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:49.625 [Thread-11] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:49.625 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:49.626 [Thread-11] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 8
+[INFO ] 2015-11-24 12:34:49.626 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 8
+[INFO ] 2015-11-24 12:34:50.432 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:50.434 [Thread-46] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:50.435 [Thread-46] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:50.436 [Thread-46] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:50.436 [Thread-46] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:50.737 [Thread-12] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:50.737 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:50.738 [Thread-12] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 8
+[INFO ] 2015-11-24 12:34:50.739 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 8
+[INFO ] 2015-11-24 12:34:51.218 [Thread-12] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:51.218 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:51.218 [Thread-12] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:51.219 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:51.410 [Thread-12] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:51.410 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:51.411 [Thread-12] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 4
+ROW SERVER: 6
+COL SERVER: 4
+[INFO ] 2015-11-24 12:34:51.411 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 4
+ROW SERVER: 6
+COL SERVER: 4
+[INFO ] 2015-11-24 12:34:51.826 [Thread-12] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:51.826 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:51.827 [Thread-12] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: 7
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:51.828 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: 7
+COL SERVER: 5
+[INFO ] 2015-11-24 12:34:52.345 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:52.346 [Thread-47] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:52.347 [Thread-47] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:52.349 [Thread-47] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:52.349 [Thread-47] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:54.368 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:54.369 [Thread-48] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:54.370 [Thread-48] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:54.371 [Thread-48] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:54.372 [Thread-48] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:56.320 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:56.322 [Thread-49] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:56.323 [Thread-49] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:56.324 [Thread-49] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:56.325 [Thread-49] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:34:58.272 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:34:58.273 [Thread-50] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:34:58.275 [Thread-50] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:58.276 [Thread-50] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:34:58.277 [Thread-50] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:35:03.260 [Thread-7] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:03.260 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:03.261 [Thread-7] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:35:04.096 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:35:04.097 [Thread-51] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:35:04.098 [Thread-51] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:04.099 [Thread-51] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:04.100 [Thread-51] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:35:04.243 [Thread-8] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:04.243 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:04.244 [Thread-8] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:35:05.891 [Thread-9] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:05.891 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:05.893 [Thread-9] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:35:05.999 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:35:06.000 [Thread-52] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:35:06.002 [Thread-52] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:06.003 [Thread-52] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:06.004 [Thread-52] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:35:06.851 [Thread-10] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:06.851 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:06.852 [Thread-10] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:35:07.763 [Thread-11] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:07.763 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:07.764 [Thread-11] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:35:08.063 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:35:08.064 [Thread-53] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:35:08.065 [Thread-53] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:08.066 [Thread-53] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:08.066 [Thread-53] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:35:08.660 [Thread-13] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:08.660 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:08.661 [Thread-13] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:35:09.724 [Thread-14] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:09.724 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:09.725 [Thread-14] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:35:10.088 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:35:10.089 [Thread-54] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:35:10.091 [Thread-54] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:10.092 [Thread-54] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:10.093 [Thread-54] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:35:12.400 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:35:12.401 [Thread-55] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:35:12.403 [Thread-55] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:12.403 [Thread-55] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:12.404 [Thread-55] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:35:16.360 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:35:16.361 [Thread-56] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:35:16.362 [Thread-56] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:16.363 [Thread-56] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:16.364 [Thread-56] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:35:22.719 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:35:22.721 [Thread-57] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:35:22.722 [Thread-57] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:22.723 [Thread-57] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:22.724 [Thread-57] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:35:23.752 [Thread-57] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:23.752 [Thread-57] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:23.920 [Thread-57] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:23.921 [Thread-57] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: 6
+COL SERVER: 8
+[INFO ] 2015-11-24 12:35:24.112 [Thread-57] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:24.113 [Thread-57] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 8
+ROW SERVER: 7
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:24.312 [Thread-57] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:24.313 [Thread-57] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 8
+ROW SERVER: 6
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:24.712 [Thread-57] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:24.713 [Thread-57] C4Packet - 
+SENT
+TYPE: 4
+ROW CLIENT: 8
+COL CLIENT: 9
+ROW SERVER: 5
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:29.112 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:35:29.113 [Thread-58] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:35:29.115 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:29.116 [Thread-58] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:29.117 [Thread-58] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:35:30.216 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:30.219 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 9
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:35:30.415 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:30.416 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 9
+ROW SERVER: 6
+COL SERVER: 9
+[INFO ] 2015-11-24 12:35:30.600 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:30.600 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 9
+ROW SERVER: 8
+COL SERVER: 8
+[INFO ] 2015-11-24 12:35:30.775 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:30.776 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 9
+ROW SERVER: 3
+COL SERVER: 9
+[INFO ] 2015-11-24 12:35:31.800 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:31.800 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: 6
+COL SERVER: 8
+[INFO ] 2015-11-24 12:35:32.136 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:32.137 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 8
+ROW SERVER: 4
+COL SERVER: 8
+[INFO ] 2015-11-24 12:35:32.391 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:32.392 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:33.039 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:33.041 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 4
+[INFO ] 2015-11-24 12:35:33.239 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:33.241 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: 6
+COL SERVER: 7
+[INFO ] 2015-11-24 12:35:33.424 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:33.425 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:33.632 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:33.633 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 7
+ROW SERVER: 6
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:33.816 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:33.817 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 4
+[INFO ] 2015-11-24 12:35:36.479 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:36.480 [Thread-58] C4Packet - 
+SENT
+TYPE: 4
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 5
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:45.016 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:45.017 [Thread-58] C4Packet - 
+SENT
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:45.735 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:45.736 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 9
+ROW SERVER: 7
+COL SERVER: 9
+[INFO ] 2015-11-24 12:35:45.737 [Thread-58] C4ServerSession - Game restarted
+[INFO ] 2015-11-24 12:35:45.738 [Thread-58] C4ServerSession - Client Lost
+[INFO ] 2015-11-24 12:35:45.895 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:45.896 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 9
+ROW SERVER: 8
+COL SERVER: 8
+[INFO ] 2015-11-24 12:35:46.079 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:46.082 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 9
+ROW SERVER: 4
+COL SERVER: 9
+[INFO ] 2015-11-24 12:35:46.263 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:46.264 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 9
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:47.311 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:47.313 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:35:47.479 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:47.482 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 8
+ROW SERVER: 5
+COL SERVER: 8
+[INFO ] 2015-11-24 12:35:47.647 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:47.649 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 8
+ROW SERVER: 7
+COL SERVER: 7
+[INFO ] 2015-11-24 12:35:47.823 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:47.824 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 8
+ROW SERVER: 6
+COL SERVER: 7
+[INFO ] 2015-11-24 12:35:48.911 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:48.926 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:35:49.079 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:49.080 [Thread-58] C4Packet - 
+SENT
+TYPE: 4
+ROW CLIENT: 4
+COL CLIENT: 7
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:35:51.471 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:51.472 [Thread-58] C4Packet - 
+SENT
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:53.272 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:53.273 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 9
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:35:53.274 [Thread-58] C4ServerSession - Game restarted
+[INFO ] 2015-11-24 12:35:53.275 [Thread-58] C4ServerSession - Client Lost
+[INFO ] 2015-11-24 12:35:53.439 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:53.441 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 9
+ROW SERVER: 6
+COL SERVER: 9
+[INFO ] 2015-11-24 12:35:53.631 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:53.632 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 9
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:35:53.791 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:53.792 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 9
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:35:53.959 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 9
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:53.960 [Thread-58] C4Packet - 
+SENT
+TYPE: 4
+ROW CLIENT: 3
+COL CLIENT: 9
+ROW SERVER: 8
+COL SERVER: 4
+[INFO ] 2015-11-24 12:35:55.592 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:55.592 [Thread-58] C4Packet - 
+SENT
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:56.312 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:56.312 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 7
+COL SERVER: 8
+[INFO ] 2015-11-24 12:35:56.313 [Thread-58] C4ServerSession - Game restarted
+[INFO ] 2015-11-24 12:35:56.314 [Thread-58] C4ServerSession - Client Lost
+[INFO ] 2015-11-24 12:35:56.472 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:56.473 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 8
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:56.647 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:56.648 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 8
+ROW SERVER: 4
+COL SERVER: 8
+[INFO ] 2015-11-24 12:35:56.816 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:56.816 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 8
+ROW SERVER: 7
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:57.383 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:57.384 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 6
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:57.560 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:57.561 [Thread-58] C4Packet - 
+SENT
+TYPE: 4
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: 5
+COL SERVER: 3
+[INFO ] 2015-11-24 12:35:59.503 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:35:59.504 [Thread-58] C4Packet - 
+SENT
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:00.368 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:00.368 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 5
+ROW SERVER: 7
+COL SERVER: 5
+[INFO ] 2015-11-24 12:36:00.369 [Thread-58] C4ServerSession - Game restarted
+[INFO ] 2015-11-24 12:36:00.370 [Thread-58] C4ServerSession - Client Lost
+[INFO ] 2015-11-24 12:36:00.519 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:00.520 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:36:00.688 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:00.689 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 5
+ROW SERVER: 4
+COL SERVER: 5
+[INFO ] 2015-11-24 12:36:00.855 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:00.856 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 3
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:36:02.071 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:02.072 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 7
+COL SERVER: 3
+[INFO ] 2015-11-24 12:36:02.255 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:02.257 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 8
+ROW SERVER: 6
+COL SERVER: 3
+[INFO ] 2015-11-24 12:36:02.415 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:02.416 [Thread-58] C4Packet - 
+SENT
+TYPE: 4
+ROW CLIENT: 6
+COL CLIENT: 8
+ROW SERVER: 5
+COL SERVER: 3
+[INFO ] 2015-11-24 12:36:03.671 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:03.672 [Thread-58] C4Packet - 
+SENT
+TYPE: 2
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:04.199 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:04.200 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:36:04.201 [Thread-58] C4ServerSession - Game restarted
+[INFO ] 2015-11-24 12:36:04.202 [Thread-58] C4ServerSession - Client Lost
+[INFO ] 2015-11-24 12:36:04.360 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:04.364 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 4
+ROW SERVER: 6
+COL SERVER: 4
+[INFO ] 2015-11-24 12:36:04.559 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:04.561 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 5
+COL CLIENT: 4
+ROW SERVER: 7
+COL SERVER: 5
+[INFO ] 2015-11-24 12:36:04.719 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:04.720 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 4
+COL CLIENT: 4
+ROW SERVER: 8
+COL SERVER: 6
+[INFO ] 2015-11-24 12:36:05.400 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:05.401 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 5
+ROW SERVER: 8
+COL SERVER: 7
+[INFO ] 2015-11-24 12:36:06.135 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:06.136 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 3
+[INFO ] 2015-11-24 12:36:06.623 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:06.625 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: 3
+COL SERVER: 4
+[INFO ] 2015-11-24 12:36:07.623 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:07.627 [Thread-58] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 8
+ROW SERVER: 6
+COL SERVER: 6
+[INFO ] 2015-11-24 12:36:08.727 [Thread-58] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:08.729 [Thread-58] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:36:12.239 [Thread-57] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:12.239 [Thread-57] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:36:12.241 [Thread-57] C4ServerSession - Client Lost
+[INFO ] 2015-11-24 12:36:13.912 [main] C4ServerSession - Session connected to 10.172.20.93
+[INFO ] 2015-11-24 12:36:13.914 [Thread-59] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:36:13.915 [Thread-59] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:13.916 [Thread-59] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:13.918 [Thread-59] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:36:17.296 [Thread-59] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:17.296 [Thread-59] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:36:21.759 [Thread-56] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:36:21.760 [Thread-56] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:40:07.614 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:40:10.012 [JavaFX Application Thread] MainAppFX - Program begins
+[INFO ] 2015-11-24 12:40:12.791 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:13.553 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:40:13.557 [Thread-1] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:40:13.559 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:13.563 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:13.563 [Thread-1] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:13.564 [Thread-1] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:40:17.563 [main] C4ServerSession - Session connected to 127.0.0.1
+[INFO ] 2015-11-24 12:40:17.664 [Thread-2] C4ServerSession - A new thread was spun: 
+[INFO ] 2015-11-24 12:40:17.669 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:17.669 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:17.670 [Thread-2] C4Packet - 
+SENT
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:17.671 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 0
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:17.672 [Thread-2] C4ServerSession - Session Started
+[INFO ] 2015-11-24 12:40:20.445 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:20.445 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:20.448 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:40:20.448 [Thread-1] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:40:20.693 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:20.693 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:20.695 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 9
+[INFO ] 2015-11-24 12:40:20.695 [Thread-1] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 9
+[INFO ] 2015-11-24 12:40:20.949 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:20.949 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:20.951 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:40:20.951 [Thread-1] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:40:21.589 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:21.589 [Thread-1] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:21.590 [Thread-1] C4ServerSession - DISCONNECTED
+[INFO ] 2015-11-24 12:40:25.653 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:25.653 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:25.655 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 9
+[INFO ] 2015-11-24 12:40:25.655 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 7
+ROW SERVER: 8
+COL SERVER: 9
+[INFO ] 2015-11-24 12:40:25.981 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:25.981 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:25.982 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:40:25.982 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 6
+ROW SERVER: 8
+COL SERVER: 5
+[INFO ] 2015-11-24 12:40:26.205 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:26.205 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:26.207 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:40:26.207 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 8
+COL CLIENT: 4
+ROW SERVER: 7
+COL SERVER: 6
+[INFO ] 2015-11-24 12:40:26.421 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:26.421 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 6
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:26.422 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 6
+ROW SERVER: 7
+COL SERVER: 5
+[INFO ] 2015-11-24 12:40:26.423 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 6
+ROW SERVER: 7
+COL SERVER: 5
+[INFO ] 2015-11-24 12:40:26.613 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:26.613 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:26.693 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: 6
+COL SERVER: 5
+[INFO ] 2015-11-24 12:40:26.693 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 7
+COL CLIENT: 7
+ROW SERVER: 6
+COL SERVER: 5
+[INFO ] 2015-11-24 12:40:26.773 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:26.773 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 7
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:26.774 [JavaFX Application Thread] C4Packet - 
+RECEIVED
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 7
+ROW SERVER: 5
+COL SERVER: 7
+[INFO ] 2015-11-24 12:40:26.774 [Thread-2] C4Packet - 
+SENT
+TYPE: 6
+ROW CLIENT: 6
+COL CLIENT: 7
+ROW SERVER: 5
+COL SERVER: 7
+[INFO ] 2015-11-24 12:40:27.565 [JavaFX Application Thread] C4Packet - 
+SENT
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:27.565 [Thread-2] C4Packet - 
+RECEIVED
+TYPE: 1
+ROW CLIENT: -1
+COL CLIENT: -1
+ROW SERVER: -1
+COL SERVER: -1
+[INFO ] 2015-11-24 12:40:27.567 [Thread-2] C4ServerSession - DISCONNECTED

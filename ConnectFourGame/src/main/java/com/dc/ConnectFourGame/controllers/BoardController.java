@@ -12,7 +12,6 @@ import com.sun.javafx.scene.control.skin.LabeledText;
 
 import javafx.scene.Node;
 
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -28,6 +27,7 @@ import javafx.scene.paint.Color;
  * 
  * @author Irina Patrocinio-Frazao, Ofer Nitka-Nakash, Brandon Yvan Balala
  */
+@SuppressWarnings("restriction")
 public class BoardController implements Initializable {
 
 	@FXML

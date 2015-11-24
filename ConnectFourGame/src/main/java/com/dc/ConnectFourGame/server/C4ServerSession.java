@@ -158,6 +158,7 @@ public class C4ServerSession extends C4Logic implements Runnable {
 				playAgain = false;
 				gameOver = true;
 				log.info("DISCONNECTED");
+				converser.connectionClose();
 				break;
 			case MOVE:
 				// receiving a move from the client
